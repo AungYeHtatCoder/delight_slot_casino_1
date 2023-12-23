@@ -15,6 +15,10 @@ use App\Http\Controllers\Admin\PermissionController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+require __DIR__.'/user.php';
+
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\User\WelcomeController::class, 'index'])->name('welcome');
@@ -26,6 +30,8 @@ Route::post('/register', [LoginController::class, 'register'])->name('register')
 Route::get('/register', [LoginController::class, 'userRegister'])->name('register');
 
 // Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => ['auth']], function () {
+
+
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => ['auth', 'checkBanned']], function () {
   // Permissions
