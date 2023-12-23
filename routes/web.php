@@ -25,8 +25,9 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/register', [LoginController::class, 'register'])->name('register');
 Route::get('/register', [LoginController::class, 'userRegister'])->name('register');
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => ['auth']], function () {
+// Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => ['auth']], function () {
 
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Controllers\Admin', 'middleware' => ['auth', 'checkBanned']], function () {
   // Permissions
   Route::delete('permissions/destroy', [PermissionController::class, 'massDestroy'])->name('permissions.massDestroy');
   Route::resource('permissions', PermissionController::class);
@@ -36,6 +37,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   // Users
   Route::delete('users/destroy', [UsersController::class, 'massDestroy'])->name('users.massDestroy');
   Route::resource('users', UsersController::class);
+  Route::put('users/{id}/ban', [UsersController::class, 'banUser'])->name('users.ban');
   Route::resource('profiles', ProfileController::class);
   Route::put('/super-admin-update-balance/{id}', [App\Http\Controllers\Admin\ProfileController::class, 'AdminUpdateBalance'])->name('admin-update-balance');
   // user profile route get method

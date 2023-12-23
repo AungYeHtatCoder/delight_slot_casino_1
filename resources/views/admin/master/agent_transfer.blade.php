@@ -1,4 +1,4 @@
-@extends('layouts.admin_app')
+@extends('admin_layouts.app')
 @section('styles')
 <style>
 .transparent-btn {
@@ -64,7 +64,7 @@
   <div class="container mt-2">
    <div class="d-flex justify-content-between">
     <h4>Agent Information -- <span>
-    Agent ID : {{ $transfer_user->id }} 
+    Agent ID : {{ $transfer_user->id }}
     </span></h4>
     <a class="btn btn-icon btn-2 btn-primary" href="{{ url('/admin/agent-list') }}">
      <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
@@ -94,7 +94,7 @@
          @endforeach
         </td>
        </tr>
-      
+
        <tr>
         <th>Create Date</th>
         <td>{!! $transfer_user->created_at !!}</td>
@@ -109,7 +109,7 @@
    </div>
   </div>
  </div>
- 
+
 </div>
 <div class="row mt-4">
  <div class="col-lg-12">
@@ -139,7 +139,7 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">Agent Real Name</label>
         <input type="text" class="form-control" name="name" value="{{ $transfer_user->name }}" readonly>
-         
+
       </div>
       @error('name')
         <span class="d-block text-danger">*{{ $message }}</span>
@@ -149,7 +149,7 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">Phone</label>
         <input type="text" class="form-control" name="phone" value="{{ $transfer_user->phone }}" readonly>
-         
+
       </div>
       @error('phone')
         <span class="d-block text-danger">*{{ $message }}</span>
@@ -163,8 +163,8 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">Agent ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
         <input type="text" class="form-control" name="cash_in">
-         
-         
+
+
       </div>
       @error('cash_in')
          <span class="d-block text-danger">*{{ $message }}</span>
@@ -174,7 +174,7 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">Addition Note (optional)</label>
         <input type="text" class="form-control" name="note">
-         
+
       </div>
       @error('note')
         <span class="d-block text-danger">*{{ $message }}</span>

@@ -1,4 +1,4 @@
-@extends('layouts.admin_app')
+@extends('admin_layouts.app')
 @section('styles')
 <style>
 .transparent-btn {
@@ -92,7 +92,7 @@
          @endforeach
         </td>
        </tr>
-      
+
        <tr>
         <th>Create Date</th>
         <td>{!! $user_detail->created_at !!}</td>

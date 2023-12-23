@@ -25,6 +25,7 @@ return new class extends Migration
             $table->integer('profile_size')->nullable();
             $table->string('address')->nullable();
             $table->integer('balance')->default(500000);
+             $table->integer('status')->default(0);
             $table->unsignedBigInteger('agent_id')->default(1);
             $table->rememberToken();
             $table->timestamps();

@@ -1,4 +1,4 @@
-@extends('layouts.admin_app')
+@extends('admin_layouts.app')
 @section('styles')
 <style>
 .transparent-btn {
@@ -74,7 +74,7 @@
               @csrf
               @method('PUT')
           </form>
-          
+
         <a class="me-1" href="{{ route('admin.real-live-master-edit', $user->id) }}" data-bs-toggle="tooltip"
          data-bs-original-title="Edit User">
          <i class="fas fa-pen-to-square text-info" style="font-size: 20px;"></i>

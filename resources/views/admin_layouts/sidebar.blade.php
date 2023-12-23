@@ -72,57 +72,34 @@
             <li class="nav-item ">
               <div class="collapse " id="masterControl">
                 <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                 <li class="nav-item">
+                    <a class="nav-link text-white " href="{{ url('/admin/real-live-master-list')}}">
                       <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
                       <span class="sidenav-normal  ms-2  ps-1"> Master Lists </span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 09:30AM </span>
+                    <a class="nav-link text-white " href="{{ url('/real-live-master-create')}}">
+                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                      <span class="sidenav-normal  ms-2  ps-1"> Master Create </span>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 12:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 02:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 04:30PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 3D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 3D </span>
-                    </a>
-                  </li>
+
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-transfer-log') }}">
                       <span class="sidenav-mini-icon"> T L </span>
                       <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
                     </a>
                   </li>
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-daily-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> D S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
                     </a>
                   </li>
 
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-monthly-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> M S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
                     </a>

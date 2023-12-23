@@ -1,4 +1,4 @@
-@extends('layouts.admin_app')
+@extends('admin_layouts.app')
 @section('styles')
 <style>
 .transparent-btn {
@@ -88,7 +88,7 @@
       <div class="input-group input-group-outline my-3">
         <label class="form-label">User Real Name</label>
         <input type="text" class="form-control" name="name" value="{{ $user->name }}">
-         
+
       </div>
       @error('name')
         <span class="d-block text-danger">*{{ $message }}</span>
@@ -98,7 +98,7 @@
       <div class="input-group input-group-outline my-3">
         <label class="form-label">Phone</label>
         <input type="text" class="form-control" name="phone" value="{{ $user->phone }}">
-         
+
       </div>
       @error('phone')
         <span class="d-block text-danger">*{{ $message }}</span>
@@ -110,8 +110,8 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">Password</label>
         <input type="password" class="form-control" name="password">
-         
-         
+
+
       </div>
       @error('password')
          <span class="d-block text-danger">*{{ $message }}</span>
@@ -121,7 +121,7 @@
       <div class="input-group input-group-outline is-valid my-3">
         <label class="form-label">ConfirmPassword</label>
         <input type="password" class="form-control" name="password_confirmation">
-         
+
       </div>
       @error('password_confirmation')
         <span class="d-block text-danger">*{{ $message }}</span>

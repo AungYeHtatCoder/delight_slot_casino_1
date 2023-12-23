@@ -1,4 +1,4 @@
-@extends('layouts.admin_app')
+@extends('admin_layouts.app')
 @section('styles')
 
 @endsection
@@ -10,7 +10,7 @@
               <li class="nav-item">
                 <a class="nav-link mb-0 px-0 py-2 active btn btn-primary" href="{{ url('/admin/agent-create') }}" aria-selected="true" style="color: aliceblue">
                   + New Agent Create
-                </a> 
+                </a>
               </li>
               <li class="nav-item ms-1">
                 <a class="nav-link mb-0 px-0 py-2 active btn btn-info" href="{{ url('/admin/agent-list') }}" aria-selected="true" style="color: aliceblue">
@@ -22,7 +22,7 @@
                  2D - 9:30 AM
                 </a>
               </li>
-            
+
               <li class="nav-item ms-1">
                 <a class="nav-link mb-0 px-0 py-2 active btn btn-info btn-sm" href="{{ url('/admin/agent-user-play-morning') }}" aria-selected="true" style="color: aliceblue">
                  2D - 12:1 PM
