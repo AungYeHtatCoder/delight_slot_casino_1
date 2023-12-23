@@ -122,56 +122,34 @@
               <div class="collapse " id="masterControl">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ route('admin.agent-list')}}">
                       <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
                       <span class="sidenav-normal  ms-2  ps-1"> Agent Lists </span>
                     </a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 09:30AM </span>
+                    <a class="nav-link text-white " href="{{ route('admin.agent-create')}}">
+                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                      <span class="sidenav-normal  ms-2  ps-1"> Agent Create </span>
                     </a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 12:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 02:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 04:30PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 3D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 3D </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-transfer-log') }}">
                       <span class="sidenav-mini-icon"> T L </span>
                       <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-daily-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> D S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
                     </a>
                   </li>
 
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-monthly-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> M S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
                     </a>
@@ -194,57 +172,28 @@
               <div class="collapse " id="masterControl">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ route('admin.agent-user-list')}}">
                       <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
                       <span class="sidenav-normal  ms-2  ps-1"> User Lists </span>
                     </a>
                   </li>
+
                   <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 09:30AM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 12:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 02:01PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 2D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 04:30PM </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
-                      <span class="sidenav-mini-icon"> 3D </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> 3D </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-transfer-log') }}">
                       <span class="sidenav-mini-icon"> T L </span>
                       <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
                     </a>
                   </li>
 
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-daily-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> D S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
                     </a>
                   </li>
 
                    <li class="nav-item">
-                    <a class="nav-link text-white " href="">
+                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-monthly-status-transfer-log') }}">
                       <span class="sidenav-mini-icon"> M S </span>
                       <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
                     </a>
