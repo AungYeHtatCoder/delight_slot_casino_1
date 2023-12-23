@@ -137,3 +137,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   Route::get('/get-all-agent-to-user-transfer-log', [App\Http\Controllers\Admin\Transfer\TransferLogController::class, 'AgentToUserTransferLog'])->name('get-all-agent-user-transfer-log');
 
 });
+
+//Slot routes
+Route::get('/slot-register', [App\Http\Controllers\Slot\SlotController::class, 'register']);
+Route::get('/slot-login', [App\Http\Controllers\Slot\SlotController::class, 'login']);
+Route::get('/slot-index', [App\Http\Controllers\Slot\SlotController::class, 'index']);
+Route::get('/slot-promo', [App\Http\Controllers\Slot\SlotController::class, 'promotion']);
+Route::get('/slot-agent', [App\Http\Controllers\Slot\SlotController::class, 'agent']);
