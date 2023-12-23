@@ -79,7 +79,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/real-live-master-create')}}">
+                  <a class="nav-link text-white " href="{{ url('/admin/real-live-master-create')}}">
                     <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
                     <span class="sidenav-normal  ms-2  ps-1"> Master Create </span>
                   </a>
