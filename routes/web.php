@@ -100,7 +100,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   Route::get('/agent-cash-out/{id}', [App\Http\Controllers\Admin\Master\MasterController::class, 'transferCashOut'])->name('agent-cash-out');
   // store agent cash out route
   Route::put('/agent-cash-out-store/{id}', [App\Http\Controllers\Admin\Master\MasterController::class, 'AgentCashOutStore'])->name('agent-cash-out-store');
-    Route::resource('/promotions', PromotionController::class);
+  Route::resource('/promotions', PromotionController::class);
   // agent user list route
   Route::get('/agent-user-list', [App\Http\Controllers\Admin\Agent\AgentController::class, 'index'])->name('agent-user-list');
   // agent user create route
@@ -141,5 +141,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   Route::get('/get-all-master-to-agent-transfer-log', [App\Http\Controllers\Admin\Transfer\TransferLogController::class, 'MasterToAgentTransferLog'])->name('get-all-master-agent-transfer-log');
   // get all agent to user transfer log route
   Route::get('/get-all-agent-to-user-transfer-log', [App\Http\Controllers\Admin\Transfer\TransferLogController::class, 'AgentToUserTransferLog'])->name('get-all-agent-user-transfer-log');
-
 });
+
+//Slot routes
+Route::get('/slot-register', [App\Http\Controllers\Slot\SlotController::class, 'register']);
+Route::get('/slot-login', [App\Http\Controllers\Slot\SlotController::class, 'login']);
+Route::get('/slot-index', [App\Http\Controllers\Slot\SlotController::class, 'index']);
+Route::get('/slot-promo', [App\Http\Controllers\Slot\SlotController::class, 'promotion']);
+Route::get('/slot-agent', [App\Http\Controllers\Slot\SlotController::class, 'agent']);
+Route::get('/slot-userinfo', [App\Http\Controllers\Slot\SlotController::class, 'userInfo']);
+Route::get('/slot-wallet', [App\Http\Controllers\Slot\SlotController::class, 'wallet']);
+Route::get('/slot-betrecord', [App\Http\Controllers\Slot\SlotController::class, 'betRecord']);
+Route::get('/slot-cashrecord', [App\Http\Controllers\Slot\SlotController::class, 'cashRecord']);
+Route::get('/slot-helpcenter', [App\Http\Controllers\Slot\SlotController::class, 'helpCenter']);
+Route::get('/slot-feedback', [App\Http\Controllers\Slot\SlotController::class, 'feedback']);

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -25,8 +27,17 @@ class HomeController extends Controller
     {
         if (auth()->user()->hasRole('Admin')) {
             return view('admin.profile.admin_profile');
+        } elseif (auth()->user()->hasRole('Master')) {
+        $agents = User::where('agent_id', Auth::user()->id)->count();
+
+            return view('admin.master.master_dashboard', compact('agents'));
+        } elseif (auth()->user()->hasRole('Agent')) {
+        $userId = auth()->id(); // ID of the master user
+        // Retrieve agents created by this master user
+        $agentIds = User::where('agent_id', $userId)->pluck('id');
+            return view('admin.agent.agent_dashboard', compact('agents'));
         } else {
-            return view('auth.login');
+            return view('welcome');
         }
     }
 }
