@@ -39,7 +39,7 @@
 
     <div class="d-flex justify-content-around my-2">
 
-        <a href="" class="btn btn-purple text-white d-block w-100 m-3 py-3 d-frame-box rounded-5">
+        <a href="{{ url('/slot-index') }}" class="btn btn-purple text-white d-block w-100 m-3 py-3 d-frame-box rounded-5">
             <h5 class="p-0 m-0">Slot</h5>
         </a>
     </div>
