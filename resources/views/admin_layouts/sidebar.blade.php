@@ -63,60 +63,60 @@
     @foreach (Auth::user()->roles as $role)
     @if($role->title == "Admin")
     <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-          <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-          <span class="nav-link-text ms-2 ps-1">Admin Control</span>
-        </a>
-        <div class="collapse show" id="pagesExamples">
-          <ul class="nav">
-            <li class="nav-item ">
-              <div class="collapse " id="masterControl">
-                <ul class="nav nav-sm flex-column">
-                 <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/real-live-master-list')}}">
-                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> Master Lists </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/real-live-master-create')}}">
-                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> Master Create </span>
-                    </a>
-                  </li>
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Admin Control</span>
+      </a>
+      <div class="collapse show" id="pagesExamples">
+        <ul class="nav">
+          <li class="nav-item ">
+            <div class="collapse " id="masterControl">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/real-live-master-list')}}">
+                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Master Lists </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/real-live-master-create')}}">
+                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Master Create </span>
+                  </a>
+                </li>
 
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> T L </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-daily-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> D S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
-                    </a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> T L </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-daily-status-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> D S </span>
+                    <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
+                  </a>
+                </li>
 
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-monthly-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> M S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-monthly-status-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> M S </span>
+                    <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </li>
     @elseif($role->title == "Master")
     <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-          <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-          <span class="nav-link-text ms-2 ps-1">Master Control</span>
-        </a>
-        <div class="collapse show" id="pagesExamples">
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Master Control</span>
+      </a>
+      <!-- <div class="collapse show" id="pagesExamples">
           <ul class="nav">
             <li class="nav-item ">
               <div class="collapse " id="masterControl">
@@ -158,52 +158,52 @@
               </div>
             </li>
           </ul>
-        </div>
+        </div> -->
     </li>
     @elseif($role->title == "Agent")
     <li class="nav-item">
-        <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-          <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-          <span class="nav-link-text ms-2 ps-1">Agent Control</span>
-        </a>
-        <div class="collapse show" id="pagesExamples">
-          <ul class="nav">
-            <li class="nav-item ">
-              <div class="collapse " id="masterControl">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ route('admin.agent-user-list')}}">
-                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> User Lists </span>
-                    </a>
-                  </li>
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Agent Control</span>
+      </a>
+      <div class="collapse show" id="pagesExamples">
+        <ul class="nav">
+          <li class="nav-item ">
+            <div class="collapse " id="masterControl">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ route('admin.agent-user-list')}}">
+                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> User Lists </span>
+                  </a>
+                </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> T L </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
-                    </a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> T L </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
+                  </a>
+                </li>
 
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-daily-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> D S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
-                    </a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-daily-status-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> D S </span>
+                    <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
+                  </a>
+                </li>
 
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-monthly-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> M S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
-                    </a>
-                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-monthly-status-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> M S </span>
+                    <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
+                  </a>
+                </li>
 
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </li>
     @endif
     @endforeach
@@ -248,7 +248,7 @@
                   </a>
                 </li>
                 @endcan
-                 @can('admin_access')
+                @can('admin_access')
                 <li class="nav-item">
                   <a class="nav-link text-white " href="{{ url('  http://ag.gsoftbb.com')}}">
                     <span class="sidenav-mini-icon"> U </span>
@@ -257,7 +257,7 @@
                 </li>
                 @endcan
 
-                 @can('admin_access')
+                @can('admin_access')
                 <li class="nav-item">
                   <a class="nav-link text-white " href="{{ url('https://bbinbo.gsoft688.com/Account/Login.aspx')}}">
                     <span class="sidenav-mini-icon"> U </span>
@@ -266,7 +266,7 @@
                 </li>
                 @endcan
 
-                 @can('admin_access')
+                @can('admin_access')
                 <li class="nav-item">
                   <a class="nav-link text-white " href="">
                     <span class="sidenav-mini-icon"> S P </span>
@@ -343,7 +343,7 @@
           @can('admin_access')
           <li class="nav-item ">
             <a class="nav-link text-white " href="">
-              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i>  </span>
+              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i> </span>
               <span class="sidenav-normal  ms-2  ps-1"> 2D (12:00PM) Winner </span>
             </a>
           </li>
@@ -367,7 +367,7 @@
           @can('admin_access')
           <li class="nav-item ">
             <a class="nav-link text-white " href="">
-              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i>  </span>
+              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i> </span>
               <span class="sidenav-normal  ms-2  ps-1"> 2D (02:30PM) Winner </span>
             </a>
           </li>
@@ -375,7 +375,7 @@
           @can('admin_access')
           <li class="nav-item ">
             <a class="nav-link text-white " href="">
-              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i>  </span>
+              <span class="sidenav-mini-icon"> <i class="fas fa-award"></i> </span>
               <span class="sidenav-normal  ms-2  ps-1"> 2D (04:30PM) Winner </span>
             </a>
           </li>
@@ -397,7 +397,7 @@
           </li>
           @endcan
           @can('admin_access')
-           <li class="nav-item ">
+          <li class="nav-item ">
             <a class="nav-link text-white " href="">
               <span class="sidenav-mini-icon"> <i class="fas fa-hourglass-end"></i> </span>
               <span class="sidenav-normal  ms-2  ps-1"> CloseTwoD </span>
@@ -428,172 +428,170 @@
     {{-- end lottery --}}
 
     {{-- 2d over amount limit --}}
-@can('admin_access')
-<li class="nav-item">
-   <a data-bs-toggle="collapse" href="#ecommerceExamplesOver" class="nav-link text-white " aria-controls="ecommerceExamplesOver"
-    role="button" aria-expanded="false">
-    {{-- <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">shopping_basket</i> --}}
-    <i class="fas fa-paper-plane" style="font-size: 16px;"></i>
-    <span class="nav-link-text ms-2 ps-1">2D OverLimit</span>
-   </a>
-   <div class="collapse " id="ecommerceExamplesOver">
-    <ul class="nav ">
-     <li class="nav-item ">
-      <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
-       <span class="sidenav-mini-icon"> P </span>
-       <span class="sidenav-normal  ms-2  ps-1"> 2D Over AmountLimit <b class="caret"></b></span>
+    @can('admin_access')
+    <li class="nav-item">
+      <a data-bs-toggle="collapse" href="#ecommerceExamplesOver" class="nav-link text-white " aria-controls="ecommerceExamplesOver" role="button" aria-expanded="false">
+        {{-- <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">shopping_basket</i> --}}
+        <i class="fas fa-paper-plane" style="font-size: 16px;"></i>
+        <span class="nav-link-text ms-2 ps-1">2D OverLimit</span>
       </a>
-      <div class="collapse " id="productsExample">
-       <ul class="nav nav-sm flex-column">
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 2D </span>
-          <span class="sidenav-normal  ms-2  ps-1"> 9:30 OverLimit </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 2D </span>
-          <span class="sidenav-normal  ms-2  ps-1"> 12:1 OverLimit </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 2D </span>
-          <span class="sidenav-normal  ms-2  ps-1"> 2 : OverLimit </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 2D </span>
-          <span class="sidenav-normal  ms-2  ps-1">4:30 OverLimit </span>
-         </a>
-        </li>
-       </ul>
+      <div class="collapse " id="ecommerceExamplesOver">
+        <ul class="nav ">
+          <li class="nav-item ">
+            <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
+              <span class="sidenav-mini-icon"> P </span>
+              <span class="sidenav-normal  ms-2  ps-1"> 2D Over AmountLimit <b class="caret"></b></span>
+            </a>
+            <div class="collapse " id="productsExample">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 2D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> 9:30 OverLimit </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 2D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> 12:1 OverLimit </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 2D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> 2 : OverLimit </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 2D </span>
+                    <span class="sidenav-normal  ms-2  ps-1">4:30 OverLimit </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
+              <span class="sidenav-mini-icon"> O </span>
+              <span class="sidenav-normal  ms-2  ps-1"> Orders <b class="caret"></b></span>
+            </a>
+            <div class="collapse " id="ordersExample">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> O </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Order List </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> O </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Order Details </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white " href="">
+              <span class="sidenav-mini-icon"> R </span>
+              <span class="sidenav-normal  ms-2  ps-1"> Referral </span>
+            </a>
+          </li>
+        </ul>
       </div>
-     </li>
-     <li class="nav-item ">
-      <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
-       <span class="sidenav-mini-icon"> O </span>
-       <span class="sidenav-normal  ms-2  ps-1"> Orders <b class="caret"></b></span>
-      </a>
-      <div class="collapse " id="ordersExample">
-       <ul class="nav nav-sm flex-column">
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> O </span>
-          <span class="sidenav-normal  ms-2  ps-1"> Order List </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> O </span>
-          <span class="sidenav-normal  ms-2  ps-1"> Order Details </span>
-         </a>
-        </li>
-       </ul>
-      </div>
-     </li>
-     <li class="nav-item ">
-      <a class="nav-link text-white " href="">
-       <span class="sidenav-mini-icon"> R </span>
-       <span class="sidenav-normal  ms-2  ps-1"> Referral </span>
-      </a>
-     </li>
-    </ul>
-   </div>
-  </li>
-@endcan
+    </li>
+    @endcan
     {{-- 2d over amount limit --}}
-@can('admin_access')
-  <li class="nav-item">
-   <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link text-white " aria-controls="ecommerceExamples"
-    role="button" aria-expanded="false">
-    <i class="fas fa-list-check" style="font-size: 16px;"></i>
-    <span class="nav-link-text ms-2 ps-1">3D Control</span>
-   </a>
-   <div class="collapse " id="ecommerceExamples">
-    <ul class="nav ">
-     <li class="nav-item ">
-      <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
-       <span class="sidenav-mini-icon"> P </span>
-       <span class="sidenav-normal  ms-2  ps-1"> ThreeDManagement <b class="caret"></b></span>
+    @can('admin_access')
+    <li class="nav-item">
+      <a data-bs-toggle="collapse" href="#ecommerceExamples" class="nav-link text-white " aria-controls="ecommerceExamples" role="button" aria-expanded="false">
+        <i class="fas fa-list-check" style="font-size: 16px;"></i>
+        <span class="nav-link-text ms-2 ps-1">3D Control</span>
       </a>
-      <div class="collapse " id="productsExample">
-       <ul class="nav nav-sm flex-column">
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 3D H </span>
-          <span class="sidenav-normal  ms-2  ps-1"> 3D History </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> OD </span>
-          <span class="sidenav-normal  ms-2  ps-1"> OpeninDate </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 3D </span>
-          <span class="sidenav-normal  ms-2  ps-1"> PrizeNoCreate </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 3D </span>
-          <span class="sidenav-normal  ms-2  ps-1">  List </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> 3D </span>
-          <span class="sidenav-normal  ms-2  ps-1">  WinnerList </span>
-         </a>
-        </li>
-       </ul>
+      <div class="collapse " id="ecommerceExamples">
+        <ul class="nav ">
+          <li class="nav-item ">
+            <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#productsExample">
+              <span class="sidenav-mini-icon"> P </span>
+              <span class="sidenav-normal  ms-2  ps-1"> ThreeDManagement <b class="caret"></b></span>
+            </a>
+            <div class="collapse " id="productsExample">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 3D H </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> 3D History </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> OD </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> OpeninDate </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 3D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> PrizeNoCreate </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 3D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> List </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> 3D </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> WinnerList </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
+              <span class="sidenav-mini-icon"> O </span>
+              <span class="sidenav-normal  ms-2  ps-1"> Orders <b class="caret"></b></span>
+            </a>
+            <div class="collapse " id="ordersExample">
+              <ul class="nav nav-sm flex-column">
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> O </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Order List </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="">
+                    <span class="sidenav-mini-icon"> O </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Order Details </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white " href="">
+              <span class="sidenav-mini-icon"> R </span>
+              <span class="sidenav-normal  ms-2  ps-1"> Referral </span>
+            </a>
+          </li>
+        </ul>
       </div>
-     </li>
-     <li class="nav-item ">
-      <a class="nav-link text-white " data-bs-toggle="collapse" aria-expanded="false" href="#ordersExample">
-       <span class="sidenav-mini-icon"> O </span>
-       <span class="sidenav-normal  ms-2  ps-1"> Orders <b class="caret"></b></span>
-      </a>
-      <div class="collapse " id="ordersExample">
-       <ul class="nav nav-sm flex-column">
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> O </span>
-          <span class="sidenav-normal  ms-2  ps-1"> Order List </span>
-         </a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link text-white " href="">
-          <span class="sidenav-mini-icon"> O </span>
-          <span class="sidenav-normal  ms-2  ps-1"> Order Details </span>
-         </a>
-        </li>
-       </ul>
-      </div>
-     </li>
-     <li class="nav-item ">
-      <a class="nav-link text-white " href="">
-       <span class="sidenav-mini-icon"> R </span>
-       <span class="sidenav-normal  ms-2  ps-1"> Referral </span>
-      </a>
-     </li>
-    </ul>
-   </div>
-  </li>
-@endcan
+    </li>
+    @endcan
 
     <li class="nav-item">
-        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link text-white">
-            <span class="sidenav-mini-icon"> <i class="fas fa-right-from-bracket"></i> </span>
-            <span class="sidenav-normal ms-2 ps-1">Logout</span>
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-        </form>
+      <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link text-white">
+        <span class="sidenav-mini-icon"> <i class="fas fa-right-from-bracket"></i> </span>
+        <span class="sidenav-normal ms-2 ps-1">Logout</span>
+      </a>
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+      </form>
     </li>
-</ul>
+  </ul>
