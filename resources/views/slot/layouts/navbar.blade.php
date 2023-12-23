@@ -6,7 +6,7 @@
   </div>
   <div class="nav-login">
     <!-- before login -->
-    {{-- <div class="d-flex justify-content-around align-items-center me-3">
+    <div class="d-flex justify-content-around align-items-center me-3">
             <a
               href="{{ url('/slot-login') }}"
               class="btn-login text-decoration-none d-block"
@@ -18,10 +18,10 @@
               >အကောင့်သစ်ဖွင့်ရန်</a
             >
             <img src="{{ asset('slot_app/images/myanmarlogo.png') }}" alt="myanmarlogo" />
-    </div> --}}
+    </div>
 
     <!-- after login -->
-    <div class="d-flex justify-content-around align-items-center me-3">
+    {{-- <div class="d-flex justify-content-around align-items-center me-3">
       <a href="#topupModal" role="button" data-bs-toggle="modal" class="btn-login text-decoration-none">500000000000</a>
       <a
       href="#"
@@ -450,6 +450,6 @@
       </li>
     </ul>
       <img src="{{ asset('slot_app/images/myanmarlogo.png') }}" alt="myanmarlogo" />
-    </div>
+    </div> --}}
   </div>
 </div>
