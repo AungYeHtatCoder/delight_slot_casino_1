@@ -14,7 +14,7 @@ class Provider extends Model
 
     public function gameTypes()
     {
-        return $this->belongsToMany(GameType::class);
+        return $this->belongsToMany(GameType::class)->withPivot('image');
     }
 
 }

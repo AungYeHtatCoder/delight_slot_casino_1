@@ -3,13 +3,17 @@
 namespace App\Http\Controllers\Slot;
 
 use App\Http\Controllers\Controller;
+use App\Models\GameType;
+use App\Models\Provider;
 use Illuminate\Http\Request;
 
 class SlotController extends Controller
 {
     public function index()
     {
-        return view('slot.pages.index');
+
+         $gameTypes = GameType::with('providers')->orderBy('order','asc')->where('status',1)->get();
+        return view('slot.pages.index',compact('gameTypes'));
     }
 
     public function promotion()

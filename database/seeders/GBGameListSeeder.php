@@ -14,1598 +14,1639 @@ class GBGameListSeeder extends Seeder
     {
          $data = [
             [
-            "g_code"=>"5006",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Staronic",
-            "imgFileName"=>"5006.jpg",
+            "game_id"=>"5006",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Staronic",
+            "image"=>"5006.jpg",
 
             ],
             [
-            "g_code"=>"5008",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Monkey GoGo",
-            "imgFileName"=>"5008.jpg",
+            "game_id"=>"5008",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Monkey GoGo",
+            "image"=>"5008.jpg",
 
             ],
             [
-            "g_code"=>"5009",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"King Kong",
-            "imgFileName"=>"5009.jpg",
+            "game_id"=>"5009",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"King Kong",
+            "image"=>"5009.jpg",
             ],
             [
-            "g_code"=>"5013",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "g_code_fun_web"=>"5013",
-            "gameName"=> "Classic",
-            "imgFileName"=>"5013.jpg",
-
-             ],
-            [
-            "g_code"=>"5014",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"Jungle",
-            "imgFileName"=>"5014.jpg",
-
-            ],
-            [
-            "g_code"=>"5027",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"Kung Fu Loung",
-            "imgFileName"=>"5027.jpg",
-
-            ],
-            [
-            "g_code"=>"5030",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Chinese Mammon",
-            "imgFileName"=>"5030.jpg",
+            "game_id"=>"5013",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Classic",
+            "image"=>"5013.jpg",
 
              ],
             [
-            "g_code"=>"5040",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Deuces Wild",
-            "imgFileName"=>"5040.jpg",
+            "game_id"=>"5014",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"Jungle",
+            "image"=>"5014.jpg",
 
             ],
             [
-            "g_code"=>"5041",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"7PK",
-            "imgFileName"=>"5041.jpg",
-             ],
-            [
-            "g_code"=>"5043",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Diamond Fruits",
-            "imgFileName"=>"5043.jpg",
-            ],
-            [
-            "g_code"=>"5044",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "STAR 97II",
-            "imgFileName"=>"5044.jpg",
-            ],
-            [
-            "g_code"=>"5045",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"3D Animal Party",
-            "imgFileName"=>"5045.jpg",
-            ],
-            [
-            "g_code"=>"5054",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=>"Six Shooter",
-            "imgFileName"=>"5054.jpg",
+            "game_id"=>"5027",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"Kung Fu Loung",
+            "image"=>"5027.jpg",
 
             ],
             [
-            "g_code"=>"5057",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Star97",
-            "imgFileName"=>"5057.jpg",
-            ],
-            [
-            "g_code"=>"5058",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Crazy Fruit",
-            "imgFileName"=>"5058.jpg",
-            ],
-            [
-            "g_code"=>"5063",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Slot Cool Fruit",
-            "imgFileName"=>"5063.jpg",
-
-            ],
-            [
-            "g_code"=>"5067",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"A Chinese Odyssey",
-            "imgFileName"=>"5067.jpg",
-            ],
-            [
-            "g_code"=>"5068",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Kuso Circus",
-            "imgFileName"=>"5068.jpg",
-            ],
-            [
-            "g_code"=>"5076",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Lucky Number",
-            "imgFileName"=>"5076.jpg",
-            ],
-            [
-            "g_code"=>"5077",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fruit",
-            "imgFileName"=>"5077.jpg",
-
-            ],
-            [
-            "g_code"=>"5079",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"3D Lucky Number",
-            "imgFileName"=>"5079.jpg",
-
-            ],
-            [
-            "g_code"=>"5083",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Guess Train",
-            "imgFileName"=>"5083.jpg",
+            "game_id"=>"5030",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Chinese Mammon",
+            "image"=>"5030.jpg",
 
              ],
             [
-            "g_code"=>"5084",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"Monster Legend",
-            "imgFileName"=>"5084.jpg",
-
-            ],
-            [
-            "g_code"=>"5088",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=>"Casino War",
-            "imgFileName"=>"5088.jpg",
+            "game_id"=>"5040",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Deuces Wild",
+            "image"=>"5040.jpg",
 
             ],
             [
-            "g_code"=>"5089",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName" =>"Red Dog",
-            "imgFileName"=>"5089.jpg",
+            "game_id"=>"5041",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"7PK",
+            "image"=>"5041.jpg",
+             ],
+            [
+            "game_id"=>"5043",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Diamond Fruits",
+            "image"=>"5043.jpg",
+            ],
+            [
+            "game_id"=>"5044",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "STAR 97II",
+            "image"=>"5044.jpg",
+            ],
+            [
+            "game_id"=>"5045",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"3D Animal Party",
+            "image"=>"5045.jpg",
+            ],
+            [
+            "game_id"=>"5054",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=>"Six Shooter",
+            "image"=>"5054.jpg",
 
             ],
             [
-            "g_code"=>"5090",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fortune of the Golden Rooster",
-            "imgFileName"=>"5090.jpg",
+            "game_id"=>"5057",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Star97",
+            "image"=>"5057.jpg",
             ],
             [
-            "g_code"=>"5094",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"Jin Ping Mai 2",
-            "imgFileName"=>"5094.jpg",
-
+            "game_id"=>"5058",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Crazy Fruit",
+            "image"=>"5058.jpg",
             ],
             [
-            "g_code"=>"5095",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Cock Fighting",
-            "imgFileName"=>"5095.jpg",
-
-            ],
-            [
-            "g_code"=>"5096",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Wu Xing",
-            "imgFileName"=>"5096.jpg",
+            "game_id"=>"5063",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Slot Cool Fruit",
+            "image"=>"5063.jpg",
 
             ],
             [
-            "g_code"=>"5097",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fantastic Ocean",
-            "imgFileName"=>"5097.jpg",
+            "game_id"=>"5067",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"A Chinese Odyssey",
+            "image"=>"5067.jpg",
             ],
             [
-            "g_code"=>"5098",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" => "WUFU LINMEN",
-            "imgFileName"=>"5098.jpg",
-
+            "game_id"=>"5068",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Kuso Circus",
+            "image"=>"5068.jpg",
             ],
             [
-            "g_code"=>"5099",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "The Wishing Dog",
-            "imgFileName"=>"5099.jpg",
-
+            "game_id"=>"5076",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Lucky Number",
+            "image"=>"5076.jpg",
             ],
             [
-            "g_code"=>"5100",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Chi Hsi",
-            "imgFileName"=>"5100.jpg",
-
-            ],
-            [
-            "g_code"=>"5105",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=>"European Roulette",
-            "imgFileName"=>"5105.jpg",
+            "game_id"=>"5077",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fruit",
+            "image"=>"5077.jpg",
 
             ],
             [
-            "g_code"=>"5106",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"THREE KINGDOMS",
-            "imgFileName"=>"5106.jpg",
-
-            ],
-            [
-            "g_code"=>"5108",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=> "Jackpot Roulette",
-            "imgFileName"=>"5108.jpg",
+            "game_id"=>"5079",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"3D Lucky Number",
+            "image"=>"5079.jpg",
 
             ],
             [
-            "g_code"=>"5119",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Mysterious Island",
-            "imgFileName"=>"5119.jpg",
-
-            ],
-            [
-            "g_code"=>"5120",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Nu Wa Bu Tian",
-            "imgFileName"=>"5120.jpg",
-
-            ],
-            [
-            "g_code"=>"5121",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"OLYMPUS",
-            "imgFileName"=>"5121.jpg",
-
-            ],
-            [
-            "g_code"=>"5122",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Battle Of Ball",
-            "imgFileName"=>"5122.jpg",
-
-            ],
-            [
-            "g_code"=>"5123",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=> "Classic BlackJack",
-            "imgFileName"=>"5123.jpg",
-
-            ],
-            [
-            "g_code"=>"5125",
-            "g_type"=>"CARD",
-            "p_code"=>"GB",
-            "p_type"=>"CB",
-            "gameName"=>"Vegas BlackJack",
-            "imgFileName"=>"5125.jpg",
-
-            ],
-            [
-            "g_code"=>"5127",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"PUBG",
-            "imgFileName"=>"5127.jpg",
-
-          ],
-            [
-            "g_code"=>"5128",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Good Fortune",
-            "imgFileName"=>"5128.jpg",
-
-            ],
-            [
-            "g_code"=>"5139",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Panda's Paradise",
-            "imgFileName"=>"5139.jpg",
-
-            ],
-            [
-            "g_code"=>"5140",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "BEER CARNIVAL",
-            "imgFileName"=>"5140.jpg",
-
-            ],
-            [
-            "g_code"=>"5141",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Winner Toro",
-            "imgFileName"=>"5141.jpg",
-
-            ],
-            [
-            "g_code"=>"5142",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Electric Night",
-            "imgFileName"=>"5142.jpg",
-
-            ],
-            [
-            "g_code"=>"5143",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Candy Party3",
-            "imgFileName"=>"5143.jpg",
+            "game_id"=>"5083",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Guess Train",
+            "image"=>"5083.jpg",
 
              ],
             [
-            "g_code"=>"5145",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Bu Bu Gao Sheng",
-            "imgFileName"=>"5145.jpg",
-
-            ],
-            [
-            "g_code"=>"5146",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"CANDY RUSH",
-            "imgFileName"=>"5146.jpg",
+            "game_id"=>"5084",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"Monster Legend",
+            "image"=>"5084.jpg",
 
             ],
             [
-            "g_code"=>"5150",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"LEGEND OF GEMS",
-            "imgFileName"=>"5150.jpg",
-
-            ],
-            [
-            "g_code"=>"5151",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "g_code_fun_web"=>"5151",
-            "gameName"=>"Jenga",
-            "imgFileName"=>"5151.jpg",
+            "game_id"=>"5088",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=>"Casino War",
+            "image"=>"5088.jpg",
 
             ],
             [
-            "g_code"=>"5152",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Legend Of Egypt",
-            "imgFileName"=>"5152.jpg",
-
-            ],
-            [
-            "g_code"=>"5153",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Jiu Wei Hu",
-            "imgFileName"=>"5153.jpg",
+            "game_id"=>"5089",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en" =>"Red Dog",
+            "image"=>"5089.jpg",
 
             ],
             [
-            "g_code"=>"5154",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Miku's Attacking",
-            "imgFileName"=>"5154.jpg",
+            "game_id"=>"5090",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fortune of the Golden Rooster",
+            "image"=>"5090.jpg",
+            ],
+            [
+            "game_id"=>"5094",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"Jin Ping Mai 2",
+            "image"=>"5094.jpg",
 
             ],
             [
-            "g_code"=>"5155",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Dragon Palace",
-            "imgFileName"=>"5155.jpg",
+            "game_id"=>"5095",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Cock Fighting",
+            "image"=>"5095.jpg",
+
+            ],
+            [
+            "game_id"=>"5096",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Wu Xing",
+            "image"=>"5096.jpg",
+
+            ],
+            [
+            "game_id"=>"5097",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fantastic Ocean",
+            "image"=>"5097.jpg",
+            ],
+            [
+            "game_id"=>"5098",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" => "WUFU LINMEN",
+            "image"=>"5098.jpg",
+
+            ],
+            [
+            "game_id"=>"5099",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "The Wishing Dog",
+            "image"=>"5099.jpg",
+
+            ],
+            [
+            "game_id"=>"5100",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Chi Hsi",
+            "image"=>"5100.jpg",
+
+            ],
+            [
+            "game_id"=>"5105",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=>"European Roulette",
+            "image"=>"5105.jpg",
+
+            ],
+            [
+            "game_id"=>"5106",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"THREE KINGDOMS",
+            "image"=>"5106.jpg",
+
+            ],
+            [
+            "game_id"=>"5108",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=> "Jackpot Roulette",
+            "image"=>"5108.jpg",
+
+            ],
+            [
+            "game_id"=>"5119",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Mysterious Island",
+            "image"=>"5119.jpg",
+
+            ],
+            [
+            "game_id"=>"5120",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Nu Wa Bu Tian",
+            "image"=>"5120.jpg",
+
+            ],
+            [
+            "game_id"=>"5121",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"OLYMPUS",
+            "image"=>"5121.jpg",
+
+            ],
+            [
+            "game_id"=>"5122",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Battle Of Ball",
+            "image"=>"5122.jpg",
+
+            ],
+            [
+            "game_id"=>"5123",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=> "Classic BlackJack",
+            "image"=>"5123.jpg",
+
+            ],
+            [
+            "game_id"=>"5125",
+            "provider_id" =>  2,
+            "game_type_code"=>"CB",
+            "game_type_id"=>1,
+            "name_en"=>"Vegas BlackJack",
+            "image"=>"5125.jpg",
+
+            ],
+            [
+            "game_id"=>"5127",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"PUBG",
+            "image"=>"5127.jpg",
+
+          ],
+            [
+            "game_id"=>"5128",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Good Fortune",
+            "image"=>"5128.jpg",
+
+            ],
+            [
+            "game_id"=>"5139",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Panda's Paradise",
+            "image"=>"5139.jpg",
+
+            ],
+            [
+            "game_id"=>"5140",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "BEER CARNIVAL",
+            "image"=>"5140.jpg",
+
+            ],
+            [
+            "game_id"=>"5141",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Winner Toro",
+            "image"=>"5141.jpg",
+
+            ],
+            [
+            "game_id"=>"5142",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Electric Night",
+            "image"=>"5142.jpg",
+
+            ],
+            [
+            "game_id"=>"5143",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Candy Party3",
+            "image"=>"5143.jpg",
+
+            ],
+            [
+            "game_id"=>"5145",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Bu Bu Gao Sheng",
+            "image"=>"5145.jpg",
+
+            ],
+            [
+            "game_id"=>"5146",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"CANDY RUSH",
+            "image"=>"5146.jpg",
+
+            ],
+            [
+            "game_id"=>"5150",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"LEGEND OF GEMS",
+            "image"=>"5150.jpg",
+
+            ],
+            [
+            "game_id"=>"5151",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "game_id_fun_web"=>"5151",
+            "name_en"=>"Jenga",
+            "image"=>"5151.jpg",
+
+            ],
+            [
+            "game_id"=>"5152",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Legend Of Egypt",
+            "image"=>"5152.jpg",
+
+            ],
+            [
+            "game_id"=>"5153",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Jiu Wei Hu",
+            "image"=>"5153.jpg",
+
+            ],
+            [
+            "game_id"=>"5154",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Miku's Attacking",
+            "image"=>"5154.jpg",
+
+            ],
+            [
+            "game_id"=>"5155",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Dragon Palace",
+            "image"=>"5155.jpg",
 
              ],
             [
-            "g_code"=>"5156",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Zuma Empire",
-            "imgFileName"=>"5156.jpg",
+            "game_id"=>"5156",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Zuma Empire",
+            "image"=>"5156.jpg",
 
             ],
             [
-            "g_code"=>"5157",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"San Yuan Si Xi",
-            "imgFileName"=>"5157.jpg",
+            "game_id"=>"5157",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"San Yuan Si Xi",
+            "image"=>"5157.jpg",
 
              ],
             [
-            "g_code"=>"5160",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Thor",
-            "imgFileName"=>"5160.jpg",
+            "game_id"=>"5160",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Thor",
+            "image"=>"5160.jpg",
 
             ],
             [
-            "g_code"=>"5161",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Conveyor Belt Sushi",
-            "imgFileName"=>"5161.jpg",
+            "game_id"=>"5161",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Conveyor Belt Sushi",
+            "image"=>"5161.jpg",
 
             ],
             [
-            "g_code"=>"5162",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Happy Egg",
-            "imgFileName"=>"5162.jpg",
+            "game_id"=>"5162",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Happy Egg",
+            "image"=>"5162.jpg",
 
              ],
             [
-            "g_code"=>"5163",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"The Wolf Of Moon",
-            "imgFileName"=>"5163.jpg",
+            "game_id"=>"5163",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"The Wolf Of Moon",
+            "image"=>"5163.jpg",
 
             ],
             [
-            "g_code"=>"5164",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Lucky Double",
-            "imgFileName"=>"5164.jpg",
+            "game_id"=>"5164",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Lucky Double",
+            "image"=>"5164.jpg",
 
             ],
             [
-            "g_code"=>"5165",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Lu Bu",
-            "imgFileName"=>"5165.jpg",
+            "game_id"=>"5165",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Lu Bu",
+            "image"=>"5165.jpg",
 
             ],
             [
-            "g_code"=>"5166",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fire Of Huluwa",
-            "imgFileName"=>"5166.jpg",
+            "game_id"=>"5166",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fire Of Huluwa",
+            "image"=>"5166.jpg",
 
             ],
             [
-            "g_code"=>"5167",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Wild Horses",
-            "imgFileName"=>"5167.jpg",
+            "game_id"=>"5167",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Wild Horses",
+            "image"=>"5167.jpg",
             ],
             [
-            "g_code"=>"5168",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Jin Ji Bao Xi 2020",
-            "imgFileName"=>"5168.jpg",
-
-            ],
-            [
-            "g_code"=>"5169",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "The Voice Of China",
-            "imgFileName"=>"5169.jpg",
+            "game_id"=>"5168",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Jin Ji Bao Xi 2020",
+            "image"=>"5168.jpg",
 
             ],
             [
-            "g_code"=>"5170",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Legend Of Ocean",
-
-            "imgFileName"=>"5170.jpg",
-
-            ],
-            [
-            "g_code"=>"5171",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Candy Party-Fast",
-            "imgFileName"=>"5171.jpg",
+            "game_id"=>"5169",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "The Voice Of China",
+            "image"=>"5169.jpg",
 
             ],
             [
-            "g_code"=>"5172",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Pian Cai Shen",
+            "game_id"=>"5170",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Legend Of Ocean",
+            "image"=>"5170.jpg",
 
-            "imgFileName"=>"5172.jpg",
+            ],
+            [
+            "game_id"=>"5171",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Candy Party-Fast",
+            "image"=>"5171.jpg",
+
+            ],
+            [
+            "game_id"=>"5172",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Pian Cai Shen",
+            "image"=>"5172.jpg",
 
           ],
             [
-            "g_code"=>"5173",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" => "Zhao Cai Jin Bao",
-            "imgFileName"=>"5173.jpg",
+            "game_id"=>"5173",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" => "Zhao Cai Jin Bao",
+            "image"=>"5173.jpg",
 
           ],
             [
-            "g_code"=>"5174",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"King of DJ",
-            "imgFileName"=>"5174.jpg",
+            "game_id"=>"5174",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"King of DJ",
+            "image"=>"5174.jpg",
 
             ],
             [
-            "g_code"=>"5175",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"ALL STARS",
-            "imgFileName"=>"5175.jpg",
+            "game_id"=>"5175",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"ALL STARS",
+            "image"=>"5175.jpg",
 
             ],
             [
-            "g_code"=>"5176",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"BRUTAL SAMURAI",
-            "imgFileName"=>"5176.jpg",
+            "game_id"=>"5176",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"BRUTAL SAMURAI",
+            "image"=>"5176.jpg",
             ],
             [
-            "g_code"=>"5177",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Lotus",
-            "imgFileName"=>"5177.jpg",
+            "game_id"=>"5177",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Lotus",
+            "image"=>"5177.jpg",
 
             ],
             [
-            "g_code"=>"5181",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Le Loi",
-            "imgFileName"=>"5181.jpg",
+            "game_id"=>"5181",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Le Loi",
+            "image"=>"5181.jpg",
             ],
             [
-            "g_code"=>"5182",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"TikTok DJ",
-            "imgFileName"=>"5182.jpg",
+            "game_id"=>"5182",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"TikTok DJ",
+            "image"=>"5182.jpg",
             ],
             [
-            "g_code"=>"5183",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Turn Fortunes",
-            "imgFileName"=>"5183.jpg",
+            "game_id"=>"5183",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Turn Fortunes",
+            "image"=>"5183.jpg",
             ],
             [
-            "g_code"=>"5184",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Carp Turn Dragon",
-            "imgFileName"=>"5184.jpg",
+            "game_id"=>"5184",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Carp Turn Dragon",
+            "image"=>"5184.jpg",
             ],
             [
-            "g_code"=>"5185",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Rich Harvest",
-            "imgFileName"=>"5185.jpg",
+            "game_id"=>"5185",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Rich Harvest",
+            "image"=>"5185.jpg",
             ],
             [
-            "g_code"=>"5186",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"SEVEN FORTUNES",
-            "imgFileName"=>"5186.jpg",
+            "game_id"=>"5186",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"SEVEN FORTUNES",
+            "image"=>"5186.jpg",
             ],
             [
-            "g_code"=>"5187",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "NINJA MASTER",
-            "imgFileName"=>"5187.jpg",
+            "game_id"=>"5187",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "NINJA MASTER",
+            "image"=>"5187.jpg",
             ],
             [
-            "g_code"=>"5188",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Happy New Year",
-            "imgFileName"=>"5188.jpg",
+            "game_id"=>"5188",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Happy New Year",
+            "image"=>"5188.jpg",
             ],
             [
-            "g_code"=>"5189",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Lucky Ox",
-            "imgFileName"=>"5189.jpg",
+            "game_id"=>"5189",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Lucky Ox",
+            "image"=>"5189.jpg",
 
             ],
             [
-            "g_code"=>"5191",
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Piggy Bank",
-            "imgFileName"=>"5191.jpg",
+            "game_id"=>"5191",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Piggy Bank",
+            "image"=>"5191.jpg",
 
             ],
             [
-            "g_code"=>"5192",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Frozen World",
-            "imgFileName"=>"5192.jpg",
-
-            ],
-            [
-            "g_code"=>"5193",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Candy Bar",
-            "imgFileName"=>"5193.jpg",
+            "game_id"=>"5192",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Frozen World",
+            "image"=>"5192.jpg",
 
             ],
             [
-            "g_code"=>"5194",
+            "game_id"=>"5193",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Candy Bar",
+            "image"=>"5193.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "GOLDEN CAI SHEN",
-            "imgFileName"=>"5194.jpg",
+            ],
+            [
+            "game_id"=>"5194",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "GOLDEN CAI SHEN",
+            "image"=>"5194.jpg",
 
           ],
             [
-            "g_code"=>"5195",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Bees Wild",
-            "imgFileName"=>"5195.jpg",
-
-          ],
-            [
-            "g_code"=>"5198",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "The Legend of Halong Bay",
-            "imgFileName"=>"5198.jpg",
+            "game_id"=>"5195",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Bees Wild",
+            "image"=>"5195.jpg",
 
           ],
             [
-            "g_code"=>"5199",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Street Food",
-            "imgFileName"=>"5199.jpg",
-
-          ],
-            [
-            "g_code"=>"5200",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Hoo Hey How",
-            "imgFileName"=>"5200.jpg",
+            "game_id"=>"5198",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "The Legend of Halong Bay",
+            "image"=>"5198.jpg",
 
           ],
             [
-            "g_code"=>"5204",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-
-            "gameName"=>"2014 FIFA",
-
-            "imgFileName"=>"5204.jpg",
+            "game_id"=>"5199",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Street Food",
+            "image"=>"5199.jpg",
 
           ],
             [
-            "g_code"=>"5205",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"BOOM LAND",
-
-            "imgFileName"=>"5205.jpg",
+            "game_id"=>"5200",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Hoo Hey How",
+            "image"=>"5200.jpg",
 
           ],
             [
-            "g_code"=>"5206",
+            "game_id"=>"5204",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"2014 FIFA",
+            "image"=>"5204.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Divine Crossbow",
-            "imgFileName"=>"5206.jpg",
+          ],
+            [
+            "game_id"=>"5205",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"BOOM LAND",
+            "image"=>"5205.jpg",
+
+          ],
+            [
+            "game_id"=>"5206",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Divine Crossbow",
+            "image"=>"5206.jpg",
 
             ],
             [
-            "g_code"=>"5207",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Wu Song Beats Tiger",
-            "imgFileName"=>"5207.jpg",
-
-            ],
-            [
-            "g_code"=>"5208",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "g_code_fun_web"=>"5208",
-            "gameName"=> "Bingo Pop",
-            "imgFileName"=>"5208.jpg",
+            "game_id"=>"5207",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,"game_type_id"=> 11,
+            "name_en"=>"Wu Song Beats Tiger",
+            "image"=>"5207.jpg",
 
             ],
             [
-            "g_code"=>"5209",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "SAFARI",
-            "imgFileName"=>"5209.jpg",
-
-            ],
-            [
-            "g_code"=>"5210",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Candy Pop",
-            "imgFileName"=>"5210.jpg",
+            "game_id"=>"5208",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "game_id_fun_web"=>"5208",
+            "name_en"=> "Bingo Pop",
+            "image"=>"5208.jpg",
 
             ],
             [
-            "g_code"=>"5211",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"GOD OF WEALTH",
-            "imgFileName"=>"5211.jpg",
-
-            ],
-            [
-            "g_code"=>"5212",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Nezha",
-            "imgFileName"=>"5212.jpg",
+            "game_id"=>"5209",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "SAFARI",
+            "image"=>"5209.jpg",
 
             ],
             [
-            "g_code"=>"5213",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName" =>"Golden Toad",
-            "imgFileName"=>"5213.jpg",
-
-            ],
-            [
-            "g_code"=>"5214",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"FRUIT NINJA",
-            "imgFileName"=>"5214.jpg",
+            "game_id"=>"5210",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Candy Pop",
+            "image"=>"5210.jpg",
 
             ],
             [
-            "g_code"=>"5215",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"BEIJING OPERA",
-            "imgFileName"=>"5215.jpg",
-
-            ],
-            [
-            "g_code"=>"5216",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Mermaid",
-            "imgFileName"=>"5216.jpg",
+            "game_id"=>"5211",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"GOD OF WEALTH",
+            "image"=>"5211.jpg",
 
             ],
             [
-            "g_code"=>"5217",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Star and Fruit",
-            "imgFileName"=>"5217.jpg",
-
-            ],
-            [
-            "g_code"=>"5218",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Rainforest",
-            "imgFileName"=>"5218.jpg",
+            "game_id"=>"5212",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Nezha",
+            "image"=>"5212.jpg",
 
             ],
             [
-            "g_code"=>"5219",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Diamond Fortune",
-            "imgFileName"=>"5219.jpg",
-
-            ],
-            [
-            "g_code"=>"5220",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Spider Spirits",
-            "imgFileName"=>"5220.jpg",
+            "game_id"=>"5213",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en" =>"Golden Toad",
+            "image"=>"5213.jpg",
 
             ],
             [
-            "g_code"=>"5221",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Birth Of Nezha",
-            "imgFileName"=>"5221.jpg",
-
-            ],
-            [
-            "g_code"=>"5222",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Crazy Jam Jar",
-            "imgFileName"=>"5222.jpg",
+            "game_id"=>"5214",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"FRUIT NINJA",
+            "image"=>"5214.jpg",
 
             ],
             [
-            "g_code"=>"5223",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Balinese Dance",
-            "imgFileName"=>"5223.jpg",
-
-            ],
-            [
-            "g_code"=>"5224",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fortune Ganesha",
-            "imgFileName"=>"5224.jpg",
+            "game_id"=>"5215",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"BEIJING OPERA",
+            "image"=>"5215.jpg",
 
             ],
             [
-            "g_code"=>"5225",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Chibi",
-            "imgFileName"=>"5225.jpg",
-
-            ],
-            [
-            "g_code"=>"5226",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Elimination 1024",
-            "imgFileName"=>"5226.jpg",
+            "game_id"=>"5216",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Mermaid",
+            "image"=>"5216.jpg",
 
             ],
             [
-            "g_code"=>"5227",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Moon Beauty",
-            "imgFileName"=>"5227.jpg",
-
-            ],
-            [
-            "g_code"=>"5228",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Mining Ｍachine",
-            "imgFileName"=>"5228.jpg",
+            "game_id"=>"5217",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Star and Fruit",
+            "image"=>"5217.jpg",
 
             ],
             [
-            "g_code"=>"5229",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Thai Fun",
-            "imgFileName"=>"5229.jpg",
-
-            ],
-            [
-            "g_code"=>"5230",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Songkran",
-            "imgFileName"=>"5230.jpg",
+            "game_id"=>"5218",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Rainforest",
+            "image"=>"5218.jpg",
 
             ],
             [
-            "g_code"=>"5231",
+            "game_id"=>"5219",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Diamond Fortune",
+            "image"=>"5219.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Treasure Pot Puzzle",
-            "imgFileName"=>"5231.jpg",
+            ],
+            [
+            "game_id"=>"5220",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Spider Spirits",
+            "image"=>"5220.jpg",
+
+            ],
+            [
+            "game_id"=>"5221",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Birth Of Nezha",
+            "image"=>"5221.jpg",
+
+            ],
+            [
+            "game_id"=>"5222",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Crazy Jam Jar",
+            "image"=>"5222.jpg",
+
+            ],
+            [
+            "game_id"=>"5223",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Balinese Dance",
+            "image"=>"5223.jpg",
+
+            ],
+            [
+            "game_id"=>"5224",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fortune Ganesha",
+            "image"=>"5224.jpg",
+
+            ],
+            [
+            "game_id"=>"5225",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Chibi",
+            "image"=>"5225.jpg",
+
+            ],
+            [
+            "game_id"=>"5226",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Elimination 1024",
+            "image"=>"5226.jpg",
+
+            ],
+            [
+            "game_id"=>"5227",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Moon Beauty",
+            "image"=>"5227.jpg",
+
+            ],
+            [
+            "game_id"=>"5228",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Mining Ｍachine",
+            "image"=>"5228.jpg",
+
+            ],
+            [
+            "game_id"=>"5229",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Thai Fun",
+            "image"=>"5229.jpg",
+
+            ],
+            [
+            "game_id"=>"5230",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Songkran",
+            "image"=>"5230.jpg",
+
+            ],
+            [
+            "game_id"=>"5231",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Treasure Pot Puzzle",
+            "image"=>"5231.jpg",
 
            ],
             [
-            "g_code"=>"5232",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "The Lost Tomb",
-            "imgFileName"=>"5232.jpg",
+            "game_id"=>"5232",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "The Lost Tomb",
+            "image"=>"5232.jpg",
 
              ],
             [
-            "g_code"=>"5233",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Hou Yi Shot the Suns",
-            "imgFileName"=>"5233.jpg",
-
-            ],
-            [
-            "g_code"=>"5234",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Awesome Buffalo",
-            "imgFileName"=>"5234.jpg",
+            "game_id"=>"5233",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Hou Yi Shot the Suns",
+            "image"=>"5233.jpg",
 
             ],
             [
-            "g_code"=>"5235",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Magic Lamp Genie",
-            "imgFileName"=>"5235.jpg",
-
-            ],
-            [
-            "g_code"=>"5236",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Beauty Thief",
-            "imgFileName"=>"5236.jpg",
+            "game_id"=>"5234",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Awesome Buffalo",
+            "image"=>"5234.jpg",
 
             ],
             [
-            "g_code"=>"5237",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "JIANG ZIYA",
-            "imgFileName"=>"5237.jpg",
-
-            ],
-            [
-            "g_code"=>"5238",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Great Winner",
-            "imgFileName"=>"5238.jpg",
+            "game_id"=>"5235",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Magic Lamp Genie",
+            "image"=>"5235.jpg",
 
             ],
             [
-            "g_code"=>"5239",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Pet Pop",
-            "imgFileName"=>"5239.jpg",
-
-            ],
-            [
-            "g_code"=>"5240",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "imgFileName"=>"5240.jpg",
+            "game_id"=>"5236",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Beauty Thief",
+            "image"=>"5236.jpg",
 
             ],
             [
-            "g_code"=>"5241",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Merry Christmas",
-
-            "imgFileName"=>"5241.jpg",
-
-            ],
-            [
-            "g_code"=>"5242",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Lions Find Treasure",
-            "imgFileName"=>"5242.jpg",
+            "game_id"=>"5237",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "JIANG ZIYA",
+            "image"=>"5237.jpg",
 
             ],
             [
-            "g_code"=>"5243",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Too Rich",
-            "imgFileName"=>"5243.jpg",
-
-            ],
-            [
-            "g_code"=>"5244",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Dragon and Tiger Fighting",
-            "imgFileName"=>"5244.jpg",
+            "game_id"=>"5238",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Great Winner",
+            "image"=>"5238.jpg",
 
             ],
             [
-            "g_code"=>"5245",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Marmot Digging",
-            "imgFileName"=>"5245.jpg",
-
-            ],
-            [
-            "g_code"=>"5246",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Go!Go! Somersault Cloud",
-            "imgFileName"=>"5246.jpg",
+            "game_id"=>"5239",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Pet Pop",
+            "image"=>"5239.jpg",
 
             ],
             [
-            "g_code"=>"5247",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Unlimited 1024",
-            "imgFileName"=>"5247.jpg",
-
-            ],
-            [
-            "g_code"=>"5250",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Minecart",
-            "imgFileName"=>"5250.jpg",
+            "game_id"=>"5240",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "image"=>"5240.jpg",
 
             ],
             [
-            "g_code"=>"5252",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Leprechaun",
-            "imgFileName"=>"5252.jpg",
-
-            ],
-            [
-            "g_code"=>"5253",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Parvenu",
-            "imgFileName"=>"5253.jpg",
+            "game_id"=>"5241",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Merry Christmas",
+            "image"=>"5241.jpg",
 
             ],
             [
-            "g_code"=>"5254",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Golden Legend",
-            "imgFileName"=>"5254.jpg",
-            ],
-            [
-            "g_code"=>"5255",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Tribal Treasure",
-            "imgFileName"=>"5255.jpg",
-            ],
-            [
-            "g_code"=>"5256",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Firecrackers",
-            "imgFileName"=>"5256.jpg",
-            ],
-            [
-            "g_code"=>"5257",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"IP MAN",
-            "imgFileName"=>"5257.jpg",
+            "game_id"=>"5242",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Lions Find Treasure",
+            "image"=>"5242.jpg",
 
             ],
             [
-            "g_code"=>"5258",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Gamblers",
-            "imgFileName"=>"5258.jpg",
-
-            ],
-            [
-            "g_code"=>"5259",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Gold King Kong",
-            "imgFileName"=>"5259.jpg",
+            "game_id"=>"5243",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Too Rich",
+            "image"=>"5243.jpg",
 
             ],
             [
-            "g_code"=>"5260",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Money Tree",
-            "imgFileName"=>"5260.jpg",
-
-            ],
-            [
-            "g_code"=>"5261",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Fortune Cat",
-            "imgFileName"=>"5261.jpg",
+            "game_id"=>"5244",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Dragon and Tiger Fighting",
+            "image"=>"5244.jpg",
 
             ],
             [
-            "g_code"=>"5262",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Casino Cats",
-            "imgFileName"=>"5262.jpg",
-            ],
-            [
-            "g_code"=>"5263",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Tiger888",
-            "imgFileName"=>"5263.jpg",
+            "game_id"=>"5245",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Marmot Digging",
+            "image"=>"5245.jpg",
 
             ],
             [
-            "g_code"=>"5264",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Dragon 888",
-            "imgFileName"=>"5264.jpg",
-
-            ],
-            [
-            "g_code"=>"5265",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Magpie Bridge",
-            "imgFileName"=>"5265.jpg",
+            "game_id"=>"5246",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Go!Go! Somersault Cloud",
+            "image"=>"5246.jpg",
 
             ],
             [
-            "g_code"=>"5266",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Zhu Yidan's Boring Life",
-            "imgFileName"=>"5266.jpg",
-
-            ],
-            [
-            "g_code"=>"5267",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Beauty Party",
-            "imgFileName"=>"5267.jpg",
+            "game_id"=>"5247",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Unlimited 1024",
+            "image"=>"5247.jpg",
 
             ],
             [
-            "g_code"=>"5311",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Flipped Temple",
-            "imgFileName"=>"5311.jpg",
-
-            ],
-            [
-            "g_code"=>"5404",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Beach Volleyball",
-            "imgFileName"=>"5404.jpg",
+            "game_id"=>"5250",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Minecart",
+            "image"=>"5250.jpg",
 
             ],
             [
-            "g_code"=>"5601",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Adventure of Mystical Land",
-
-            "imgFileName"=>"5601.jpg",
-
-            ],
-            [
-            "g_code"=>"5701",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-
-            "gameName"=> "LinkGem",
-
-            "imgFileName"=>"5701.jpg",
+            "game_id"=>"5252",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Leprechaun",
+            "image"=>"5252.jpg",
 
             ],
             [
-            "g_code"=>"5703",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"I Am Rich",
-            "imgFileName"=>"5703.jpg",
-
-            ],
-            [
-            "g_code"=>"5705",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Treasure Pot",
-
-            "imgFileName"=>"5705.jpg",
+            "game_id"=>"5253",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Parvenu",
+            "image"=>"5253.jpg",
 
             ],
             [
-            "g_code"=>"5707",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "GOLDEN JAGUAR",
-            "imgFileName"=>"5707.jpg",
+            "game_id"=>"5254",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Golden Legend",
+            "image"=>"5254.jpg",
+            ],
+            [
+            "game_id"=>"5255",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Tribal Treasure",
+            "image"=>"5255.jpg",
+            ],
+            [
+            "game_id"=>"5256",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Firecrackers",
+            "image"=>"5256.jpg",
+            ],
+            [
+            "game_id"=>"5257",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"IP MAN",
+            "image"=>"5257.jpg",
 
             ],
             [
-            "g_code"=>"5805",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Caesar's Empire",
-            "imgFileName"=>"5805.jpg",
-
-            ],
-            [
-            "g_code"=>"5823",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Big Prosperity",
-            "imgFileName"=>"5823.jpg",
+            "game_id"=>"5258",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Gamblers",
+            "image"=>"5258.jpg",
 
             ],
             [
-            "g_code"=>"5824",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Mystic Dragon",
-            "imgFileName"=>"5824.jpg",
+            "game_id"=>"5259",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Gold King Kong",
+            "image"=>"5259.jpg",
 
             ],
             [
-            "g_code"=>"5828",
+            "game_id"=>"5260",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Money Tree",
+            "image"=>"5260.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "T-Rex",
-            "imgFileName"=>"5828.jpg",
             ],
             [
-            "g_code"=>"5835",
+            "game_id"=>"5261",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Fortune Cat",
+            "image"=>"5261.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Happy Golden Ox Of Happiness",
-            "imgFileName"=>"5835.jpg",
+            ],
+            [
+            "game_id"=>"5262",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Casino Cats",
+            "image"=>"5262.jpg",
+            ],
+            [
+            "game_id"=>"5263",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Tiger888",
+            "image"=>"5263.jpg",
+
+            ],
+            [
+            "game_id"=>"5264",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Dragon 888",
+            "image"=>"5264.jpg",
+
+            ],
+            [
+            "game_id"=>"5265",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Magpie Bridge",
+            "image"=>"5265.jpg",
+
+            ],
+            [
+            "game_id"=>"5266",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Zhu Yidan's Boring Life",
+            "image"=>"5266.jpg",
+
+            ],
+            [
+            "game_id"=>"5267",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Beauty Party",
+            "image"=>"5267.jpg",
+
+            ],
+            [
+            "game_id"=>"5311",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Flipped Temple",
+            "image"=>"5311.jpg",
+
+            ],
+            [
+            "game_id"=>"5404",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Beach Volleyball",
+            "image"=>"5404.jpg",
+
+            ],
+            [
+            "game_id"=>"5601",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Adventure of Mystical Land",
+            "image"=>"5601.jpg",
+
+            ],
+            [
+            "game_id"=>"5701",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "LinkGem",
+            "image"=>"5701.jpg",
+
+            ],
+            [
+            "game_id"=>"5703",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"I Am Rich",
+            "image"=>"5703.jpg",
+
+            ],
+            [
+            "game_id"=>"5705",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Treasure Pot",
+            "image"=>"5705.jpg",
+
+            ],
+            [
+            "game_id"=>"5707",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "GOLDEN JAGUAR",
+            "image"=>"5707.jpg",
+
+            ],
+            [
+            "game_id"=>"5805",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Caesar's Empire",
+            "image"=>"5805.jpg",
+
+            ],
+            [
+            "game_id"=>"5823",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Big Prosperity",
+            "image"=>"5823.jpg",
+
+            ],
+            [
+            "game_id"=>"5824",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Mystic Dragon",
+            "image"=>"5824.jpg",
+
+            ],
+            [
+            "game_id"=>"5828",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,"game_type_id"=> 11,
+            "name_en"=> "T-Rex",
+            "image"=>"5828.jpg",
+            ],
+            [
+            "game_id"=>"5835",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Happy Golden Ox Of Happiness",
+            "image"=>"5835.jpg",
 
              ],
             [
-            "g_code"=>"5837",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Happy Golden Monkey Of Happiness",
-            "imgFileName"=>"5837.jpg",
-
-            ],
-            [
-            "g_code"=>"5901",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=> "Duo Bao",
-            "imgFileName"=>"5901.jpg",
+            "game_id"=>"5837",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Happy Golden Monkey Of Happiness",
+            "image"=>"5837.jpg",
 
             ],
             [
-            "g_code"=>"5902",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Candy Party",
-            "imgFileName"=>"5902.jpg",
+            "game_id"=>"5901",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=> "Duo Bao",
+            "image"=>"5901.jpg",
 
             ],
             [
-            "g_code"=>"5903",
+            "game_id"=>"5902",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Candy Party",
+            "image"=>"5902.jpg",
 
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Tomb of Dragon Emperor",
-            "imgFileName"=>"5903.jpg",
+            ],
+            [
+            "game_id"=>"5903",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Tomb of Dragon Emperor",
+            "image"=>"5903.jpg",
 
              ],
             [
-            "g_code"=>"5908",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Candy Party2",
-            "imgFileName"=>"5908.jpg",
-
-            ],
-            [
-            "g_code"=>"5909",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Ani Pop",
-            "imgFileName"=>"5909.jpg",
+            "game_id"=>"5908",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Candy Party2",
+            "image"=>"5908.jpg",
 
             ],
             [
-            "g_code"=>"5910",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Magic Of The Elements",
-            "imgFileName"=>"5910.jpg",
-
-            ],
-            [
-            "g_code"=>"5912",
-
-            "p_code"=>"GB",
-            "p_type"=>"SL",
-            "gameName"=>"Duo Bao2",
-            "imgFileName"=>"5912.jpg",
-
-             ],
-            [
-            "g_code"=>"38001",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Fishing Master",
-            "imgFileName"=>"38001.jpg",
+            "game_id"=>"5909",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Ani Pop",
+            "image"=>"5909.jpg",
 
             ],
             [
-            "g_code"=>"38002",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=> "Rich Ocean",
-            "imgFileName"=>"38002.jpg",
+            "game_id"=>"5910",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Magic Of The Elements",
+            "image"=>"5910.jpg",
 
             ],
             [
-            "g_code"=>"30588",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Golden Crabs",
-            "imgFileName"=>"30588.jpg",
+            "game_id"=>"5912",
+            "provider_id" =>  2,
+            "game_type_code"=>"SL" ,
+            "game_type_id"=> 10,
+            "name_en"=>"Duo Bao2",
+            "image"=>"5912.jpg",
 
              ],
             [
-            "g_code"=>"30590",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Golden Dragon",
-            "imgFileName"=>"30590.jpg",
+            "game_id"=>"38001",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Fishing Master",
+            "image"=>"38001.jpg",
 
             ],
             [
-            "g_code"=>"30592",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Ghost Buster",
-            "imgFileName"=>"30592.jpg",
+            "game_id"=>"38002",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=> "Rich Ocean",
+            "image"=>"38002.jpg",
+
+            ],
+            [
+            "game_id"=>"30588",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Golden Crabs",
+            "image"=>"30588.jpg",
+
+            ],
+            [
+            "game_id"=>"30590",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Golden Dragon",
+            "image"=>"30590.jpg",
+
+            ],
+            [
+            "game_id"=>"30592",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Ghost Buster",
+            "image"=>"30592.jpg",
 
              ],
             [
-            "g_code"=>"30593",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Golden Boy Fishing",
-            "imgFileName"=>"30593.jpg",
+            "game_id"=>"30593",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Golden Boy Fishing",
+            "image"=>"30593.jpg",
 
              ],
             [
-            "g_code"=>"30594",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=> "Jurassic World",
-            "imgFileName"=>"30594.jpg",
+            "game_id"=>"30594",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=> "Jurassic World",
+            "image"=>"30594.jpg",
              ],
             [
-            "g_code"=>"30595",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=> "Demon Buster",
-            "imgFileName"=>"30595.jpg",
+            "game_id"=>"30595",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=> "Demon Buster",
+            "image"=>"30595.jpg",
 
              ],
             [
-            "g_code"=>"30598",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=>"Fish Hunter 2",
-            "imgFileName"=>"30598.jpg",
+            "game_id"=>"30598",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=>"Fish Hunter 2",
+            "image"=>"30598.jpg",
 
-             ],
+            ],
             [
-            "g_code"=>"30599",
-            "g_type"=>"FISH",
-            "p_code"=>"GB",
-            "p_type"=>"FH",
-            "gameName"=> "Fish Hunter",
-            "imgFileName"=>"30599.jpg",
+            "game_id"=>"30599",
+            "provider_id" =>  2,
+            "game_type_code"=>"FH",
+            "game_type_id" => 3,
+            "name_en"=> "Fish Hunter",
+            "image"=>"30599.jpg",
 
           ]
     ];

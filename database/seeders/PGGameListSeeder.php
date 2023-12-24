@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class PRGameListSeeder extends Seeder
+class PGGameListSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -19,7 +19,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Honey Trap of Diao Chan",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "diaochan.jpg"
                     ],
                     [
@@ -27,7 +27,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Gem Saviour",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "gem-saviour.jpg"
 
                     ],
@@ -36,7 +36,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fortune Gods",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-gods.jpg"
                     ],
                     [
@@ -44,7 +44,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Medusa 2: The Quest of Perseus",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "medusa2.jpg",
                     ],
                     [
@@ -52,7 +52,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Medusa 1 : The Curse of Athena",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "medusa.jpg",
 
                     ],
@@ -61,7 +61,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wizdom Wonders",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>  "wizdom-wonders.jpg",
                     ],
                     [
@@ -69,7 +69,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Hood vs Wolf",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "hood-wolf.jpg",
                     ],
                     [
@@ -77,7 +77,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Reel Love",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "reel-love.jpg"
                     ],
                     [
@@ -85,7 +85,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Win Win Won",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "win-win-won.jpg",
                     ],
                     [
@@ -93,7 +93,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Plushie Frenzy",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "plushie-frenzy.jpg",
 
                     ],
@@ -102,7 +102,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Tree of Fortune",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-tree.jpg",
 
                     ],
@@ -111,7 +111,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Hotpot",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image"=> "hotpot.jpg",
                     ],
                     [
@@ -119,7 +119,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Dragon Legend",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "dragon-legend.jpg",
                     ],
                     [
@@ -127,7 +127,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Baccarat Deluxe",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "baccarat-deluxe.jpg",
                     ],
                     [
@@ -135,7 +135,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Hip Hop Panda",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "hip-hop-panda.jpg"
                     ],
                     [
@@ -143,7 +143,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Legend of Hou Yi",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "legend-of-hou-yi.jpg",
                     ],
                     [
@@ -151,7 +151,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mr. Hallow-Win",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mr-hallow-win.jpg",
                     ],
                     [
@@ -159,7 +159,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Prosperity Lion",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "prosperity-lion.jpg",
                     ],
                     [
@@ -167,7 +167,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Santa's Gift Rush",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "santas-gift-rush.jpg",
                     ],
                     [
@@ -175,7 +175,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Gem Saviour Sword",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "gem-saviour-sword.jpg",
 
                     ],
@@ -185,7 +185,7 @@ class PRGameListSeeder extends Seeder
                     "gameCode"=> "piggy-gold",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "piggy-gold.jpg",
 
                     ],
@@ -194,7 +194,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Jungle Delight",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"jungle-delight.jpg",
                     ],
                     [
@@ -202,7 +202,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Symbols Of Egypt",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "symbols-of-egypt.jpg",
                     ],
                     [
@@ -210,7 +210,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ganesha Gold",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ganesha-gold.jpg",
                     ],
                     [
@@ -218,7 +218,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Three Monkeys",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "three-monkeys.jpg",
                     ],
                     [
@@ -226,7 +226,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Emperor's Favour",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "emperors-favour.jpg",
                     ],
                     [
@@ -234,7 +234,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Double Fortune",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "double-fortune.jpg",
                     ],
                     [
@@ -242,7 +242,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Journey to the Wealth",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"journey-to-the-wealth.jpg",
 
                     ],
@@ -251,7 +251,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "The Great Icescape",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "the-great-icescape.jpg",
 
                     ],
@@ -260,7 +260,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Captain's Bounty",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "captains-bounty.jpg",
                     ],
                     [
@@ -268,7 +268,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Dragon Hatch",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "dragon-hatch.jpg",
                     ],
                     [
@@ -276,7 +276,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Vampire's Charm",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "vampires-charm.jpg",
                     ],
                     [
@@ -284,7 +284,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ninja vs Samurai",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ninja-vs-samurai.jpg",
                     ],
                     [
@@ -292,7 +292,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Leprechaun Riches",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "leprechaun-riches.jpg",
 
                     ],
@@ -301,7 +301,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Flirting Scholar",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "flirting-scholar.jpg",
                     ],
                     [
@@ -309,7 +309,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Gem Saviour Conquest",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "gem-saviour-conquest.jpg",
                     ],
                     [
@@ -317,7 +317,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Dragon Tiger Luck",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "dragon-tiger-luck.jpg",
 
                     ],
@@ -326,7 +326,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Muay Thai Champion",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "muay-thai-champion.jpg",
                     ],
                     [
@@ -334,7 +334,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mahjong Ways",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mahjong-ways.jpg",
                     ],
                     [
@@ -342,7 +342,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Shaolin Soccer",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "shaolin-soccer.jpg",
 
                     ],
@@ -351,7 +351,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fortune Mouse",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-mouse.jpg",
                     ],
                     [
@@ -359,7 +359,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Bikini Paradise",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "bikini-paradise.jpg",
 
                     ],
@@ -368,7 +368,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Candy Burst",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "candy-burst.jpg",
                     ],
                     [
@@ -376,7 +376,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "CaiShen Wins",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "cai-shen-wins.jpg",
 
                     ],
@@ -385,7 +385,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Egypt's Book of Mystery",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "egypts-book-mystery.jpg",
                     ],
                     [
@@ -393,7 +393,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mahjong Ways 2",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mahjong-ways2.jpg",
 
                     ],
@@ -402,7 +402,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ganesha Fortune",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ganesha-fortune.jpg",
 
                     ],
@@ -410,7 +410,7 @@ class PRGameListSeeder extends Seeder
                     "game_id"=> "79",
                     "name_en"=> "Dreams of Macau",
                     "provide_id"=> 5,
-                    "game_type_code"=> "SL","game_type_id"=> 11,
+                    "game_type_code"=> "SL","game_type_id"=> 10,
                     "image" => "dreams-of-macau.jpg",
 
                     ],
@@ -419,7 +419,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Circus Delight",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "circus-delight.jpg",
 
                     ],
@@ -428,7 +428,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Phoenix Rises",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "phoenix-rises.jpg",
                     ],
                     [
@@ -436,7 +436,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wild Fireworks",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "wild-fireworks.jpg",
 
                     ],
@@ -445,7 +445,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Queen of Bounty",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "queen-bounty.jpg",
                     ],
                     [
@@ -453,7 +453,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Genie's 3 Wishes",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"genies-wishes.jpg",
 
                     ],
@@ -462,7 +462,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Galactic Gems",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "galactic-gems.jpg",
 
                     ],
@@ -471,7 +471,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Treasures of Aztec",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "treasures-aztec.jpg",
 
                     ],
@@ -480,7 +480,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Jewels of Prosperity",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "jewels-prosper.jpg",
 
                     ],
@@ -489,7 +489,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Lucky Neko",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "lucky-neko.jpg",
 
                     ],
@@ -498,7 +498,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Secrets of Cleopatra",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "sct-cleopatra.jpg",
                     ],
                     [
@@ -506,7 +506,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Guardians of Ice & Fire",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "gdn-ice-fire.jpg",
 
                     ],
@@ -515,7 +515,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Thai River Wonders",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>  "thai-river.jpg",
 
                     ],
@@ -524,7 +524,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Opera Dynasty",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "opera-dynasty.jpg",
                     ],
                     [
@@ -532,7 +532,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Bali Vacation",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "bali-vacation.jpg",
                     ],
                     [
@@ -540,7 +540,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Majestic Treasures",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "majestic-ts.jpg",
                     ],
                     [
@@ -549,7 +549,7 @@ class PRGameListSeeder extends Seeder
                     "gameCode"=> "jack-frosts",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"jack-frosts.jpg",
                     ],
                     [
@@ -557,7 +557,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fortune Ox",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-ox.jpg",
 
                     ],
@@ -566,7 +566,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Candy Bonanza",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "candy-bonanza.jpg",
                     ],
                     [
@@ -575,7 +575,7 @@ class PRGameListSeeder extends Seeder
                     "gameCode"=> "rise-of-apollo",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "rise-of-apollo.jpg",
 
                     ],
@@ -584,7 +584,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mermaid Riches",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mermaid-riches.jpg",
                     ],
                     [
@@ -592,7 +592,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Crypto Gold",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "crypto-gold.jpg",
                     ],
                     [
@@ -600,7 +600,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wild Bandito",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "wild-bandito.jpg",
                     ],
                     [
@@ -608,7 +608,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Heist Stakes",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "heist-stakes.jpg",
                     ],
                     [
@@ -616,7 +616,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ways of the Qilin",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ways-of-qilin.jpg",
 
                     ],
@@ -625,7 +625,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Legendary Monkey King",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "lgd-monkey-kg.jpg",
                     ],
                     [
@@ -633,7 +633,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Buffalo Win",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "buffalo-win.jpg",
 
                     ],
@@ -642,7 +642,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Sushi Oishi",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "sushi-oishi.jpg",
 
                     ],
@@ -651,7 +651,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Jurassic Kingdom",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "jurassic-kdm.jpg",
 
                     ],
@@ -660,7 +660,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Groundhog Harvest",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"groundhog.jpg",
                     ],
                     [
@@ -668,7 +668,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Oriental Prosperity",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"oriental-pros.jpg",
                     ],
                     [
@@ -676,7 +676,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Raider Jane's Crypt of Fortune",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "crypt-fortune.jpg",
 
                     ],
@@ -685,7 +685,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Emoji Riches",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "emoji-riches.jpg",
                     ],
                     [
@@ -693,7 +693,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Supermarket Spree",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "sprmkt-spree.jpg",
 
                     ],
@@ -702,7 +702,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Farm Invaders",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "farm-invaders.jpg",
 
                     ],
@@ -711,7 +711,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Cocktail Nights",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "cocktail-nite.jpg",
                     ],
                     [
@@ -719,7 +719,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mask Carnival",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mask-carnival.jpg",
                     ],
                     [
@@ -727,7 +727,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Spirited Wonders",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "spirit-wonder.jpg",
 
                     ],
@@ -736,7 +736,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "The Queen's Banquet",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"queen-banquet.jpg",
 
                     ],
@@ -745,7 +745,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Destiny of Sun & Moon",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "dest-sun-moon.jpg",
 
                     ],
@@ -754,7 +754,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Garuda Gems",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "garuda-gems.jpg",
 
                     ],
@@ -763,7 +763,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Rooster Rumble",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "rooster-rbl.jpg",
 
                     ],
@@ -772,7 +772,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Battleground Royale",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "battleground.jpg",
 
                     ],
@@ -781,7 +781,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Butterfly Blossom",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "btrfly-blossom.jpg",
 
                     ],
@@ -790,7 +790,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fortune Tiger",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-tiger.jpg",
                     ],
                     [
@@ -798,7 +798,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Speed Winner",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "speed-winner.jpg",
 
                     ],
@@ -807,7 +807,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Legend of Perseus",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "legend-perseus.jpg",
 
                     ],
@@ -816,7 +816,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Win Win Fish Prawn Crab",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "win-win-fpc.jpg",
 
                     ],
@@ -825,7 +825,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Lucky Piggy",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "lucky-piggy.jpg",
 
                     ],
@@ -834,7 +834,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wild Coaster",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>  "wild-coaster.jpg",
 
                     ],
@@ -843,7 +843,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wild Bounty Showdown",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "wild-bounty-sd.jpg",
 
                     ],
@@ -852,7 +852,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Prosperity Fortune Tree",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "prosper-ftree.jpg",
 
                     ],
@@ -861,7 +861,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Totem Wonders",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "totem-wonders.jpg",
 
                     ],
@@ -870,7 +870,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Asgardian Rising",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>"asgardian-rs.jpg",
 
                     ],
@@ -879,7 +879,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Alchemy Gold",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "alchemy-gold.jpg",
 
                     ],
@@ -888,7 +888,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Diner Delights",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "diner-delights.jpg",
 
                     ],
@@ -897,7 +897,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Hawaiian Tiki",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "hawaiian-tiki.jpg",
 
                     ],
@@ -906,7 +906,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fruity Candy",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fruity-candy.jpg",
 
                     ],
@@ -915,7 +915,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Midas Fortune",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "midas-fortune.jpg",
                     ],
                     [
@@ -923,7 +923,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Bakery Bonanza",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "bakery-bonanza.jpg",
                     ],
                     [
@@ -931,7 +931,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Rave Party Fever",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "rave-party-fvr.jpg",
 
                     ],
@@ -940,7 +940,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mystical Spirits",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "myst-spirits.jpg",
 
                     ],
@@ -949,7 +949,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Songkran Splash",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "songkran-spl.jpg",
                     ],
                     [
@@ -957,7 +957,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Cruise Royale",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "cruise-royale.jpg",
 
                     ],
@@ -966,7 +966,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ultimate Striker",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ult-striker.jpg",
 
                     ],
@@ -975,7 +975,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Super Golf Drive",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "spr-golf-drive.jpg",
 
                     ],
@@ -984,7 +984,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Ninja Raccoon Frenzy",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "ninja-raccoon.jpg",
 
                     ],
@@ -993,7 +993,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Fortune Rabbit",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "fortune-rabbit.jpg",
 
                     ],
@@ -1002,7 +1002,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Forge of Wealth",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" =>  "forge-wealth.jpg",
 
                     ],
@@ -1011,7 +1011,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Wild Heist Cashout",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "wild-heist-co.jpg",
 
                     ],
@@ -1020,7 +1020,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Gladiator's Glory",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "gladi-glory.jpg",
                     ],
                     [
@@ -1028,7 +1028,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Mafia Mayhem",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "mafia-mayhem.jpg",
                     ],
                     [
@@ -1036,7 +1036,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Safari Wilds",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "safari-wilds.jpg",
                     ],
                     [
@@ -1044,7 +1044,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Lucky Clover Lady",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "lucky-clover.jpg",
 
                     ],
@@ -1053,7 +1053,7 @@ class PRGameListSeeder extends Seeder
                     "name_en"=> "Tsar Treasures",
                     "provide_id"=> 5,
                     "game_type_code"=> "SL",
-                    "game_type_id"=> 11,
+                    "game_type_id"=> 10,
                     "image" => "tsar-treasures.jpg",
 
                     ]

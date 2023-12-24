@@ -140,89 +140,37 @@
       </div>
     </div>
   </div>
+  @foreach ($gameTypes as $types)
+
 
   <div class="mt-3">
     <div class="game-content-title">
       <span>
-        <img src="{{ asset('slot_app/images/slotlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
-        စလော့
+        <img src="{{ asset('slot_app/images/icon').'/'.$types->icon }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+        {{$types->description}}
       </span>
     </div>
+
     <div class="game-content mt-2">
-      <div class="row mx-1">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
+
+        <div class="row mx-1">
+        @foreach ($types->providers as $provider)
+
+          <div class="col-4">
+            <a href="#" class="text-decoration-none">
+              <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                {{$provider->description}}
+            </a>
+          </div>
+        @endforeach
         </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame2.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame3.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
+
       </div>
 
-      <div class="row mx-1 mt-3">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame4.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame5.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame6.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-      </div>
 
-      <div class="row mx-1 mt-3">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame7.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame8.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame9.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row mx-1 mt-3">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame10.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame11.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/slotgames/slotgame12.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-          </a>
-        </div>
-      </div>
-    </div>
   </div>
-
+@endforeach
+{{--
   <!-- FISH GAME -->
   <div class="mt-3">
     <div class="game-content-title">
@@ -382,103 +330,104 @@
     </div>
   </div>
 
-  <!-- ကဒ်ဂိမ်း -->
-  <div class="mt-3">
-    <div class="game-content-title">
-      <span>
-        <img src="{{ asset('slot_app/images/card/cardlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
-        ကဒ်ဂိမ်း
-      </span>
+    <!-- ကဒ်ဂိမ်း -->
+    <div class="mt-3">
+        <div class="game-content-title">
+        <span>
+            <img src="{{ asset('slot_app/images/card/cardlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+            ကဒ်ဂိမ်း
+        </span>
+        </div>
+        <div class="game-content mt-2">
+        <div class="row mx-1">
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/card/card1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">FG ကဒ်ဂိမ်း</span>
+            </a>
+            </div>
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/card/card2.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">KS စစ်တုရင်ကစားနည်း</span>
+            </a>
+            </div>
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/card/card3.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">V8 စစ်တုရင်နှင့်ကတ်များ</span>
+            </a>
+            </div>
+        </div>
+        </div>
     </div>
-    <div class="game-content mt-2">
-      <div class="row mx-1">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/card/card1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">FG ကဒ်ဂိမ်း</span>
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/card/card2.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">KS စစ်တုရင်ကစားနည်း</span>
-          </a>
-        </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/card/card3.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">V8 စစ်တုရင်နှင့်ကတ်များ</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Esports -->
-  <div class="mt-3">
-    <div class="game-content-title">
-      <span>
-        <img src="{{ asset('slot_app/images/esport/esportlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
-        Esports
-      </span>
-    </div>
-    <div class="game-content mt-2">
-      <div class="row mx-1">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/esport/esport1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">TF Esports</span>
-          </a>
+    <!-- Esports -->
+    <div class="mt-3">
+        <div class="game-content-title">
+        <span>
+            <img src="{{ asset('slot_app/images/esport/esportlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+            Esports
+        </span>
         </div>
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/esport/esport2.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">IM Esports</span>
-          </a>
+        <div class="game-content mt-2">
+        <div class="row mx-1">
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/esport/esport1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">TF Esports</span>
+            </a>
+            </div>
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/esport/esport2.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">IM Esports</span>
+            </a>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
-  </div>
 
-  <!-- ကြက်တိုက်ခြင်း။ -->
-  <div class="mt-3">
-    <div class="game-content-title">
-      <span>
-        <img src="{{ asset('slot_app/images/chickenfight/chickenfightlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
-        ကြက်တိုက်ခြင်း။
-      </span>
-    </div>
-    <div class="game-content mt-2">
-      <div class="row mx-1">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/chickenfight/chicken1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">SV388ကြက်တိုက်ပွဲ</span>
-          </a>
+    <!-- ကြက်တိုက်ခြင်း။ -->
+    <div class="mt-3">
+        <div class="game-content-title">
+        <span>
+            <img src="{{ asset('slot_app/images/chickenfight/chickenfightlogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+            ကြက်တိုက်ခြင်း။
+        </span>
         </div>
-      </div>
+        <div class="game-content mt-2">
+        <div class="row mx-1">
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/chickenfight/chicken1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">SV388ကြက်တိုက်ပွဲ</span>
+            </a>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
 
-  <!-- ထီ -->
-  <div class="mt-3">
-    <div class="game-content-title">
-      <span>
-        <img src="{{ asset('slot_app/images/lottery/lottorylogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
-        ထီ
-      </span>
-    </div>
-    <div class="game-content mt-2">
-      <div class="row mx-1">
-        <div class="col-4">
-          <a href="#" class="text-decoration-none">
-            <img src="{{ asset('slot_app/images/lottery/lottory1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-            <span class="text-center">BBIN ထီ</span>
-          </a>
+    <!-- ထီ -->
+    <div class="mt-3">
+        <div class="game-content-title">
+        <span>
+            <img src="{{ asset('slot_app/images/lottery/lottorylogo.png') }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+            ထီ
+        </span>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="game-content mt-2">
+        <div class="row mx-1">
+            <div class="col-4">
+            <a href="#" class="text-decoration-none">
+                <img src="{{ asset('slot_app/images/lottery/lottory1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center">BBIN ထီ</span>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div> --}}
+
 </div>
 <!-- GAME END -->
 

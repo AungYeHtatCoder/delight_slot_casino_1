@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('code');
             $table->string('description')->nullable();
+            $table->integer('status')->default(1);
+            $table->integer('order');
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }
