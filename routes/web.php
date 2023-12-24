@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\PermissionController;
 // });
 
 require __DIR__.'/user.php';
+require __DIR__.'/amk.php';
 
 
 Auth::routes();
