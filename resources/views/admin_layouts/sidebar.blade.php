@@ -288,15 +288,15 @@
       <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link text-white " aria-controls="applicationsExamples" role="button" aria-expanded="false">
         {{-- <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">apps</i> --}}
         <i class="fas fa-list-check" style="font-size: 16px;"></i>
-        <span class="nav-link-text ms-2 ps-1">2D Control</span>
+        <span class="nav-link-text ms-2 ps-1">Slot Control</span>
       </a>
       <div class="collapse " id="applicationsExamples">
         <ul class="nav ">
           @can('admin_access')
           <li class="nav-item ">
-            <a class="nav-link text-white " href="">
+            <a class="nav-link text-white " href="{{ url('/admin/game-type-lists') }}">
               <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-              <span class="sidenav-normal  ms-2  ps-1"> 2D Users </span>
+              <span class="sidenav-normal  ms-2  ps-1"> GameType&Provider </span>
             </a>
           </li>
           @endcan

@@ -114,37 +114,37 @@ class PermissionsTableSeeder extends Seeder
 
             [
                 'id'         => '17',
-                'title'      => 'lottery_match_management_access',
+                'title'      => 'game_type_list_management_access',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
             [
                 'id'         => '18',
-                'title'      => 'lottery_match_create',
+                'title'      => 'game_type_list_create',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
             [
                 'id'         => '19',
-                'title'      => 'lottery_match_edit',
+                'title'      => 'game_type_list_edit',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
             [
                 'id'         => '20',
-                'title'      => 'lottery_match_show',
+                'title'      => 'game_type_list_show',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
             [
                 'id'         => '21',
-                'title'      => 'lottery_match_delete',
+                'title'      => 'game_type_list_delete',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
             [
                 'id'         => '22',
-                'title'      => 'lottery_match_access',
+                'title'      => 'game_type_list_access',
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
@@ -385,6 +385,6 @@ class PermissionsTableSeeder extends Seeder
         ];
 
         Permission::insert($permissions);
-    
+
     }
 }
