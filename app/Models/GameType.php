@@ -2,9 +2,8 @@
 
 namespace App\Models;
 
-use App\Models\Provider;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class GameType extends Model
 {
@@ -13,14 +12,9 @@ class GameType extends Model
     protected $fillable =['name','description'];
 
 
-    // public function providers()
-    // {
-    //     return $this->hasMany(Provider::class);
-    // }
-
-     public function providers()
+    public function providers()
     {
-        return $this->belongsToMany(Provider::class, 'game_type_provider');
+        return $this->belongsToMany(Provider::class,'game_type_provider')->withPivot('image');
     }
 
 }
