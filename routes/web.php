@@ -22,7 +22,7 @@ require __DIR__.'/amk.php';
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', [App\Http\Controllers\User\WelcomeController::class, 'index'])->name('welcome');
+// Route::get('/', [App\Http\Controllers\User\WelcomeController::class, 'index'])->name('welcome');
 
 //auth routes
 Route::get('/login', [LoginController::class, 'userLogin'])->name('login');
@@ -147,7 +147,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
 //Slot routes
 Route::get('/slot-register', [App\Http\Controllers\Slot\SlotController::class, 'register']);
 Route::get('/slot-login', [App\Http\Controllers\Slot\SlotController::class, 'login']);
-Route::get('/slot-index', [App\Http\Controllers\Slot\SlotController::class, 'index']);
+Route::get('/', [App\Http\Controllers\Slot\SlotController::class, 'index']);
 Route::get('/slot-promo', [App\Http\Controllers\Slot\SlotController::class, 'promotion']);
 Route::get('/slot-agent', [App\Http\Controllers\Slot\SlotController::class, 'agent']);
 Route::get('/slot-userinfo', [App\Http\Controllers\Slot\SlotController::class, 'userInfo']);
@@ -156,3 +156,4 @@ Route::get('/slot-betrecord', [App\Http\Controllers\Slot\SlotController::class, 
 Route::get('/slot-cashrecord', [App\Http\Controllers\Slot\SlotController::class, 'cashRecord']);
 Route::get('/slot-helpcenter', [App\Http\Controllers\Slot\SlotController::class, 'helpCenter']);
 Route::get('/slot-feedback', [App\Http\Controllers\Slot\SlotController::class, 'feedback']);
+Route::get('/slot-game-details', [App\Http\Controllers\Slot\SlotController::class, 'asiagaming']);
