@@ -22,7 +22,7 @@ class GameController extends Controller
     {
         $endpoint = '/getGameList.aspx';
         $operatorCode = config('common.operatorcode');
-        $providerCode = 'RE';
+        $providerCode = 'JK';
         $secretKey = config('common.secret_key');
         $signatureString = strtolower($operatorCode) . strtoupper($providerCode) . $secretKey;
 
