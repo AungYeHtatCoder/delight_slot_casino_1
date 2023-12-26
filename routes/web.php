@@ -156,3 +156,4 @@ Route::get('/slot-betrecord', [App\Http\Controllers\Slot\SlotController::class, 
 Route::get('/slot-cashrecord', [App\Http\Controllers\Slot\SlotController::class, 'cashRecord']);
 Route::get('/slot-helpcenter', [App\Http\Controllers\Slot\SlotController::class, 'helpCenter']);
 Route::get('/slot-feedback', [App\Http\Controllers\Slot\SlotController::class, 'feedback']);
+Route::get('/slot-game-details', [App\Http\Controllers\Slot\SlotController::class, 'asiagaming']);

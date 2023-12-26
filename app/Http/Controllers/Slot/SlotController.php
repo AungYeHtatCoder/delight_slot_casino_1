@@ -61,4 +61,9 @@ class SlotController extends Controller
     {
         return view('slot.pages.register');
     }
+
+    public function asiagaming()
+    {
+        return view('slot.pages.game-details');
+    }
 }

@@ -145,8 +145,8 @@
 
   <div class="mt-3">
     <div class="game-content-title">
-      <span>
-        <img src="{{ asset('slot_app/images/icon').'/'.$types->icon }}" alt="hotgame" style="width: 30px; height: 30px" class="ms-2" />
+      <span style="font-size: 16px">
+        <img src="{{ asset('slot_app/images/icon').'/'.$types->icon }}" alt="livecasino" style="width: 30px; height: 30px" class="ms-2" />
         {{$types->description}}
       </span>
     </div>
@@ -155,11 +155,11 @@
 
         <div class="row mx-1">
         @foreach ($types->providers as $provider)
-
-          <div class="col-4">
-            <a href="#" class="text-decoration-none">
+          
+          <div class="col-4 mt-4">
+            <a href="{{ url('/slot-game-details') }}" class="text-decoration-none text-white">
               <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
-                {{$provider->description}}
+                <span class="text-center mt-2">{{$provider->description}}</span>
             </a>
           </div>
         @endforeach
