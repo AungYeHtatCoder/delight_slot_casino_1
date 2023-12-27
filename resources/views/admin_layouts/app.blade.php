@@ -21,6 +21,7 @@
   </main>
   @include('admin_layouts.setting')
   <!--   Core JS Files   -->
+  <script src="https://kit.fontawesome.com/b829c5162c.js" crossorigin="anonymous"></script>
   <script src="{{ asset('admin_app/assets/js/core/popper.min.js')}}"></script>
   <script src="{{ asset('admin_app/assets/js/core/bootstrap.min.js')}}"></script>
   <script src="{{ asset('admin_app/assets/js/plugins/perfect-scrollbar.min.js')}}"></script>

@@ -58,7 +58,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
 @endsection
 @section('content')
-<div class="container text-center mt-4">
+<div class="container text-center" style="min-height: 70vh;">
  <div class="row">
   <div class="col-12 col-md-8 mx-auto">
    <div class="card">
