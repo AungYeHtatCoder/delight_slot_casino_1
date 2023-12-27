@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             RoleUserTableSeeder::class,
             GameTypeSeeder::class,
             ProviderSeeder::class,
-            GameTypeProviderSeeder::class
+            GameTypeProviderSeeder::class,
+            AGGameListSeeder::class,
             // GBGameListSeeder::class,
             // PGGameListSeeder::class,
             // PRGameListSeeder::class,
