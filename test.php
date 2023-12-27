@@ -16,3 +16,4 @@ $secretKey = 'cb9d7680c24e1d501a9a393b0698e522';
 $signature = generateSignature($operatorCode, $providerCode, $secretKey);
 
 echo "Signature: " . $signature;
+$token = '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';
