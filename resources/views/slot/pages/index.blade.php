@@ -141,8 +141,6 @@
     </div>
   </div>
   @foreach ($gameTypes as $types)
-
-
   <div class="mt-3">
     <div class="game-content-title">
       <span style="font-size: 16px">
@@ -155,9 +153,9 @@
 
         <div class="row mx-1">
         @foreach ($types->providers as $provider)
-          
+
           <div class="col-4 mt-4">
-            <a href="{{ url('/slot-game-details') }}" class="text-decoration-none text-white">
+            <a href="{{ route('user.gamelist',['provider_id' => $provider->id ,'game_type_id' => $types->id]) }}" class="text-decoration-none text-white">
               <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
                 <span class="text-center mt-2">{{$provider->description}}</span>
             </a>

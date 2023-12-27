@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('slot_games', function (Blueprint $table) {
+        Schema::create('game_lists', function (Blueprint $table) {
             $table->id();
             $table->string('game_id');
             $table->string('name_en');
-            $table->string('name_mm');
+            $table->string('name_mm')->nullable();
             $table->string('image')->nullable(true);
-            $table->string('type');
-            $table->string('providerCode');
+            $table->string('click_count')->default(0);
+            $table->foreignId('game_type_id')->references('id')->on('game_types');
+            $table->foreignId('provider_id')->references('id')->on('providers');
             $table->timestamps();
         });
     }

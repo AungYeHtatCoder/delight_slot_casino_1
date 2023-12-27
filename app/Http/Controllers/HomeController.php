@@ -35,7 +35,7 @@ class HomeController extends Controller
         $userId = auth()->id(); // ID of the master user
         // Retrieve agents created by this master user
         $agentIds = User::where('agent_id', $userId)->pluck('id');
-            return view('admin.agent.agent_dashboard', compact('agents'));
+            return view('admin.agent.agent_dashboard', compact('agentIds'));
         } else {
             return view('welcome');
         }

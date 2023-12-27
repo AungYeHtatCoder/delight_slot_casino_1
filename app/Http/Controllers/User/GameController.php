@@ -4,6 +4,8 @@ namespace App\Http\Controllers\User;
 
 use App\Helpers\ApiHelper;
 use App\Http\Controllers\Controller;
+use App\Models\Admin\GameList;
+use App\Models\GameType;
 use App\Models\Provider;
 use App\Services\ApiService;
 use GuzzleHttp\Client;
@@ -18,16 +20,15 @@ class GameController extends Controller
         $this->apiService = $apiService;
     }
 
-    public function getGameList()
+    public function gameListAPI()
     {
         $endpoint = '/getGameList.aspx';
         $operatorCode = config('common.operatorcode');
-        $providerCode = 'JK';
+        $providerCode = 'AG';
         $secretKey = config('common.secret_key');
         $signatureString = strtolower($operatorCode) . strtoupper($providerCode) . $secretKey;
 
         $signature = ApiHelper::generateSignature($signatureString);
-
 
         $param = [
             'operatorcode' => config('common.operatorcode'),
@@ -50,8 +51,10 @@ class GameController extends Controller
 
     }
 
-    public function launchGame()
+    public function getGameList($provider_id, $game_type_id)
     {
+        $gameLists = GameList::where('provider_id',$provider_id)->where('game_type_id',$game_type_id)->get();
 
+        return view('slot.pages.game-details',compact('gameLists'));
     }
 }

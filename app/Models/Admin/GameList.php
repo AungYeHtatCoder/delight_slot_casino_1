@@ -5,7 +5,7 @@ namespace App\Models\Admin;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SlotGame extends Model
+class GameList extends Model
 {
     use HasFactory;
     protected $fillable = [
@@ -13,7 +13,8 @@ class SlotGame extends Model
         'name_en',
         'name_mm',
         'image',
-        'type',
-        'providerCode'
+        'game_type_id',
+        'provider_id',
+        'click_count'
     ];
 }
