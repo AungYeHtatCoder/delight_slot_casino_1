@@ -20,7 +20,7 @@
             @foreach ($gameLists as $data)
                 <div class="col-4">
                 <a href="#" class="text-decoration-none">
-                    <img src="{{ asset('slot_app/images/livecasino/casino1.png') }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+                    <img src="{{ asset('game_logo/'.$data->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
                     <span class="text-center">{{$data->name_en}}</span>
                 </a>
                 </div>

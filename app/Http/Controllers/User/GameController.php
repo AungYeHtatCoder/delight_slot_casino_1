@@ -24,7 +24,7 @@ class GameController extends Controller
     {
         $endpoint = '/getGameList.aspx';
         $operatorCode = config('common.operatorcode');
-        $providerCode = 'AG';
+        $providerCode = 'PG';
         $secretKey = config('common.secret_key');
         $signatureString = strtolower($operatorCode) . strtoupper($providerCode) . $secretKey;
 
