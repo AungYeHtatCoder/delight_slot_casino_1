@@ -34,7 +34,7 @@ class GameController extends Controller
     {
 
         $endpoint = '/getGameList.aspx';
-        $providerCode = 'GB';
+        $providerCode = 'K9';
         $signatureString = strtolower($this->operatorCode) . strtoupper($providerCode) . $this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
 
@@ -70,21 +70,21 @@ class GameController extends Controller
         $game = GameList::where('id',$id)->first();
         $endpoint = '/launchGames.aspx';
         $password = 'pass1234';
-        $providerCode = 'GB';
+        $providerCode = $game->provider->p_code;
         $userName = 'sophia';
         $type = $game->gameType->code ;
-        // $gameId = $game->game_id;
+        $gameId = $game->game_id;
         $signatureString = $this->operatorCode.$password.$providerCode.$type.$userName.$this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
 
 
         $parameters = [
             'operatorcode' => config('common.operatorcode'),
-            'providercode' => 'GB',
+            'providercode' => $providerCode,
             'username' => $userName,
             'password' => $password,
-            'type' => 'SL',
-            'gameid' => 0,
+            'type' => $type,
+            'gameid' => $gameId,
             'lang' => 'en',
             'html5' => 0,
             'signature' => $signature,

@@ -66,7 +66,7 @@
     <div class="card-header pb-0">
      <div class="d-lg-flex">
       <div>
-       <h5 class="mb-0">User Create Dashboards</h5>
+       <h5 class="mb-0">New Player</h5>
 
       </div>
       <div class="ms-auto my-auto mt-lg-0 mt-4">

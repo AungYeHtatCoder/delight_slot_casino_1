@@ -172,7 +172,7 @@
                 <li class="nav-item">
                   <a class="nav-link text-white " href="{{ route('admin.agent-user-list')}}">
                     <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> User Lists </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Player Lists</span>
                   </a>
                 </li>
 

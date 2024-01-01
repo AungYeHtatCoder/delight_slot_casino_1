@@ -382,6 +382,19 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-02-10 14:00:26',
                 'updated_at' => '2023-02-10 14:00:26',
             ],
+            [
+                'id'         => '60',
+                'title'      => 'create_player',
+                'created_at' => '2023-02-10 14:00:26',
+                'updated_at' => '2023-02-10 14:00:26',
+            ],
+            [
+                'id'         => '61',
+                'title'      => 'make_transfer',
+                'created_at' => '2023-02-10 14:00:26',
+                'updated_at' => '2023-02-10 14:00:26',
+            ],
+
         ];
 
         Permission::insert($permissions);
