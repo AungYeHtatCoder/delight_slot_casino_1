@@ -19,7 +19,7 @@
         <div class="row mx-1">
             @foreach ($gameLists as $data)
                 <div class="col-4">
-                <a href="#" class="text-decoration-none">
+                <a href="{{route('user.launchGame',$data->id)}}" class="text-decoration-none">
                     <img src="{{ asset('game_logo/'.$data->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
                     <span class="text-center">{{$data->name_en}}</span>
                 </a>

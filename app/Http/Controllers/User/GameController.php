@@ -10,24 +10,32 @@ use App\Models\Provider;
 use App\Services\ApiService;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class GameController extends Controller
 {
     protected $apiService;
+    protected $operatorCode;
+
+    protected $secretKey;
+
+
 
     public function __construct(ApiService $apiService)
     {
+
         $this->apiService = $apiService;
+        $this->operatorCode = config('common.operatorcode');
+        $this->secretKey  = config('common.secret_key');
+
     }
 
     public function gameListAPI()
     {
-        $endpoint = '/getGameList.aspx';
-        $operatorCode = config('common.operatorcode');
-        $providerCode = 'PG';
-        $secretKey = config('common.secret_key');
-        $signatureString = strtolower($operatorCode) . strtoupper($providerCode) . $secretKey;
 
+        $endpoint = '/getGameList.aspx';
+        $providerCode = 'GB';
+        $signatureString = strtolower($this->operatorCode) . strtoupper($providerCode) . $this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
 
         $param = [
@@ -56,5 +64,38 @@ class GameController extends Controller
         $gameLists = GameList::where('provider_id',$provider_id)->where('game_type_id',$game_type_id)->get();
 
         return view('slot.pages.game-details',compact('gameLists'));
+    }
+    public function launchGame($id)
+    {
+        $game = GameList::where('id',$id)->first();
+        $endpoint = '/launchGames.aspx';
+        $password = 'pass1234';
+        $providerCode = $game->provider->p_code;
+        $userName = 'sophia';
+        $type = $game->gameType->code ;
+        $gameId = $game->game_id;
+        $signatureString = $this->operatorCode.$password.$providerCode.$type.$userName.$this->secretKey;
+        $signature = ApiHelper::generateSignature($signatureString);
+
+
+        $parameters = [
+            'operatorcode' => config('common.operatorcode'),
+            'providercode' => $providerCode,
+            'username' => $userName,
+            'password' => $password,
+            'type' => $type,
+            'gameid' => $gameId,
+            'lang' => 'en',
+            'html5' => 0,
+            'signature' => $signature,
+            'blimit' => 0,
+        ];
+
+        $response = $this->apiService->get($endpoint, $parameters);
+
+        $data = $response['gameUrl'];
+        return redirect($data);
+
+
     }
 }

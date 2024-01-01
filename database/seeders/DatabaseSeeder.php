@@ -23,10 +23,12 @@ class DatabaseSeeder extends Seeder
             ProviderSeeder::class,
             GameTypeProviderSeeder::class,
             AGGameListSeeder::class,
-            // GBGameListSeeder::class,
-            // PGGameListSeeder::class,
-            // PRGameListSeeder::class,
-            // REGameListSeeder::class
+            GBGameListSeeder::class,
+            PGGameListSeeder::class,
+            PRGameListSeeder::class,
+            REGameListSeeder::class,
+            JKGameListSeeder::class,
+            S3GameListSeeder::class
         ]);
     }
 }

@@ -20,7 +20,7 @@ class PGGameListSeeder extends Seeder
                     "name_en"=> "Honey Trap of Diao Chan",
                     "provider_id"=> 5,
                     "game_type_id"=> 10,
-                    "image" => "diaochan.jpg"
+                    "image" => "diaochan.png"
                     ],
                     [
                     "game_id"=> "2",
@@ -28,7 +28,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "gem-saviour.jpg"
+                    "image" => "gem-saviour.png"
 
                     ],
                     [
@@ -37,7 +37,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-gods.jpg"
+                    "image" => "fortune-gods.png"
                     ],
                     [
                     "game_id"=> "6",
@@ -45,7 +45,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "medusa2.jpg",
+                    "image" => "medusa2.png",
                     ],
                     [
                     "game_id"=> "7",
@@ -53,14 +53,13 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "medusa.jpg",
+                    "image" => "medusa.png",
 
                     ],
                     [
                     "game_id"=> "17",
                     "name_en"=> "Wizdom Wonders",
                     "provider_id"=> 5,
-
                     "game_type_id"=> 10,
                     "image" =>  "wizdom-wonders.jpg",
                     ],
@@ -70,7 +69,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "hood-wolf.jpg",
+                    "image" => "hood-wolf.png",
                     ],
                     [
                     "game_id"=> "20",
@@ -78,7 +77,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "reel-love.jpg"
+                    "image" => "reel-love.png"
                     ],
                     [
                     "game_id"=> "24",
@@ -86,7 +85,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "win-win-won.jpg",
+                    "image" => "win-win-won.png",
                     ],
                     [
                     "game_id"=> "25",
@@ -94,7 +93,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "plushie-frenzy.jpg",
+                    "image" => "plushie-frenzy.png",
 
                     ],
                     [
@@ -103,7 +102,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-tree.jpg",
+                    "image" => "fortune-tree.png",
 
                     ],
                     [
@@ -112,7 +111,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image"=> "hotpot.jpg",
+                    "image"=> "hotpot.png",
                     ],
                     [
                     "game_id"=> "29",
@@ -120,7 +119,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "dragon-legend.jpg",
+                    "image" => "dragon-legend.png",
                     ],
                     [
                     "game_id"=> "31",
@@ -128,7 +127,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "baccarat-deluxe.jpg",
+                    "image" => "baccarat-deluxe.png",
                     ],
                     [
                     "game_id"=> "33",
@@ -136,7 +135,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "hip-hop-panda.jpg"
+                    "image" => "hip-hop-panda.png"
                     ],
                     [
                     "game_id"=> "34",
@@ -144,7 +143,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "legend-of-hou-yi.jpg",
+                    "image" => "legend-of-hou-yi.png",
                     ],
                     [
                     "game_id"=> "35",
@@ -152,7 +151,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mr-hallow-win.jpg",
+                    "image" => "mr-hallow-win.png",
                     ],
                     [
                     "game_id"=> "36",
@@ -160,7 +159,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "prosperity-lion.jpg",
+                    "image" => "prosperity-lion.png",
                     ],
                     [
                     "game_id"=> "37",
@@ -168,7 +167,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "santas-gift-rush.jpg",
+                    "image" => "santas-gift-rush.png",
                     ],
                     [
                     "game_id"=> "38",
@@ -176,7 +175,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "gem-saviour-sword.jpg",
+                    "image" => "gem-saviour-sword.png",
 
                     ],
                     [
@@ -186,7 +185,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "piggy-gold.jpg",
+                    "image" => "piggy-gold.png",
 
                     ],
                     [
@@ -195,7 +194,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"jungle-delight.jpg",
+                    "image" =>"jungle-delight.png",
                     ],
                     [
                     "game_id"=> "41",
@@ -203,7 +202,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "symbols-of-egypt.jpg",
+                    "image" => "symbols-of-egypt.png",
                     ],
                     [
                     "game_id"=> "42",
@@ -211,7 +210,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ganesha-gold.jpg",
+                    "image" => "ganesha-gold.png",
                     ],
                     [
                     "game_id"=> "43",
@@ -219,7 +218,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "three-monkeys.jpg",
+                    "image" => "jungle-delight.png",
                     ],
                     [
                     "game_id"=> "44",
@@ -227,7 +226,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "emperors-favour.jpg",
+                    "image" => "emperors-favour.png",
                     ],
                     [
                     "game_id"=> "48",
@@ -235,7 +234,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "double-fortune.jpg",
+                    "image" => "double-fortune.png",
                     ],
                     [
                     "game_id"=> "50",
@@ -243,7 +242,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"journey-to-the-wealth.jpg",
+                    "image" =>"journey-to-the-wealth.png",
 
                     ],
                     [
@@ -252,7 +251,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "the-great-icescape.jpg",
+                    "image" => "the-great-icescape.png",
 
                     ],
                     [
@@ -261,7 +260,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "captains-bounty.jpg",
+                    "image" => "captains-bounty.png",
                     ],
                     [
                     "game_id"=> "57",
@@ -269,7 +268,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "dragon-hatch.jpg",
+                    "image" => "dragon-hatch.png",
                     ],
                     [
                     "game_id"=> "58",
@@ -277,7 +276,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "vampires-charm.jpg",
+                    "image" => "vampires-charm.png",
                     ],
                     [
                     "game_id"=> "59",
@@ -285,7 +284,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ninja-vs-samurai.jpg",
+                    "image" => "ninja-vs-samurai.png",
                     ],
                     [
                     "game_id"=> "60",
@@ -293,7 +292,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "leprechaun-riches.jpg",
+                    "image" => "leprechaun-riches.png",
 
                     ],
                     [
@@ -302,7 +301,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "flirting-scholar.jpg",
+                    "image" => "flirting-scholar.png",
                     ],
                     [
                     "game_id"=> "62",
@@ -310,7 +309,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "gem-saviour-conquest.jpg",
+                    "image" => "gem-saviour-conquest.png",
                     ],
                     [
                     "game_id"=> "63",
@@ -318,7 +317,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "dragon-tiger-luck.jpg",
+                    "image" => "dragon-tiger-luck.png",
 
                     ],
                     [
@@ -327,7 +326,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "muay-thai-champion.jpg",
+                    "image" => "muay-thai-champion.png",
                     ],
                     [
                     "game_id"=> "65",
@@ -335,7 +334,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mahjong-ways.jpg",
+                    "image" => "mahjong-ways.png",
                     ],
                     [
                     "game_id"=> "67",
@@ -343,7 +342,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "shaolin-soccer.jpg",
+                    "image" => "shaolin-soccer.png",
 
                     ],
                     [
@@ -352,7 +351,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-mouse.jpg",
+                    "image" => "fortune-mouse.png",
                     ],
                     [
                     "game_id"=> "69",
@@ -360,7 +359,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "bikini-paradise.jpg",
+                    "image" => "bikini-paradise.png",
 
                     ],
                     [
@@ -369,7 +368,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "candy-burst.jpg",
+                    "image" => "candy-burst.png",
                     ],
                     [
                     "game_id"=> "71",
@@ -377,7 +376,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "cai-shen-wins.jpg",
+                    "image" => "cai-shen-wins.png",
 
                     ],
                     [
@@ -386,7 +385,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "egypts-book-mystery.jpg",
+                    "image" => "egypts-book-mystery.png",
                     ],
                     [
                     "game_id"=> "74",
@@ -394,7 +393,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mahjong-ways2.jpg",
+                    "image" => "mahjong-ways2.png",
 
                     ],
                     [
@@ -403,7 +402,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ganesha-fortune.jpg",
+                    "image" => "ganesha-fortune.png",
 
                     ],
                     [
@@ -411,7 +410,7 @@ class PGGameListSeeder extends Seeder
                     "name_en"=> "Dreams of Macau",
                     "provider_id"=> 5,
                    "game_type_id"=> 10,
-                    "image" => "dreams-of-macau.jpg",
+                    "image" => "dreams-of-macau.png",
 
                     ],
                     [
@@ -420,7 +419,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "circus-delight.jpg",
+                    "image" => "circus-delight.png",
 
                     ],
                     [
@@ -429,7 +428,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "phoenix-rises.jpg",
+                    "image" => "phoenix-rises.png",
                     ],
                     [
                     "game_id"=> "83",
@@ -437,7 +436,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "wild-fireworks.jpg",
+                    "image" => "wild-fireworks.png",
 
                     ],
                     [
@@ -446,7 +445,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "queen-bounty.jpg",
+                    "image" => "queen-bounty.png",
                     ],
                     [
                     "game_id"=> "85",
@@ -454,7 +453,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"genies-wishes.jpg",
+                    "image" =>"genies-wishes.png",
 
                     ],
                     [
@@ -463,7 +462,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "galactic-gems.jpg",
+                    "image" => "galactic-gems.png",
 
                     ],
                     [
@@ -472,7 +471,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "treasures-aztec.jpg",
+                    "image" => "treasures-aztec.png",
 
                     ],
                     [
@@ -481,7 +480,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "jewels-prosper.jpg",
+                    "image" => "jewels-prosper.png",
 
                     ],
                     [
@@ -490,7 +489,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "lucky-neko.jpg",
+                    "image" => "lucky-neko.png",
 
                     ],
                     [
@@ -499,7 +498,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "sct-cleopatra.jpg",
+                    "image" => "sct-cleopatra.png",
                     ],
                     [
                     "game_id"=> "91",
@@ -507,7 +506,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "gdn-ice-fire.jpg",
+                    "image" => "gdn-ice-fire.png",
 
                     ],
                     [
@@ -516,7 +515,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>  "thai-river.jpg",
+                    "image" =>  "thai-river.png",
 
                     ],
                     [
@@ -525,7 +524,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "opera-dynasty.jpg",
+                    "image" => "opera-dynasty.png",
                     ],
                     [
                     "game_id"=> "94",
@@ -533,7 +532,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "bali-vacation.jpg",
+                    "image" => "bali-vacation.png",
                     ],
                     [
                     "game_id"=> "95",
@@ -541,7 +540,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "majestic-ts.jpg",
+                    "image" => "majestic-ts.png",
                     ],
                     [
                     "game_id"=> "97",
@@ -550,7 +549,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"jack-frosts.jpg",
+                    "image" =>"jack-frosts.png",
                     ],
                     [
                     "game_id"=> "98",
@@ -558,7 +557,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-ox.jpg",
+                    "image" => "fortune-ox.png",
 
                     ],
                     [
@@ -567,7 +566,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "candy-bonanza.jpg",
+                    "image" => "candy-bonanza.png",
                     ],
                     [
                     "game_id"=> "101",
@@ -576,7 +575,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "rise-of-apollo.jpg",
+                    "image" => "rise-of-apollo.png",
 
                     ],
                     [
@@ -585,7 +584,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mermaid-riches.jpg",
+                    "image" => "mermaid-riches.png",
                     ],
                     [
                     "game_id"=> "103",
@@ -593,7 +592,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "crypto-gold.jpg",
+                    "image" => "crypto-gold.png",
                     ],
                     [
                     "game_id"=> "104",
@@ -601,7 +600,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "wild-bandito.jpg",
+                    "image" => "wild-bandito.png",
                     ],
                     [
                     "game_id"=> "105",
@@ -609,7 +608,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "heist-stakes.jpg",
+                    "image" => "heist-stakes.png",
                     ],
                     [
                     "game_id"=> "106",
@@ -617,7 +616,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ways-of-qilin.jpg",
+                    "image" => "ways-of-qilin.png",
 
                     ],
                     [
@@ -626,7 +625,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "lgd-monkey-kg.jpg",
+                    "image" => "lgd-monkey-kg.png",
                     ],
                     [
                     "game_id"=> "108",
@@ -634,7 +633,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "buffalo-win.jpg",
+                    "image" => "buffalo-win.png",
 
                     ],
                     [
@@ -643,7 +642,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "sushi-oishi.jpg",
+                    "image" => "oriental-pros.png",
 
                     ],
                     [
@@ -652,7 +651,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "jurassic-kdm.jpg",
+                    "image" => "jurassic-kdm.png",
 
                     ],
                     [
@@ -661,7 +660,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"groundhog.jpg",
+                    "image" =>"groundhog.png",
                     ],
                     [
                     "game_id"=> "112",
@@ -669,7 +668,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"oriental-pros.jpg",
+                    "image" =>"oriental-pros.png",
                     ],
                     [
                     "game_id"=> "113",
@@ -677,7 +676,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "crypt-fortune.jpg",
+                    "image" => "crypt-fortune.png",
 
                     ],
                     [
@@ -686,7 +685,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "emoji-riches.jpg",
+                    "image" => "emoji-riches.png",
                     ],
                     [
                     "game_id"=> "115",
@@ -694,7 +693,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "sprmkt-spree.jpg",
+                    "image" => "sprmkt-spree.png",
 
                     ],
                     [
@@ -703,7 +702,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "farm-invaders.jpg",
+                    "image" => "sprmkt-spree.png",
 
                     ],
                     [
@@ -712,7 +711,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "cocktail-nite.jpg",
+                    "image" => "cocktail-nite.png",
                     ],
                     [
                     "game_id"=> "118",
@@ -720,7 +719,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mask-carnival.jpg",
+                    "image" => "mask-carnival.png",
                     ],
                     [
                     "game_id"=> "119",
@@ -728,7 +727,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "spirit-wonder.jpg",
+                    "image" => "spirit-wonder.png",
 
                     ],
                     [
@@ -737,7 +736,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"queen-banquet.jpg",
+                    "image" =>"queen-banquet.png",
 
                     ],
                     [
@@ -746,7 +745,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "dest-sun-moon.jpg",
+                    "image" => "dest-sun-moon.png",
 
                     ],
                     [
@@ -755,7 +754,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "garuda-gems.jpg",
+                    "image" => "garuda-gems.png",
 
                     ],
                     [
@@ -764,7 +763,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "rooster-rbl.jpg",
+                    "image" => "rooster-rbl.png",
 
                     ],
                     [
@@ -773,7 +772,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "battleground.jpg",
+                    "image" => "battleground.png",
 
                     ],
                     [
@@ -782,7 +781,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "btrfly-blossom.jpg",
+                    "image" => "btrfly-blossom.png",
 
                     ],
                     [
@@ -791,7 +790,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-tiger.jpg",
+                    "image" => "fortune-tiger.png",
                     ],
                     [
                     "game_id"=> "127",
@@ -799,7 +798,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "speed-winner.jpg",
+                    "image" => "speed-winner.png",
 
                     ],
                     [
@@ -808,7 +807,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "legend-perseus.jpg",
+                    "image" => "legend-perseus.png",
 
                     ],
                     [
@@ -817,7 +816,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "win-win-fpc.jpg",
+                    "image" => "win-win-fpc.png",
 
                     ],
                     [
@@ -826,7 +825,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "lucky-piggy.jpg",
+                    "image" => "lucky-piggy.png",
 
                     ],
                     [
@@ -835,7 +834,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>  "wild-coaster.jpg",
+                    "image" =>  "wild-coaster.png",
 
                     ],
                     [
@@ -844,7 +843,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "wild-bounty-sd.jpg",
+                    "image" => "wild-bounty-sd.png",
 
                     ],
                     [
@@ -853,7 +852,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "prosper-ftree.jpg",
+                    "image" => "prosper-ftree.png",
 
                     ],
                     [
@@ -862,7 +861,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "totem-wonders.jpg",
+                    "image" => "totem-wonders.png",
 
                     ],
                     [
@@ -871,7 +870,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>"asgardian-rs.jpg",
+                    "image" =>"asgardian-rs.png",
 
                     ],
                     [
@@ -880,7 +879,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "alchemy-gold.jpg",
+                    "image" => "alchemy-gold.png",
 
                     ],
                     [
@@ -889,7 +888,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "diner-delights.jpg",
+                    "image" => "diner-delights.png",
 
                     ],
                     [
@@ -898,7 +897,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "hawaiian-tiki.jpg",
+                    "image" => "hawaiian-tiki.png",
 
                     ],
                     [
@@ -907,7 +906,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fruity-candy.jpg",
+                    "image" => "fruity-candy.png",
 
                     ],
                     [
@@ -916,7 +915,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "midas-fortune.jpg",
+                    "image" => "midas-fortune.png",
                     ],
                     [
                     "game_id"=> "1418544",
@@ -924,7 +923,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "bakery-bonanza.jpg",
+                    "image" => "bakery-bonanza.png",
                     ],
                     [
                     "game_id"=> "1420892",
@@ -932,7 +931,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "rave-party-fvr.jpg",
+                    "image" => "rave-party-fvr.png",
 
                     ],
                     [
@@ -941,7 +940,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "myst-spirits.jpg",
+                    "image" => "myst-spirits.png",
 
                     ],
                     [
@@ -950,7 +949,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "songkran-spl.jpg",
+                    "image" => "songkran-spl.png",
                     ],
                     [
                     "game_id"=> "1473388",
@@ -958,7 +957,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "cruise-royale.jpg",
+                    "image" => "cruise-royale.png",
 
                     ],
                     [
@@ -967,7 +966,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ult-striker.jpg",
+                    "image" => "ult-striker.png",
 
                     ],
                     [
@@ -976,7 +975,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "spr-golf-drive.jpg",
+                    "image" => "spr-golf-drive.png",
 
                     ],
                     [
@@ -985,7 +984,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "ninja-raccoon.jpg",
+                    "image" => "ninja-raccoon.png",
 
                     ],
                     [
@@ -994,7 +993,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "fortune-rabbit.jpg",
+                    "image" => "fortune-rabbit.png",
 
                     ],
                     [
@@ -1003,7 +1002,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" =>  "forge-wealth.jpg",
+                    "image" =>  "forge-wealth.png",
 
                     ],
                     [
@@ -1012,7 +1011,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "wild-heist-co.jpg",
+                    "image" => "wild-heist-co.png",
 
                     ],
                     [
@@ -1021,7 +1020,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "gladi-glory.jpg",
+                    "image" => "gladi-glory.png",
                     ],
                     [
                     "game_id"=> "1580541",
@@ -1029,7 +1028,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "mafia-mayhem.jpg",
+                    "image" => "mafia-mayhem.png",
                     ],
                     [
                     "game_id"=> "1594259",
@@ -1037,7 +1036,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "safari-wilds.jpg",
+                    "image" => "safari-wilds.png",
                     ],
                     [
                     "game_id"=> "1601012",
@@ -1045,7 +1044,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "lucky-clover.jpg",
+                    "image" => "lucky-clover.png",
 
                     ],
                     [
@@ -1054,7 +1053,7 @@ class PGGameListSeeder extends Seeder
                     "provider_id"=> 5,
 
                     "game_type_id"=> 10,
-                    "image" => "tsar-treasures.jpg",
+                    "image" => "tsar-treasures.png",
 
                     ]
             ];

@@ -13,9 +13,6 @@ class AGGameListSeeder extends Seeder
       $data = [
            [
             "game_id"=> "SC07",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Gold Class Deluxe",
@@ -23,9 +20,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH48",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Pillar of Fortune",
@@ -33,9 +27,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "TG04",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Let it ride",
@@ -43,9 +34,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB62",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Wild Gods",
@@ -53,9 +41,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB64",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Lucky Riches",
@@ -63,9 +48,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH56",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Mermaid Treasure",
@@ -73,9 +55,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SC06",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Beast Party",
@@ -84,9 +63,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB63",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Bingo Slot",
@@ -94,9 +70,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB59",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Kung Fu All Stars",
@@ -104,9 +77,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH52",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Bao Zu Po",
@@ -114,9 +84,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH62",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Sex and Zen",
@@ -124,9 +91,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB60",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Ace Heist",
@@ -134,9 +98,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH31",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Golden Dragon",
@@ -144,9 +105,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH49",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Lucha Heroes",
@@ -154,9 +112,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH25",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "The Nutcracker",
@@ -164,9 +119,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH65",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Temple Raider",
@@ -174,9 +126,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB56",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Vegas Vegas",
@@ -184,9 +133,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH54",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Ultra Shift",
@@ -194,9 +140,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH26",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Sushi Nights",
@@ -204,9 +148,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH40",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Peking Opera",
@@ -214,9 +156,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH44",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Steampunk War",
@@ -224,9 +164,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB58",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Sexy Succubus",
@@ -234,9 +172,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH36",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "One Percenter",
@@ -244,9 +180,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH42",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Young and Dangerous",
@@ -254,9 +188,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH55",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Money Monster",
@@ -264,9 +196,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB57",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Evil Dragons",
@@ -274,9 +204,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH19",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Treasure Tarot",
@@ -284,9 +212,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH28",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Egyptian Treasure",
@@ -294,9 +220,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH27",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Kabuki Gold",
@@ -304,9 +228,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH30",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Fortune Alchemy",
@@ -314,9 +236,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH23",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Fengshen Yanyi",
@@ -324,9 +244,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH07",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Festival Lions",
@@ -334,9 +252,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH02",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Joan of Arc",
@@ -344,9 +260,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH12",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Panda's Gold",
@@ -354,9 +268,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH35",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Koi Treasure",
@@ -364,9 +276,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH38",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Chinese Zodiac",
@@ -374,9 +284,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH20",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Huluwa",
@@ -384,9 +292,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH32",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "TanWanLanYue",
@@ -394,9 +300,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH34",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Touchdown Hottie",
@@ -404,9 +308,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH18",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Snow White",
@@ -414,9 +316,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB55",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Lucky Combo",
@@ -424,9 +324,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WC01",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Happy Jump",
@@ -434,9 +332,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH24",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "The Living Dead",
@@ -444,9 +340,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH21",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Bloody Kisses",
@@ -454,9 +348,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH29",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=>  "Witch's Quest",
@@ -464,9 +356,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH22",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Dark Joker",
@@ -474,9 +364,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SC05",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Wild 777",
@@ -484,9 +372,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WA01",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Diamond Queen",
@@ -494,9 +380,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH17",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "The Moon Lady",
@@ -504,9 +388,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH10",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Alice's Adventures",
@@ -514,9 +396,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH11",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "The Storm",
@@ -524,9 +404,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH06",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "King Arthur",
@@ -534,9 +412,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH04",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Mucha Goddesses",
@@ -544,9 +420,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "EP02",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "DragonTiger",
@@ -554,9 +428,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH03",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Real Champions",
@@ -564,9 +436,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB51",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "King of Glory",
@@ -574,9 +444,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "EP03",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Sicbo",
@@ -584,9 +452,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "WH01",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Alibaba",
@@ -594,9 +460,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB47",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Mystic Gems",
@@ -604,9 +468,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB50",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Mr XIN",
@@ -614,9 +476,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB49",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "The Dragon Pearl Gold",
@@ -624,9 +484,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB45",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Legend of the Dragon",
@@ -634,9 +492,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SC03",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Gold Class",
@@ -644,9 +500,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SX02",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Street Battle",
@@ -654,9 +508,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB34",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Ice Crush",
@@ -664,9 +516,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB33",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Candy Quest",
@@ -674,9 +524,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "FRU2",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Fruit Slot 2",
@@ -684,9 +532,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB37",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Shanghai Bund",
@@ -694,9 +540,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "PKBD",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Deuces Wild",
@@ -704,9 +548,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "PKBB",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Bonus Deuces Wild",
@@ -714,9 +556,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB30",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Year of the Monkey",
@@ -724,9 +564,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB28",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "God of Wu Fortune",
@@ -734,9 +572,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB07",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en" => "Chinese Chess Slot",
@@ -744,9 +580,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB09",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Chess Slot",
@@ -754,9 +588,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB10",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Happy Farm",
@@ -764,9 +596,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB08",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Mahjong Slot",
@@ -774,9 +604,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB11",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Summer Campsite",
@@ -784,9 +612,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB01",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Space Odyssey",
@@ -794,9 +620,7 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB06",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
+
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Samurai",
@@ -804,9 +628,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "SB02",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en"=> "Garden Vintage",
@@ -814,9 +635,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "PKBJ",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en" => "Video poker2 (jacks or better)",
@@ -824,9 +642,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "FRU",
-            "g_type"=> "SLOT",
-            "p_code"=> "AG",
-            "p_type"=> "SL",
             'provider_id' => 1,
             'game_type_id' =>10,
             "name_en" => "Fruit Slot",
@@ -844,5 +659,5 @@ class AGGameListSeeder extends Seeder
                 'image' => $value['image']
             ]);
          }
-   } 
+   }
 }
