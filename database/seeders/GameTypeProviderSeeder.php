@@ -27,8 +27,8 @@ class GameTypeProviderSeeder extends Seeder
 
         //BBIN
         $provider2 = Provider::find(2);
-        $bbinImages = ['fishgame2.jpg','live_casino_2.jpeg','lotto1.png','slot_1.png'];
-        $gameTypeId_2 = [3,4,5,10];
+        $bbinImages = ['card_1.png','fishgame2.jpg','live_casino_2.jpeg','lotto1.png','slot_1.png'];
+        $gameTypeId_2 = [1,3,4,5,10];
         $gameTypeData_2=[];
         foreach ($gameTypeId_2 as $index => $gameTypeId) {
             $gameTypeData_2[$gameTypeId] = ['image' => $bbinImages[$index]];

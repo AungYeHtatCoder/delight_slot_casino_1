@@ -119,7 +119,6 @@ class GBGameListSeeder extends Seeder
             [
             "game_id"=>"5054",
             "provider_id" =>  2,
-
             "game_type_id"=>1,
             "name_en"=>"Six Shooter",
             "image"=>"5054.jpg",

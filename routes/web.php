@@ -57,6 +57,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   Route::resource('games', GameController::class);
   Route::resource('text', BannerTextController::class);
   Route::resource('/promotions', PromotionController::class);
+
+
+
+
+
   // master list route
   Route::get('/real-live-master-list', [App\Http\Controllers\Admin\Master\AdminCreateMasterController::class, 'index'])->name('real-live-master-list');
   // master create route
