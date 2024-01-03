@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 
@@ -86,5 +86,5 @@
   </div>
  </div>
 </div>
-@include('slot.layouts.sub-footer')
+@include('user.layouts.sub-footer')
 @endsection

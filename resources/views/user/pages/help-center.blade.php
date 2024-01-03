@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <div style="padding-top: 50px;">
@@ -186,5 +186,5 @@
  <!-- Add more items as needed -->
 
 </div>
-@include('slot.layouts.sub-footer')
+@include('user.layouts.sub-footer')
 @endsection

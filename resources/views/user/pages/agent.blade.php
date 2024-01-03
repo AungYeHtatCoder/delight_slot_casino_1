@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <div style="margin-top: 50px; padding: 10px 10px 100px 10px">
@@ -207,6 +207,6 @@
   </div>
  </div>
 
- @include('slot.layouts.sub-footer')
+ @include('user.layouts.sub-footer')
 </div>
 @endsection

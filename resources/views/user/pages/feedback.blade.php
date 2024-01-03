@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <div class="feedback" style="margin-top: 60px; padding: 10px">
@@ -20,5 +20,5 @@
   </div>
  </form>
 </div>
-@include('slot.layouts.sub-footer')
+@include('user.layouts.sub-footer')
 @endsection

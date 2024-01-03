@@ -11,6 +11,7 @@ use App\Services\ApiService;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class GameController extends Controller
 {
@@ -34,7 +35,7 @@ class GameController extends Controller
     {
 
         $endpoint = '/getGameList.aspx';
-        $providerCode = 'K9';
+        $providerCode = 'G8';
         $signatureString = strtolower($this->operatorCode) . strtoupper($providerCode) . $this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
 
@@ -52,6 +53,7 @@ class GameController extends Controller
         // dd($data['gamelist']);
 
         $games = json_decode($data['gamelist'], true);
+        
         return $games;
 
         // $jsonData = json_decode($responseData, true);
@@ -77,22 +79,22 @@ class GameController extends Controller
         $signatureString = $this->operatorCode.$password.$providerCode.$type.$userName.$this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
 
-
+        
         $parameters = [
             'operatorcode' => config('common.operatorcode'),
             'providercode' => $providerCode,
             'username' => $userName,
             'password' => $password,
             'type' => $type,
-            'gameid' => $gameId,
+            'gameid' => 0,
             'lang' => 'en',
             'html5' => 0,
             'signature' => $signature,
             'blimit' => 0,
         ];
-
+        
         $response = $this->apiService->get($endpoint, $parameters);
-
+  
         $data = $response['gameUrl'];
         return redirect($data);
 

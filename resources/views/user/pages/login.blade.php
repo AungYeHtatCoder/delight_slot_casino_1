@@ -1,4 +1,4 @@
-@include('slot.layouts.head')
+@include('user.layouts.head')
 @yield('style')
 
 <body>

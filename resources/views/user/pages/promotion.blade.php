@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <div class="promotion pb-5" style="margin-top: 50px; padding: 10px">

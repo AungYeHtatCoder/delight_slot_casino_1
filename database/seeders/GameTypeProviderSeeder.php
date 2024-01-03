@@ -17,8 +17,8 @@ class GameTypeProviderSeeder extends Seeder
     {
         //ASIAGAMING
         $provider1 = Provider::find(1);
-        $AgImages = ['fishgame1.png','live_casino_1.jpeg','sport_1.png','slot_5.png'];
-        $gameTypeId_1 = [3, 4, 9, 10];
+        $AgImages = ['sport_2.png','slot_5.png'];
+        $gameTypeId_1 = [3,4];
         foreach ($gameTypeId_1 as $index => $gameTypeId) {
             $gameTypeData_1[$gameTypeId] = ['image' => $AgImages[$index]];
         }
@@ -27,8 +27,8 @@ class GameTypeProviderSeeder extends Seeder
 
         //BBIN
         $provider2 = Provider::find(2);
-        $bbinImages = ['card_1.png','fishgame2.jpg','live_casino_2.jpeg','lotto1.png','slot_1.png'];
-        $gameTypeId_2 = [1,3,4,5,10];
+        $bbinImages = ['live_casino_2.jpeg','slot_1.png'];
+        $gameTypeId_2 = [2,4];
         $gameTypeData_2=[];
         foreach ($gameTypeId_2 as $index => $gameTypeId) {
             $gameTypeData_2[$gameTypeId] = ['image' => $bbinImages[$index]];
@@ -38,8 +38,8 @@ class GameTypeProviderSeeder extends Seeder
 
         //JOKER
         $provider3 = Provider::find(3);
-        $jokerImages = ['fishgame3.png','slot_2.png'];
-        $gameTypeId_3 = [3,10];
+        $jokerImages = ['slot_2.png'];
+        $gameTypeId_3 = [4];
         $gameTypeData_3=[];
         foreach ($gameTypeId_3 as $index => $gameTypeId) {
             $gameTypeData_3[$gameTypeId] = ['image' => $jokerImages[$index]];

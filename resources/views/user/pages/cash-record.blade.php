@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <div class="bet-record" style="margin-top: 60px; padding-top: 10px">
@@ -31,5 +31,5 @@
   <p>‌‌ဒေတာမရှိပါ။</p>
  </div>
 </div>
-@include('slot.layouts.sub-footer')
+@include('user.layouts.sub-footer')
 @endsection

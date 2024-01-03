@@ -1,4 +1,4 @@
-@extends('slot.layouts.app')
+@extends('user.layouts.app')
 
 @section('content')
 <!-- CAROUSEL START -->
@@ -432,5 +432,5 @@
 <!-- FOOTER INFO START-->
 
 <!-- FOOTER INFO END-->
-@include('slot.layouts.sub-footer')
+@include('user.layouts.sub-footer')
 @endsection

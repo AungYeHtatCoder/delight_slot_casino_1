@@ -1,24 +1,24 @@
-@include('slot.layouts.head')
+@include('user.layouts.head')
 @yield('style')
 
 <body>
   <div class="main">
     <!-- NAVBAR START -->
-    @include('slot.layouts.navbar')
+    @include('user.layouts.navbar')
     <!-- NAVBAR END -->
 
     @yield('content')
     <!-- FOOTER START -->
-    @include('slot.layouts.footer')
+    @include('user.layouts.footer')
     <!-- FOOTER END -->
   </div>
 
   <!-- SIDE BAR -->
-  @include('slot.layouts.sidebar')
+  @include('user.layouts.sidebar')
   <!-- SIDE BAR -->
 
   <!-- TOP UP AND WITHDRAW -->
-  @include('slot.layouts.topup-model')
+  @include('user.layouts.topup-model')
 </body>
-@include('slot.layouts.js')
+@include('user.layouts.js')
 @yield('script')

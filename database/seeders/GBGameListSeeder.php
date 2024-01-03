@@ -282,7 +282,6 @@ class GBGameListSeeder extends Seeder
             [
             "game_id"=>"5099",
             "provider_id" =>  2,
-
             "game_type_id"=> 10,
             "name_en"=> "The Wishing Dog",
             "image"=>"5099.jpg",

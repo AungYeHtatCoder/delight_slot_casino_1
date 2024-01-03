@@ -13,7 +13,8 @@ class GetGameTypeController extends Controller
 {
     public function index()
 {
-    abort_if(Gate::denies('game_type_list_access'), Response::HTTP_FORBIDDEN, '403 Forbidden |You cannot  Access this page because you do not have permission');
+    abort_if(Gate::denies('game_type_access'),
+    Response::HTTP_FORBIDDEN, '403 Forbidden |You cannot  Access this page because you do not have permission');
     // Retrieve all game types with their related providers
     $gameTypes = GameType::with('providers')->get();
     return view('admin.slot.game_type.index', compact('gameTypes'));
