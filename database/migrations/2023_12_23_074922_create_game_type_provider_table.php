@@ -16,12 +16,11 @@ return new class extends Migration
             $table->unsignedBigInteger('provider_id');
             $table->unsignedBigInteger('game_type_id');
             $table->string('image');
-            $table->foreign('game_type_id')->references('id')->on('game_types');
-            $table->foreign('provider_id')->references('id')->on('providers');
+            $table->foreign('game_type_id')->references('id')->on('game_types')->onDelete('cascade');
+            $table->foreign('provider_id')->references('id')->on('providers')->onDelete('cascade');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      */

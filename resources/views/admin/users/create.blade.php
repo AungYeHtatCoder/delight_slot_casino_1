@@ -82,7 +82,7 @@
           <form role="form" method="POST" class="text-start" action="{{ route('admin.users.store') }}">
             @csrf
             <div class="custom-form-group">
-              <label for="title">User Name</label>
+              <label for="title">Player Name</label>
               <input type="text" id="name" name="name" class="form-control" value="{{old('name')}}">
               @error('name')
               <span class="d-block text-danger">*{{ $message }}</span>

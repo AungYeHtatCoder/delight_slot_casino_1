@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Helpers\ApiHelper;
+use Exception;
 use App\Models\User;
+use App\Helpers\ApiHelper;
 use App\Models\Admin\Role;
+use App\Services\ApiService;
 use Illuminate\Http\Request;
 use App\Models\Admin\Permission;
-use App\Http\Controllers\Controller;
 use App\Http\Requests\UserRequest;
-use App\Services\ApiService;
-use Exception;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
 //use Gate;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,8 +24,8 @@ class UsersController extends Controller
 
     protected $apiService;
     protected $operatorCode;
-
     protected $secretKey;
+    protected $backendPassword;
 
 
 
@@ -34,6 +35,7 @@ class UsersController extends Controller
         $this->apiService = $apiService;
         $this->operatorCode = config('common.operatorcode');
         $this->secretKey  = config('common.secret_key');
+        $this->backendPassword  = config('common.backend_password');
     }
     /**
      * Display a listing of the resource.
@@ -68,9 +70,8 @@ class UsersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(UserRequest $request)
+    public function storeSophia(UserRequest $request)
     {
-
 
         try {
             $inputs = $request->validated();
@@ -102,6 +103,48 @@ class UsersController extends Controller
         } catch (Exception $e) {
 
             return redirect()->back()->with('error', $e->getMessage());
+        }
+    }
+
+    public function store(Request $request)
+    {
+        try {
+            $operatorcode = $this->operatorCode; // operatorcode
+            $username = $request->name;
+            $secret_key = $this->secretKey;
+            $md5_hash = md5($operatorcode . $username . $secret_key); //signature
+            // change to UpperCase $md5_hash
+            $md5_hash = strtoupper($md5_hash);
+           // $backend_password = 'pass1234';
+            $backend_password = $this->backendPassword;
+
+            $url = 'https://gsmd.336699bet.com/createMember.aspx?operatorcode=' . $operatorcode . '&username=' . $username . '&signature=' . $md5_hash;
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $url);
+            curl_setopt($ch, CURLOPT_USERPWD, $operatorcode . ":" . $backend_password);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+            $output = curl_exec($ch);
+            $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+
+            $user = User::create([
+                'name' => $username,
+                'phone' => $request->phone,
+                'password' => Hash::make($request->password),
+                'agent_id' => Auth::user()->id,
+            ]);
+
+            $agentRole = Role::where('title', 'User')->first();
+            $user->roles()->sync($agentRole->id);
+
+            return redirect()->route('admin.users.index')->with('success', 'Create New Player Successfully!');
+        } catch (\Exception $e) {
+            // Log the exception message
+            Log::error('Error creating user: ' . $e->getMessage());
+
+            // Redirect back with an error message
+            return redirect()->back()->with('error', 'There was an error creating the user. Please try again.');
         }
     }
 

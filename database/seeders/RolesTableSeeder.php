@@ -35,7 +35,7 @@ class RolesTableSeeder extends Seeder
             ],
             [
                 'id'         => 4,
-                'title'      => 'User',
+                'title'      => 'Player',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
