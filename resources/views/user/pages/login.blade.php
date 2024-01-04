@@ -15,16 +15,25 @@
           <form action="">
             <input
               type="text"
-              name="signin_phone"
+              name="login"
               class="form-control w-75 py-2 my-3 mx-auto"
               placeholder="ဖုန်းနံပါတ် (သို့) အီးမေးလ်ဖြည့်ပါ"
             />
+            @error('login')
+                    <span class="text-danger d-block ps-3 pt-2">{{ "The email or phone field is required." }}</span>
+                    @enderror
+            
             <input
               type="password"
-              name="signin_password"
+              name="password" id="password"
               class="form-control w-75 py-2 my-3 mx-auto"
               placeholder="လျှို့ဝှက်နံပါတ်ဖြည့်ပါ"
             />
+            <span class="input-group-text bg-white border border-0"><i class="fas fa-eye text-purple" id="eye" onclick="PwdView()" style="cursor: pointer;"></i></span>
+
+             @error('password')
+                    <span class="text-danger d-block ps-3 pt-2">{{ $message }}</span>
+                    @enderror
   
             <div class="d-flex justify-content-end align-items-center me-5">
               <small
@@ -66,5 +75,24 @@
   
   
 </body>
-@include('slot.layouts.js')
+@include('user.layouts.js')
 @yield('script')
+
+@section('script')
+<script>
+    function PwdView() {
+        var x = document.getElementById("password");
+        var y = document.getElementById("eye");
+
+        if (x.type === "password") {
+            x.type = "text";
+            y.classList.remove('fa-eye');
+            y.classList.add('fa-eye-slash');
+        } else {
+            x.type = "password";
+            y.classList.remove('fa-eye-slash');
+            y.classList.add('fa-eye');
+        }
+    }
+</script>
+@endsection

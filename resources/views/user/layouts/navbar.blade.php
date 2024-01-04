@@ -26,7 +26,21 @@
        <a href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="text-decoration-none mx-2"><img src="{{ asset('slot_app/images/user_avatar.png') }}" alt="" style="border-radius: 50%" /></a>
        <ul class="dropdown-menu dropdown-menu-end dropdowns">
          <li>
-           <h6 class="dropdown-header fs-4">login User Name</h6>
+           {{-- <h6 class="dropdown-header fs-4">login User Name</h6> --}}
+           {{-- login --}}
+            <div class="d-flex justify-content-around align-items-center">
+              @guest
+              <a href="{{ route('login') }}" class="btn-login text-decoration-none d-block">လော့ဂ်အင်</a>
+              <a href="{{ route('register') }}" class="btn-register text-decoration-none mx-2">အကောင့်သစ်ဖွင့်ရန်</a>
+              @else
+              <a href="{{ route('user.user_info') }}" class="btn-login text-decoration-none d-block">{{ Auth::user()->name }}</a>
+
+              <a href="{{ route('logout') }}" class="btn-register text-decoration-none mx-2" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">အကောင့်ထွက်ရန်</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+              </form>
+              @endguest
+            </div>
          </li>
          <li>
            <a class="dropdown-item" href="{{ route('user.user_info')}}"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
