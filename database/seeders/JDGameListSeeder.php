@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Admin\GameList;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,2889 +13,796 @@ class JDGameListSeeder extends Seeder
      */
     public function run(): void
     {
-        [
-            {
-            "g_code": "0_14086",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14086",
-            "g_code_fun_h5": "0_14086",
-            "g_code_web": "0_14086",
-            "g_code_fun_web": "0_14086",
-            "gameName": {
-            "gameName_enus": "Open Sesame Mega",
-            "gameName_zhcn": "Open Sesame Mega"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14086/14086_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14087",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14087",
-            "g_code_fun_h5": "0_14087",
-            "g_code_web": "0_14087",
-            "g_code_fun_web": "0_14087",
-            "gameName": {
-            "gameName_enus": "Pop Pop Candy",
-            "gameName_zhcn": "Pop Pop Candy"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14087/14087_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14085",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14085",
-            "g_code_fun_h5": "0_14085",
-            "g_code_web": "0_14085",
-            "g_code_fun_web": "0_14085",
-            "gameName": {
-            "gameName_enus": "Fruity Bonanza",
-            "gameName_zhcn": "Fruity Bonanza"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14085/14085_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14042",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14042",
-            "g_code_fun_h5": "0_14042",
-            "g_code_web": "0_14042",
-            "g_code_fun_web": "0_14042",
-            "gameName": {
-            "gameName_enus": "Treasure Bowl",
-            "gameName_zhcn": "Treasure Bowl"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14042/14042_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14041",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14041",
-            "g_code_fun_h5": "0_14041",
-            "g_code_web": "0_14041",
-            "g_code_fun_web": "0_14041",
-            "gameName": {
-            "gameName_enus": "Mjolnir",
-            "gameName_zhcn": "Mjolnir"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14041/14041_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14077",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14077",
-            "g_code_fun_h5": "0_14077",
-            "g_code_web": "0_14077",
-            "g_code_fun_web": "0_14077",
-            "gameName": {
-            "gameName_enus": "Trump Card",
-            "gameName_zhcn": "Trump Card"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14077/14077_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14055",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14055",
-            "g_code_fun_h5": "0_14055",
-            "g_code_web": "0_14055",
-            "g_code_fun_web": "0_14055",
-            "gameName": {
-            "gameName_enus": "Kong",
-            "gameName_zhcn": "Kong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14055/14055_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14084",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14084",
-            "g_code_fun_h5": "0_14084",
-            "g_code_web": "0_14084",
-            "g_code_fun_web": "0_14084",
-            "gameName": {
-            "gameName_enus": "CaiShen Coming",
-            "gameName_zhcn": "CaiShen Coming"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14084/14084_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14047",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14047",
-            "g_code_fun_h5": "0_14047",
-            "g_code_web": "0_14047",
-            "g_code_fun_web": "0_14047",
-            "gameName": {
-            "gameName_enus": "Moneybags Man",
-            "gameName_zhcn": "Moneybags Man"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14047/14047_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14045",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14045",
-            "g_code_fun_h5": "0_14045",
-            "g_code_web": "0_14045",
-            "g_code_fun_web": "0_14045",
-            "gameName": {
-            "gameName_enus": "Super Niubi Deluxe",
-            "gameName_zhcn": "Super Niubi Deluxe"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14045/14045_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14065",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14065",
-            "g_code_fun_h5": "0_14065",
-            "g_code_web": "0_14065",
-            "g_code_fun_web": "0_14065",
-            "gameName": {
-            "gameName_enus": "Blossom Of Wealth",
-            "gameName_zhcn": "Blossom Of Wealth"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14065/14065_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14079",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14079",
-            "g_code_fun_h5": "0_14079",
-            "g_code_web": "0_14079",
-            "g_code_fun_web": "0_14079",
-            "gameName": {
-            "gameName_enus": "Moneybags Man 2",
-            "gameName_zhcn": "Moneybags Man 2"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14079/14079_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14036",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14036",
-            "g_code_fun_h5": "0_14036",
-            "g_code_web": "0_14036",
-            "g_code_fun_web": "0_14036",
-            "gameName": {
-            "gameName_enus": "Super Niubi",
-            "gameName_zhcn": "Super Niubi"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14036/14036_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14061",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14061",
-            "g_code_fun_h5": "0_14061",
-            "g_code_web": "0_14061",
-            "g_code_fun_web": "0_14061",
-            "gameName": {
-            "gameName_enus": "Maya Gold Crazy",
-            "gameName_zhcn": "Maya Gold Crazy"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14061/14061_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14080",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14080",
-            "g_code_fun_h5": "0_14080",
-            "g_code_web": "0_14080",
-            "g_code_fun_web": "0_14080",
-            "gameName": {
-            "gameName_enus": "Elemental Link Fire",
-            "gameName_zhcn": "Elemental Link Fire"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14080/14080_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14030",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14030",
-            "g_code_fun_h5": "0_14030",
-            "g_code_web": "0_14030",
-            "g_code_fun_web": "0_14030",
-            "gameName": {
-            "gameName_enus": "Triple King Kong",
-            "gameName_zhcn": "Triple King Kong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14030/14030_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14083",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14083",
-            "g_code_fun_h5": "0_14083",
-            "g_code_web": "0_14083",
-            "g_code_fun_web": "0_14083",
-            "gameName": {
-            "gameName_enus": "CooCoo Farm",
-            "gameName_zhcn": "CooCoo Farm"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14083/14083_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14082",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14082",
-            "g_code_fun_h5": "0_14082",
-            "g_code_web": "0_14082",
-            "g_code_fun_web": "0_14082",
-            "gameName": {
-            "gameName_enus": "Elemental Link Water",
-            "gameName_zhcn": "Elemental Link Water"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14082/14082_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14081",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14081",
-            "g_code_fun_h5": "0_14081",
-            "g_code_web": "0_14081",
-            "g_code_fun_web": "0_14081",
-            "gameName": {
-            "gameName_enus": "Birds Party Deluxe",
-            "gameName_zhcn": "Birds Party Deluxe"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14081/14081_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14075",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14075",
-            "g_code_fun_h5": "0_14075",
-            "g_code_web": "0_14075",
-            "g_code_fun_web": "0_14075",
-            "gameName": {
-            "gameName_enus": "Fortune Neko",
-            "gameName_zhcn": "Fortune Neko"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14075/14075_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14070",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14070",
-            "g_code_fun_h5": "0_14070",
-            "g_code_web": "0_14070",
-            "g_code_fun_web": "0_14070",
-            "gameName": {
-            "gameName_enus": "Book of Mystery",
-            "gameName_zhcn": "Book of Mystery"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14070/14070_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14068",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14068",
-            "g_code_fun_h5": "0_14068",
-            "g_code_web": "0_14068",
-            "g_code_fun_web": "0_14068",
-            "gameName": {
-            "gameName_enus": "Prosperity Tiger",
-            "gameName_zhcn": "Prosperity Tiger"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14068/14068_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14067",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14067",
-            "g_code_fun_h5": "0_14067",
-            "g_code_web": "0_14067",
-            "g_code_fun_web": "0_14067",
-            "gameName": {
-            "gameName_enus": "Glamorous Girl",
-            "gameName_zhcn": "Glamorous Girl"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14067/14067_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14064",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14064",
-            "g_code_fun_h5": "0_14064",
-            "g_code_web": "0_14064",
-            "g_code_fun_web": "0_14064",
-            "gameName": {
-            "gameName_enus": "Boom Fiesta",
-            "gameName_zhcn": "Boom Fiesta"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14064/14064_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14063",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14063",
-            "g_code_fun_h5": "0_14063",
-            "g_code_web": "0_14063",
-            "g_code_fun_web": "0_14063",
-            "gameName": {
-            "gameName_enus": "Big Three Dragons",
-            "gameName_zhcn": "Big Three Dragons"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14063/14063_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14060",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14060",
-            "g_code_fun_h5": "0_14060",
-            "g_code_web": "0_14060",
-            "g_code_fun_web": "0_14060",
-            "gameName": {
-            "gameName_enus": "Lantern Wealth",
-            "gameName_zhcn": "Lantern Wealth"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14060/14060_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14059",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14059",
-            "g_code_fun_h5": "0_14059",
-            "g_code_web": "0_14059",
-            "g_code_fun_web": "0_14059",
-            "gameName": {
-            "gameName_enus": "Marvelous IV",
-            "gameName_zhcn": "Marvelous IV"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14059/14059_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14058",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14058",
-            "g_code_fun_h5": "0_14058",
-            "g_code_web": "0_14058",
-            "g_code_fun_web": "0_14058",
-            "gameName": {
-            "gameName_enus": "Wonder Elephant",
-            "gameName_zhcn": "Wonder Elephant"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14058/14058_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14054",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14054",
-            "g_code_fun_h5": "0_14054",
-            "g_code_web": "0_14054",
-            "g_code_fun_web": "0_14054",
-            "gameName": {
-            "gameName_enus": "Lucky Diamond",
-            "gameName_zhcn": "Lucky Diamond"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14054/14054_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14053",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14053",
-            "g_code_fun_h5": "0_14053",
-            "g_code_web": "0_14053",
-            "g_code_fun_web": "0_14053",
-            "gameName": {
-            "gameName_enus": "Spindrift 2",
-            "gameName_zhcn": "Spindrift 2"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14053/14053_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14052",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14052",
-            "g_code_fun_h5": "0_14052",
-            "g_code_web": "0_14052",
-            "g_code_fun_web": "0_14052",
-            "gameName": {
-            "gameName_enus": "Jungle Jungle",
-            "gameName_zhcn": "Jungle Jungle"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14052/14052_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14051",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14051",
-            "g_code_fun_h5": "0_14051",
-            "g_code_web": "0_14051",
-            "g_code_fun_web": "0_14051",
-            "gameName": {
-            "gameName_enus": "Dragons Gate",
-            "gameName_zhcn": "Dragons Gate"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14051/14051_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14050",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14050",
-            "g_code_fun_h5": "0_14050",
-            "g_code_web": "0_14050",
-            "g_code_fun_web": "0_14050",
-            "gameName": {
-            "gameName_enus": "Spindrift",
-            "gameName_zhcn": "Spindrift"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14050/14050_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14048",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14048",
-            "g_code_fun_h5": "0_14048",
-            "g_code_web": "0_14048",
-            "g_code_fun_web": "0_14048",
-            "gameName": {
-            "gameName_enus": "Double Wilds",
-            "gameName_zhcn": "Double Wilds"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14048/14048_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14046",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14046",
-            "g_code_fun_h5": "0_14046",
-            "g_code_web": "0_14046",
-            "g_code_fun_web": "0_14046",
-            "gameName": {
-            "gameName_enus": "Miner Babe",
-            "gameName_zhcn": "Miner Babe"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14046/14046_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14044",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14044",
-            "g_code_fun_h5": "0_14044",
-            "g_code_web": "0_14044",
-            "g_code_fun_web": "0_14044",
-            "gameName": {
-            "gameName_enus": "Funky King Kong",
-            "gameName_zhcn": "Funky King Kong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14044/14044_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14043",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14043",
-            "g_code_fun_h5": "0_14043",
-            "g_code_web": "0_14043",
-            "g_code_fun_web": "0_14043",
-            "gameName": {
-            "gameName_enus": "Golden Disco",
-            "gameName_zhcn": "Golden Disco"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14043/14043_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14040",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14040",
-            "g_code_fun_h5": "0_14040",
-            "g_code_web": "0_14040",
-            "g_code_fun_web": "0_14040",
-            "gameName": {
-            "gameName_enus": "Pirate Treasure",
-            "gameName_zhcn": "Pirate Treasure"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14040/14040_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14039",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14039",
-            "g_code_fun_h5": "0_14039",
-            "g_code_web": "0_14039",
-            "g_code_fun_web": "0_14039",
-            "gameName": {
-            "gameName_enus": "Fortune Treasure",
-            "gameName_zhcn": "Fortune Treasure"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14039/14039_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14038",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14038",
-            "g_code_fun_h5": "0_14038",
-            "g_code_web": "0_14038",
-            "g_code_fun_web": "0_14038",
-            "gameName": {
-            "gameName_enus": "Egypt Treasure",
-            "gameName_zhcn": "Egypt Treasure"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14038/14038_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14035",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14035",
-            "g_code_fun_h5": "0_14035",
-            "g_code_web": "0_14035",
-            "g_code_fun_web": "0_14035",
-            "gameName": {
-            "gameName_enus": "Dragons World",
-            "gameName_zhcn": "Dragons World"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14035/14035_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14034",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14034",
-            "g_code_fun_h5": "0_14034",
-            "g_code_web": "0_14034",
-            "g_code_fun_web": "0_14034",
-            "gameName": {
-            "gameName_enus": "Go Lai Fu",
-            "gameName_zhcn": "Go Lai Fu"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14034/14034_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14033",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14033",
-            "g_code_fun_h5": "0_14033",
-            "g_code_web": "0_14033",
-            "g_code_fun_web": "0_14033",
-            "gameName": {
-            "gameName_enus": "Birds Party",
-            "gameName_zhcn": "Birds Party"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14033/14033_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14029",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14029",
-            "g_code_fun_h5": "0_14029",
-            "g_code_web": "0_14029",
-            "g_code_fun_web": "0_14029",
-            "gameName": {
-            "gameName_enus": "Orient Animals",
-            "gameName_zhcn": "Orient Animals"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14029/14029_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14027",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14027",
-            "g_code_fun_h5": "0_14027",
-            "g_code_web": "0_14027",
-            "g_code_fun_web": "0_14027",
-            "gameName": {
-            "gameName_enus": "Lucky Seven",
-            "gameName_zhcn": "Lucky Seven"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14027/14027_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14025",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14025",
-            "g_code_fun_h5": "0_14025",
-            "g_code_web": "0_14025",
-            "g_code_fun_web": "0_14025",
-            "gameName": {
-            "gameName_enus": "Lucky Racing",
-            "gameName_zhcn": "Lucky Racing"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14025/14025_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14023",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14023",
-            "g_code_fun_h5": "0_14023",
-            "g_code_web": "0_14023",
-            "g_code_fun_web": "0_14023",
-            "gameName": {
-            "gameName_enus": "Poker King",
-            "gameName_zhcn": "Poker King"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14023/14023_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14022",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14022",
-            "g_code_fun_h5": "0_14022",
-            "g_code_web": "0_14022",
-            "g_code_fun_web": "0_14022",
-            "gameName": {
-            "gameName_enus": "Mining Upstart",
-            "gameName_zhcn": "Mining Upstart"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14022/14022_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14021",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14021",
-            "g_code_fun_h5": "0_14021",
-            "g_code_web": "0_14021",
-            "g_code_fun_web": "0_14021",
-            "gameName": {
-            "gameName_enus": "Rolling In Money",
-            "gameName_zhcn": "Rolling In Money"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14021/14021_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14018",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14018",
-            "g_code_fun_h5": "0_14018",
-            "g_code_web": "0_14018",
-            "g_code_fun_web": "0_14018",
-            "gameName": {
-            "gameName_enus": "DaJi",
-            "gameName_zhcn": "DaJi"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14018/14018_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14016",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14016",
-            "g_code_fun_h5": "0_14016",
-            "g_code_web": "0_14016",
-            "g_code_fun_web": "0_14016",
-            "gameName": {
-            "gameName_enus": "Kingsman",
-            "gameName_zhcn": "Kingsman"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14016/14016_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14012",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14012",
-            "g_code_fun_h5": "0_14012",
-            "g_code_web": "0_14012",
-            "g_code_fun_web": "0_14012",
-            "gameName": {
-            "gameName_enus": "Street Fighter",
-            "gameName_zhcn": "Street Fighter"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14012/14012_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14010",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14010",
-            "g_code_fun_h5": "0_14010",
-            "g_code_web": "0_14010",
-            "g_code_fun_web": "0_14010",
-            "gameName": {
-            "gameName_enus": "Dragon",
-            "gameName_zhcn": "Dragon"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14010/14010_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14008",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14008",
-            "g_code_fun_h5": "0_14008",
-            "g_code_web": "0_14008",
-            "g_code_fun_web": "0_14008",
-            "gameName": {
-            "gameName_enus": "Dragon Warrior",
-            "gameName_zhcn": "Dragon Warrior"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14008/14008_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14007",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14007",
-            "g_code_fun_h5": "0_14007",
-            "g_code_web": "0_14007",
-            "g_code_fun_web": "0_14007",
-            "gameName": {
-            "gameName_enus": "One Punch Man",
-            "gameName_zhcn": "One Punch Man"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14007/14007_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14006",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14006",
-            "g_code_fun_h5": "0_14006",
-            "g_code_web": "0_14006",
-            "g_code_fun_web": "0_14006",
-            "gameName": {
-            "gameName_enus": "Billionaire",
-            "gameName_zhcn": "Billionaire"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14006/14006_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14005",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14005",
-            "g_code_fun_h5": "0_14005",
-            "g_code_web": "0_14005",
-            "g_code_fun_web": "0_14005",
-            "gameName": {
-            "gameName_enus": "Mr. Bao",
-            "gameName_zhcn": "Mr. Bao"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14005/14005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_14003",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_14003",
-            "g_code_fun_h5": "0_14003",
-            "g_code_web": "0_14003",
-            "g_code_fun_web": "0_14003",
-            "gameName": {
-            "gameName_enus": "Panda Panda",
-            "gameName_zhcn": "Panda Panda"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/14003/14003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_15012",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_15012",
-            "g_code_fun_h5": "0_15012",
-            "g_code_web": "0_15012",
-            "g_code_fun_web": "0_15012",
-            "gameName": {
-            "gameName_enus": "Legendary 5",
-            "gameName_zhcn": "Legendary 5"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/15012/15012_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_15010",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_15010",
-            "g_code_fun_h5": "0_15010",
-            "g_code_web": "0_15010",
-            "g_code_fun_web": "0_15010",
-            "gameName": {
-            "gameName_enus": "Chef Panda",
-            "gameName_zhcn": "Chef Panda"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/15010/15010_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_15005",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_15005",
-            "g_code_fun_h5": "0_15005",
-            "g_code_web": "0_15005",
-            "g_code_fun_web": "0_15005",
-            "gameName": {
-            "gameName_enus": "Lucky Fuwa",
-            "gameName_zhcn": "Lucky Fuwa"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/15005/15005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_15002",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_15002",
-            "g_code_fun_h5": "0_15002",
-            "g_code_web": "0_15002",
-            "g_code_fun_web": "0_15002",
-            "gameName": {
-            "gameName_enus": "Monkey King",
-            "gameName_zhcn": "Monkey King"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/15002/15002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_15001",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_15001",
-            "g_code_fun_h5": "0_15001",
-            "g_code_web": "0_15001",
-            "g_code_fun_web": "0_15001",
-            "gameName": {
-            "gameName_enus": "Rooster In Love",
-            "gameName_zhcn": "Rooster In Love"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/15001/15001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8020",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8020",
-            "g_code_fun_h5": "0_8020",
-            "g_code_web": "0_8020",
-            "g_code_fun_web": "0_8020",
-            "gameName": {
-            "gameName_enus": "Open Sesame",
-            "gameName_zhcn": "Open Sesame"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8020/8020_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8048",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8048",
-            "g_code_fun_h5": "0_8048",
-            "g_code_web": "0_8048",
-            "g_code_fun_web": "0_8048",
-            "gameName": {
-            "gameName_enus": "OpenSesame II",
-            "gameName_zhcn": "OpenSesame II"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8048/8048_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8003",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8003",
-            "g_code_fun_h5": "0_8003",
-            "g_code_web": "0_8003",
-            "g_code_fun_web": "0_8003",
-            "gameName": {
-            "gameName_enus": "Winning Mask",
-            "gameName_zhcn": "Winning Mask"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8003/8003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8047",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8047",
-            "g_code_fun_h5": "0_8047",
-            "g_code_web": "0_8047",
-            "g_code_fun_web": "0_8047",
-            "gameName": {
-            "gameName_enus": "Winning Mask II",
-            "gameName_zhcn": "Winning Mask II"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8047/8047_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8051",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8051",
-            "g_code_fun_h5": "0_8051",
-            "g_code_web": "0_8051",
-            "g_code_fun_web": "0_8051",
-            "gameName": {
-            "gameName_enus": "Xi Yang Yang",
-            "gameName_zhcn": "Xi Yang Yang"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8051/8051_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8050",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8050",
-            "g_code_fun_h5": "0_8050",
-            "g_code_web": "0_8050",
-            "g_code_fun_web": "0_8050",
-            "gameName": {
-            "gameName_enus": "Fortune Horse",
-            "gameName_zhcn": "Fortune Horse"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8050/8050_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8049",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8049",
-            "g_code_fun_h5": "0_8049",
-            "g_code_web": "0_8049",
-            "g_code_fun_web": "0_8049",
-            "gameName": {
-            "gameName_enus": "Flirting Scholar Tang II",
-            "gameName_zhcn": "Flirting Scholar Tang II"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8049/8049_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8046",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8046",
-            "g_code_fun_h5": "0_8046",
-            "g_code_web": "0_8046",
-            "g_code_fun_web": "0_8046",
-            "gameName": {
-            "gameName_enus": "Guan Gong",
-            "gameName_zhcn": "Guan Gong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8046/8046_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8044",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8044",
-            "g_code_fun_h5": "0_8044",
-            "g_code_web": "0_8044",
-            "g_code_fun_web": "0_8044",
-            "gameName": {
-            "gameName_enus": "Beauty And The Kingdom",
-            "gameName_zhcn": "Beauty And The Kingdom"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8044/8044_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8035",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8035",
-            "g_code_fun_h5": "0_8035",
-            "g_code_web": "0_8035",
-            "g_code_fun_web": "0_8035",
-            "gameName": {
-            "gameName_enus": "Lucky Phoenix",
-            "gameName_zhcn": "Lucky Phoenix"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8035/8035_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8028",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8028",
-            "g_code_fun_h5": "0_8028",
-            "g_code_web": "0_8028",
-            "g_code_fun_web": "0_8028",
-            "gameName": {
-            "gameName_enus": "Lucky Miner",
-            "gameName_zhcn": "Lucky Miner"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8028/8028_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8023",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8023",
-            "g_code_fun_h5": "0_8023",
-            "g_code_web": "0_8023",
-            "g_code_fun_web": "0_8023",
-            "gameName": {
-            "gameName_enus": "Olympian Temple",
-            "gameName_zhcn": "Olympian Temple"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8023/8023_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8022",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8022",
-            "g_code_fun_h5": "0_8022",
-            "g_code_web": "0_8022",
-            "g_code_fun_web": "0_8022",
-            "gameName": {
-            "gameName_enus": "MahJong",
-            "gameName_zhcn": "MahJong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8022/8022_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8021",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8021",
-            "g_code_fun_h5": "0_8021",
-            "g_code_web": "0_8021",
-            "g_code_fun_web": "0_8021",
-            "gameName": {
-            "gameName_enus": "Banana Saga",
-            "gameName_zhcn": "Banana Saga"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8021/8021_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8019",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8019",
-            "g_code_fun_h5": "0_8019",
-            "g_code_web": "0_8019",
-            "g_code_fun_web": "0_8019",
-            "gameName": {
-            "gameName_enus": "Four Treasures",
-            "gameName_zhcn": "Four Treasures"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8019/8019_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8018",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8018",
-            "g_code_fun_h5": "0_8018",
-            "g_code_web": "0_8018",
-            "g_code_fun_web": "0_8018",
-            "gameName": {
-            "gameName_enus": "Napoleon",
-            "gameName_zhcn": "Napoleon"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8018/8018_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8017",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8017",
-            "g_code_fun_h5": "0_8017",
-            "g_code_web": "0_8017",
-            "g_code_fun_web": "0_8017",
-            "gameName": {
-            "gameName_enus": "New Year",
-            "gameName_zhcn": "New Year"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8017/8017_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8015",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8015",
-            "g_code_fun_h5": "0_8015",
-            "g_code_web": "0_8015",
-            "g_code_fun_web": "0_8015",
-            "gameName": {
-            "gameName_enus": "Moonlight Treasure",
-            "gameName_zhcn": "Moonlight Treasure"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8015/8015_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8014",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8014",
-            "g_code_fun_h5": "0_8014",
-            "g_code_web": "0_8014",
-            "g_code_fun_web": "0_8014",
-            "gameName": {
-            "gameName_enus": "Lucky Lion",
-            "gameName_zhcn": "Lucky Lion"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8014/8014_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8007",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8007",
-            "g_code_fun_h5": "0_8007",
-            "g_code_web": "0_8007",
-            "g_code_fun_web": "0_8007",
-            "gameName": {
-            "gameName_enus": "Lucky Qilin",
-            "gameName_zhcn": "Lucky Qilin"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8007/8007_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8006",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8006",
-            "g_code_fun_h5": "0_8006",
-            "g_code_web": "0_8006",
-            "g_code_fun_web": "0_8006",
-            "gameName": {
-            "gameName_enus": "Formosa Bear",
-            "gameName_zhcn": "Formosa Bear"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8006/8006_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8005",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8005",
-            "g_code_fun_h5": "0_8005",
-            "g_code_web": "0_8005",
-            "g_code_fun_web": "0_8005",
-            "gameName": {
-            "gameName_enus": "Llama Adventure",
-            "gameName_zhcn": "Llama Adventure"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8005/8005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8004",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8004",
-            "g_code_fun_h5": "0_8004",
-            "g_code_web": "0_8004",
-            "g_code_fun_web": "0_8004",
-            "gameName": {
-            "gameName_enus": "Wu Kong",
-            "gameName_zhcn": "Wu Kong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8004/8004_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8002",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8002",
-            "g_code_fun_h5": "0_8002",
-            "g_code_web": "0_8002",
-            "g_code_fun_web": "0_8002",
-            "gameName": {
-            "gameName_enus": "Flirting Scholar Tang",
-            "gameName_zhcn": "Flirting Scholar Tang"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8002/8002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "0_8001",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "0_8001",
-            "g_code_fun_h5": "0_8001",
-            "g_code_web": "0_8001",
-            "g_code_fun_web": "0_8001",
-            "gameName": {
-            "gameName_enus": "Lucky Dragons",
-            "gameName_zhcn": "Lucky Dragons"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/8001/8001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7009",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7009",
-            "g_code_fun_h5": "7_7009",
-            "g_code_web": "7_7009",
-            "g_code_fun_web": "7_7009",
-            "gameName": {
-            "gameName_enus": "Fishing Legend",
-            "gameName_zhcn": "Fishing Legend"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7009/7009_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7004",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7004",
-            "g_code_fun_h5": "7_7004",
-            "g_code_web": "7_7004",
-            "g_code_fun_web": "7_7004",
-            "gameName": {
-            "gameName_enus": "Shade Dragons Fishing",
-            "gameName_zhcn": "Shade Dragons Fishing"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7004/7004_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7003",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7003",
-            "g_code_fun_h5": "7_7003",
-            "g_code_web": "7_7003",
-            "g_code_fun_web": "7_7003",
-            "gameName": {
-            "gameName_enus": "CaiShen Fishing",
-            "gameName_zhcn": "CaiShen Fishing"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7003/7003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7006",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7006",
-            "g_code_fun_h5": "7_7006",
-            "g_code_web": "7_7006",
-            "g_code_fun_web": "7_7006",
-            "gameName": {
-            "gameName_enus": "DragonMaster",
-            "gameName_zhcn": "DragonMaster"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7006/7006_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7005",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7005",
-            "g_code_fun_h5": "7_7005",
-            "g_code_web": "7_7005",
-            "g_code_fun_web": "7_7005",
-            "gameName": {
-            "gameName_enus": "Fishing YiLuFa",
-            "gameName_zhcn": "Fishing YiLuFa"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7005/7005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7002",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7002",
-            "g_code_fun_h5": "7_7002",
-            "g_code_web": "7_7002",
-            "g_code_fun_web": "7_7002",
-            "gameName": {
-            "gameName_enus": "Dragon Fishing II",
-            "gameName_zhcn": "Dragon Fishing II"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7002/7002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7001",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7001",
-            "g_code_fun_h5": "7_7001",
-            "g_code_web": "7_7001",
-            "g_code_fun_web": "7_7001",
-            "gameName": {
-            "gameName_enus": "Dragon Fishing",
-            "gameName_zhcn": "Dragon Fishing"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7001/7001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "7_7007",
-            "g_type": "FISH",
-            "p_code": "JD",
-            "p_type": "FH",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "7_7007",
-            "g_code_fun_h5": "7_7007",
-            "g_code_web": "7_7007",
-            "g_code_fun_web": "7_7007",
-            "gameName": {
-            "gameName_enus": "Fishing Disco",
-            "gameName_zhcn": "Fishing Disco"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/7007/7007_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9017",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9017",
-            "g_code_fun_h5": "9_9017",
-            "g_code_web": "9_9017",
-            "g_code_fun_web": "9_9017",
-            "gameName": {
-            "gameName_enus": "HiLo",
-            "gameName_zhcn": "HiLo"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9017/9017_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9016",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9016",
-            "g_code_fun_h5": "9_9016",
-            "g_code_web": "9_9016",
-            "g_code_fun_web": "9_9016",
-            "gameName": {
-            "gameName_enus": "Goal",
-            "gameName_zhcn": "Goal"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9016/9016_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9015",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9015",
-            "g_code_fun_h5": "9_9015",
-            "g_code_web": "9_9015",
-            "g_code_fun_web": "9_9015",
-            "gameName": {
-            "gameName_enus": "Firework Burst",
-            "gameName_zhcn": "Firework Burst"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9015/9015_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9014",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9014",
-            "g_code_fun_h5": "9_9014",
-            "g_code_web": "9_9014",
-            "g_code_fun_web": "9_9014",
-            "gameName": {
-            "gameName_enus": "Mines",
-            "gameName_zhcn": "Mines"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9014/9014_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9012",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9012",
-            "g_code_fun_h5": "9_9012",
-            "g_code_web": "9_9012",
-            "g_code_fun_web": "9_9012",
-            "gameName": {
-            "gameName_enus": "Jogo Do Bicho",
-            "gameName_zhcn": "Jogo Do Bicho"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9012/9012_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9013",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9013",
-            "g_code_fun_h5": "9_9013",
-            "g_code_web": "9_9013",
-            "g_code_fun_web": "9_9013",
-            "gameName": {
-            "gameName_enus": "Galaxy Burst",
-            "gameName_zhcn": "Galaxy Burst"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9013/9013_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9011",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9011",
-            "g_code_fun_h5": "9_9011",
-            "g_code_web": "9_9011",
-            "g_code_fun_web": "9_9011",
-            "gameName": {
-            "gameName_enus": "CaiShen Party",
-            "gameName_zhcn": "CaiShen Party"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9011/9011_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9010",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9010",
-            "g_code_fun_h5": "9_9010",
-            "g_code_web": "9_9010",
-            "g_code_fun_web": "9_9010",
-            "gameName": {
-            "gameName_enus": "Lucky Color Game",
-            "gameName_zhcn": "Lucky Color Game"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9010/9010_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9009",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9009",
-            "g_code_fun_h5": "9_9009",
-            "g_code_web": "9_9009",
-            "g_code_fun_web": "9_9009",
-            "gameName": {
-            "gameName_enus": "King Of Football",
-            "gameName_zhcn": "King Of Football"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9009/9009_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9008",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9008",
-            "g_code_fun_h5": "9_9008",
-            "g_code_web": "9_9008",
-            "g_code_fun_web": "9_9008",
-            "gameName": {
-            "gameName_enus": "Crazy King Kong",
-            "gameName_zhcn": "Crazy King Kong"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9008/9008_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9007",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9007",
-            "g_code_fun_h5": "9_9007",
-            "g_code_web": "9_9007",
-            "g_code_fun_web": "9_9007",
-            "gameName": {
-            "gameName_enus": "Super Super Fruit",
-            "gameName_zhcn": "Super Super Fruit"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9007/9007_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9006",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9006",
-            "g_code_fun_h5": "9_9006",
-            "g_code_web": "9_9006",
-            "g_code_fun_web": "9_9006",
-            "gameName": {
-            "gameName_enus": "Huaguoshan Legends",
-            "gameName_zhcn": "Huaguoshan Legends"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9006/9006_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9004",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9004",
-            "g_code_fun_h5": "9_9004",
-            "g_code_web": "9_9004",
-            "g_code_fun_web": "9_9004",
-            "gameName": {
-            "gameName_enus": "Beer Tycoon",
-            "gameName_zhcn": "Beer Tycoon"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9004/9004_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9002",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9002",
-            "g_code_fun_h5": "9_9002",
-            "g_code_web": "9_9002",
-            "g_code_fun_web": "9_9002",
-            "gameName": {
-            "gameName_enus": "Happy New Year",
-            "gameName_zhcn": "Happy New Year"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9002/9002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9001",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9001",
-            "g_code_fun_h5": "9_9001",
-            "g_code_web": "9_9001",
-            "g_code_fun_web": "9_9001",
-            "gameName": {
-            "gameName_enus": "Classic Mario",
-            "gameName_zhcn": "Classic Mario"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9001/9001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "9_9003",
-            "g_type": "OTHER",
-            "p_code": "JD",
-            "p_type": "OT",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "9_9003",
-            "g_code_fun_h5": "9_9003",
-            "g_code_web": "9_9003",
-            "g_code_fun_web": "9_9003",
-            "gameName": {
-            "gameName_enus": "Birds And Animals",
-            "gameName_zhcn": "Birds And Animals"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/9003/9003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "12_12003",
-            "g_type": "LOTTERY",
-            "p_code": "JD",
-            "p_type": "LK",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "12_12003",
-            "g_code_fun_h5": "12_12003",
-            "g_code_web": "12_12003",
-            "g_code_fun_web": "12_12003",
-            "gameName": {
-            "gameName_enus": "Happy Lottery",
-            "gameName_zhcn": "Happy Lottery"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/12003/12003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "12_12002",
-            "g_type": "LOTTERY",
-            "p_code": "JD",
-            "p_type": "LK",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "12_12002",
-            "g_code_fun_h5": "12_12002",
-            "g_code_web": "12_12002",
-            "g_code_fun_web": "12_12002",
-            "gameName": {
-            "gameName_enus": "Gold Rooster Lottery",
-            "gameName_zhcn": "Gold Rooster Lottery"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/12002/12002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "12_12001",
-            "g_type": "LOTTERY",
-            "p_code": "JD",
-            "p_type": "LK",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "12_12001",
-            "g_code_fun_h5": "12_12001",
-            "g_code_web": "12_12001",
-            "g_code_fun_web": "12_12001",
-            "gameName": {
-            "gameName_enus": "CaiShen Bingo",
-            "gameName_zhcn": "CaiShen Bingo"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/12001/12001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18026",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18026",
-            "g_code_fun_h5": "18_18026",
-            "g_code_web": "18_18026",
-            "g_code_fun_web": "18_18026",
-            "gameName": {
-            "gameName_enus": "Dragon Tiger - Joker Bonus",
-            "gameName_zhcn": "Dragon Tiger - Joker Bonus"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18026/18026_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18022",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18022",
-            "g_code_fun_h5": "18_18022",
-            "g_code_web": "18_18022",
-            "g_code_fun_web": "18_18022",
-            "gameName": {
-            "gameName_enus": "Poker Racing",
-            "gameName_zhcn": "Poker Racing"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18022/18022_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18005",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18005",
-            "g_code_fun_h5": "18_18005",
-            "g_code_web": "18_18005",
-            "g_code_fun_web": "18_18005",
-            "gameName": {
-            "gameName_enus": "NewQiangZhuangLiuNiu",
-            "gameName_zhcn": "NewQiangZhuangLiuNiu"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18005/18005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18013",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18013",
-            "g_code_fun_h5": "18_18013",
-            "g_code_web": "18_18013",
-            "g_code_fun_web": "18_18013",
-            "gameName": {
-            "gameName_enus": "Tong bi Liu Niu",
-            "gameName_zhcn": "Tong bi Liu Niu"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18013/18013_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18004",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18004",
-            "g_code_fun_h5": "18_18004",
-            "g_code_web": "18_18004",
-            "g_code_fun_web": "18_18004",
-            "gameName": {
-            "gameName_enus": "YaZhuangAceyDeucey",
-            "gameName_zhcn": "YaZhuangAceyDeucey"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18004/18004_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18002",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18002",
-            "g_code_fun_h5": "18_18002",
-            "g_code_web": "18_18002",
-            "g_code_fun_web": "18_18002",
-            "gameName": {
-            "gameName_enus": "QiangZhuangNiuNiu",
-            "gameName_zhcn": "QiangZhuangNiuNiu"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18002/18002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "18_18001",
-            "g_type": "CARD",
-            "p_code": "JD",
-            "p_type": "CB",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "18_18001",
-            "g_code_fun_h5": "18_18001",
-            "g_code_web": "18_18001",
-            "g_code_fun_web": "18_18001",
-            "gameName": {
-            "gameName_enus": "TongbiNiuNiu",
-            "gameName_zhcn": "TongbiNiuNiu"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/18001/18001_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22009",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22009",
-            "g_code_fun_h5": "22_22009",
-            "g_code_web": "22_22009",
-            "g_code_fun_web": "22_22009",
-            "gameName": {
-            "gameName_enus": "Hotline",
-            "gameName_zhcn": "Hotline"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22009/22009_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22008",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22008",
-            "g_code_fun_h5": "22_22008",
-            "g_code_web": "22_22008",
-            "g_code_fun_web": "22_22008",
-            "gameName": {
-            "gameName_enus": "Mini Roulette",
-            "gameName_zhcn": "Mini Roulette"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22008/22008_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22007",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22007",
-            "g_code_fun_h5": "22_22007",
-            "g_code_web": "22_22007",
-            "g_code_fun_web": "22_22007",
-            "gameName": {
-            "gameName_enus": "Keno",
-            "gameName_zhcn": "Keno"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22007/22007_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22006",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22006",
-            "g_code_fun_h5": "22_22006",
-            "g_code_web": "22_22006",
-            "g_code_fun_web": "22_22006",
-            "gameName": {
-            "gameName_enus": "Hilo",
-            "gameName_zhcn": "Hilo"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22006/22006_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22005",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22005",
-            "g_code_fun_h5": "22_22005",
-            "g_code_web": "22_22005",
-            "g_code_fun_web": "22_22005",
-            "gameName": {
-            "gameName_enus": "Mines",
-            "gameName_zhcn": "Mines"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22005/22005_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22004",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22004",
-            "g_code_fun_h5": "22_22004",
-            "g_code_web": "22_22004",
-            "g_code_fun_web": "22_22004",
-            "gameName": {
-            "gameName_enus": "Plinko",
-            "gameName_zhcn": "Plinko"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22004/22004_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22003",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22003",
-            "g_code_fun_h5": "22_22003",
-            "g_code_web": "22_22003",
-            "g_code_fun_web": "22_22003",
-            "gameName": {
-            "gameName_enus": "Goal",
-            "gameName_zhcn": "Goal"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22003/22003_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22002",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22002",
-            "g_code_fun_h5": "22_22002",
-            "g_code_web": "22_22002",
-            "g_code_fun_web": "22_22002",
-            "gameName": {
-            "gameName_enus": "Dice",
-            "gameName_zhcn": "Dice"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22002/22002_en.png",
-            "displaydemo": ""
-            },
-            {
-            "g_code": "22_22001",
-            "g_type": "SLOT",
-            "p_code": "JD",
-            "p_type": "SL",
-            "h5": "1",
-            "web": "-1",
-            "h5_fun": "-1",
-            "web_fun": "-1",
-            "status": "1",
-            "g_progressive": "-1",
-            "g_code_h5": "22_22001",
-            "g_code_fun_h5": "22_22001",
-            "g_code_web": "22_22001",
-            "g_code_fun_web": "22_22001",
-            "gameName": {
-            "gameName_enus": "Aviator",
-            "gameName_zhcn": "Aviator"
-            },
-            "imgFileName": "https://dl.lfyanwei.com/jdb-assetsv3/games/22001/22001_en.png",
-            "displaydemo": ""
-            }
+        $data =  [
+            [
+                "game_id" => "0_14086",
+                "provider_id" => 5,
+                'game_type_id' => 4,
+                "name_en" => "Open Sesame Mega",
+                "image" => "14086_en.png",
+
+            ],
+            [
+                "game_id" => "0_14087",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Pop Pop Candy",
+                "image" => "14087_en.png",
+
+            ],
+            [
+                "game_id" => "0_14085",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Fruity Bonanza",
+                "image" => "14085_en.png",
+
+            ],
+            [
+                "game_id" => "0_14042",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Treasure Bowl",
+                "image" => "14042_en.png",
+
+            ],
+            [
+                "game_id" => "0_14041",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Mjolnir",
+                "image" => "14041_en.png",
+
+            ],
+            [
+                "game_id" => "0_14077",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Trump Card",
+                "image" => "14077_en.png",
+
+            ],
+            [
+                "game_id" => "0_14055",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Kong",
+                "image" => "14055_en.png",
+
+            ],
+            [
+                "game_id" => "0_14084",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "CaiShen Coming",
+                "image" => "14084_en.png",
+
+            ],
+            [
+                "game_id" => "0_14047",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Moneybags Man",
+                "image" => "14047_en.png",
+
+            ],
+            [
+                "game_id" => "0_14045",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Super Niubi Deluxe",
+                "image" => "14045_en.png",
+
+            ],
+            [
+                "game_id" => "0_14065",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Blossom Of Wealth",
+                "image" => "14065_en.png",
+
+            ],
+            [
+                "game_id" => "0_14079",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Moneybags Man 2",
+                "image" => "14079_en.png",
+
+            ],
+            [
+                "game_id" => "0_14036",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Super Niubi",
+                "image" => "14036_en.png",
+
+            ],
+            [
+                "game_id" => "0_14061",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Maya Gold Crazy",
+                "image" => "14061_en.png",
+
+            ],
+            [
+                "game_id" => "0_14080",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Elemental Link Fire",
+                "image" => "14080_en.png",
+
+            ],
+            [
+                "game_id" => "0_14030",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Triple King Kong",
+                "image" => "14030_en.png",
+
+            ],
+            [
+                "game_id" => "0_14083",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "CooCoo Farm",
+                "image" => "14083_en.png",
+
+            ],
+            [
+                "game_id" => "0_14082",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Elemental Link Water",
+                "image" => "14082_en.png",
+
+            ],
+            [
+                "game_id" => "0_14081",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Birds Party Deluxe",
+                "image" => "14081_en.png",
+
+            ],
+            [
+                "game_id" => "0_14075",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Fortune Neko",
+                "image" => "14075_en.png",
+
+            ],
+            [
+                "game_id" => "0_14070",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Book of Mystery",
+                "image" => "14070_en.png",
+
+            ],
+            [
+                "game_id" => "0_14068",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Prosperity Tiger",
+                "image" => "14068_en.png",
+
+            ],
+            [
+                "game_id" => "0_14067",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Glamorous Girl",
+                "image" => "14067_en.png",
+
+            ],
+            [
+                "game_id" => "0_14064",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Boom Fiesta",
+                "image" => "14064_en.png",
+
+            ],
+            [
+                "game_id" => "0_14063",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Big Three Dragons",
+                "image" => "14063_en.png",
+
+            ],
+            [
+                "game_id" => "0_14060",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lantern Wealth",
+                "image" => "14060_en.png",
+
+            ],
+            [
+                "game_id" => "0_14059",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Marvelous IV",
+                "image" => "14059_en.png",
+
+            ],
+            [
+                "game_id" => "0_14058",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Wonder Elephant",
+                "image" => "14058_en.png",
+
+            ],
+            [
+                "game_id" => "0_14054",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Diamond",
+                "image" => "14054_en.png",
+
+            ],
+            [
+                "game_id" => "0_14053",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Spindrift 2",
+                "image" => "14053_en.png",
+
+            ],
+            [
+                "game_id" => "0_14052",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Jungle Jungle",
+                "image" => "14052_en.png",
+
+            ],
+            [
+                "game_id" => "0_14051",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Dragons Gate",
+                "image" => "14051_en.png",
+
+            ],
+            [
+                "game_id" => "0_14050",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Spindrift",
+                "image" => "14050_en.png",
+
+            ],
+            [
+                "game_id" => "0_14048",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Double Wilds",
+                "image" => "14048_en.png",
+
+            ],
+            [
+                "game_id" => "0_14046",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Miner Babe",
+                "image" => "14046_en.png",
+
+            ],
+            [
+                "game_id" => "0_14044",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Funky King Kong",
+                "image" => "14044_en.png",
+
+            ],
+            [
+                "game_id" => "0_14043",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Golden Disco",
+                "image" => "14043_en.png",
+
+            ],
+            [
+                "game_id" => "0_14040",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Pirate Treasure",
+                "image" => "14040_en.png",
+
+            ],
+            [
+                "game_id" => "0_14039",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Fortune Treasure",
+                "image" => "14039_en.png",
+
+            ],
+            [
+                "game_id" => "0_14038",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Egypt Treasure",
+                "image" => "14038_en.png",
+
+            ],
+            [
+                "game_id" => "0_14035",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Dragons World",
+                "image" => "14035_en.png",
+
+            ],
+            [
+                "game_id" => "0_14034",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Go Lai Fu",
+                "image" => "/14034_en.png",
+
+            ],
+            [
+                "game_id" => "0_14033",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Birds Party",
+                "image" => "14033_en.png",
+
+            ],
+            [
+                "game_id" => "0_14029",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Orient Animals",
+                "image" => "14029_en.png",
+
+            ],
+            [
+                "game_id" => "0_14027",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Seven",
+                "image" => "14027_en.png",
+
+            ],
+            [
+                "game_id" => "0_14025",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Racing",
+                "image" => "14025_en.png",
+
+            ],
+            [
+                "game_id" => "0_14023",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Poker King",
+                "image" => "14023_en.png",
+
+            ],
+            [
+                "game_id" => "0_14022",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Mining Upstart",
+                "image" => "14022_en.png",
+
+            ],
+            [
+                "game_id" => "0_14021",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Rolling In Money",
+                "image" => "14021_en.png",
+
+            ],
+            [
+                "game_id" => "0_14018",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "DaJi",
+                "image" => "14018_en.png",
+
+            ],
+            [
+                "game_id" => "0_14016",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Kingsman",
+                "image" => "14016_en.png",
+
+            ],
+            [
+                "game_id" => "0_14012",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Street Fighter",
+                "image" => "14012_en.png",
+
+            ],
+            [
+                "game_id" => "0_14010",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Dragon",
+                "image" => "14010_en.png",
+
+            ],
+            [
+                "game_id" => "0_14008",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Dragon Warrior",
+                "image" => "14008_en.png",
+
+            ],
+            [
+                "game_id" => "0_14007",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "One Punch Man",
+                "image" => "14007_en.png",
+
+            ],
+            [
+                "game_id" => "0_14006",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Billionaire",
+                "image" => "14006_en.png",
+
+            ],
+            [
+                "game_id" => "0_14005",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Mr. Bao",
+                "image" => "14005_en.png",
+
+            ],
+            [
+                "game_id" => "0_14003",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Panda Panda",
+                "image" => "14003_en.png",
+
+            ],
+            [
+                "game_id" => "0_15012",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Legendary 5",
+                "image" => "15012_en.png",
+
+            ],
+            [
+                "game_id" => "0_15010",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Chef Panda",
+                "image" => "15010_en.png",
+
+            ],
+            [
+                "game_id" => "0_15005",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Fuwa",
+                "image" => "15005_en.png",
+
+            ],
+            [
+                "game_id" => "0_15002",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Monkey King",
+                "image" => "15002_en.png",
+
+            ],
+            [
+                "game_id" => "0_15001",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Rooster In Love",
+                "image" => "15001_en.png",
+
+            ],
+            [
+                "game_id" => "0_8020",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Open Sesame",
+                "image" => "8020_en.png",
+
+            ],
+            [
+                "game_id" => "0_8048",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "OpenSesame II",
+                "image" => "8048_en.png",
+
+            ],
+            [
+                "game_id" => "0_8003",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Winning Mask",
+                "image" => "8003_en.png",
+
+            ],
+            [
+                "game_id" => "0_8047",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Winning Mask II",
+                "image" => "8047_en.png",
+
+            ],
+            [
+                "game_id" => "0_8051",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Xi Yang Yang",
+                "image" => "8051_en.png",
+
+            ],
+            [
+                "game_id" => "0_8050",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Fortune Horse",
+                "image" => "8050_en.png",
+
+            ],
+            [
+                "game_id" => "0_8049",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Flirting Scholar Tang II",
+                "image" => "8049_en.png",
+
+            ],
+            [
+                "game_id" => "0_8046",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Guan Gong",
+                "image" => "8046_en.png",
+
+            ],
+            [
+                "game_id" => "0_8044",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Beauty And The Kingdom",
+                "image" => "8044_en.png",
+
+            ],
+            [
+                "game_id" => "0_8035",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Phoenix",
+                "image" => "8035_en.png",
+
+            ],
+            [
+                "game_id" => "0_8028",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Miner",
+                "image" => "8028_en.png",
+
+            ],
+            [
+                "game_id" => "0_8023",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Olympian Temple",
+                "image" => "8023_en.png",
+
+            ],
+            [
+                "game_id" => "0_8022",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "MahJong",
+                "image" => "8022_en.png",
+
+            ],
+            [
+                "game_id" => "0_8021",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Banana Saga",
+                "image" => "8021_en.png",
+
+            ],
+            [
+                "game_id" => "0_8019",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Four Treasures",
+                "image" => "8019_en.png",
+
+            ],
+            [
+                "game_id" => "0_8018",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Napoleon",
+                "image" => "8018_en.png",
+
+            ],
+            [
+                "game_id" => "0_8017",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "New Year",
+                "image" => "8017_en.png",
+
+            ],
+            [
+                "game_id" => "0_8015",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Moonlight Treasure",
+                "image" => "8015_en.png",
+
+            ],
+            [
+                "game_id" => "0_8014",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Lion",
+                "image" => "8014_en.png",
+
+            ],
+            [
+                "game_id" => "0_8007",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Qilin",
+                "image" => "8007_en.png",
+
+            ],
+            [
+                "game_id" => "0_8006",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Formosa Bear",
+                "image" => "8006_en.png",
+
+            ],
+            [
+                "game_id" => "0_8005",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Llama Adventure",
+                "image" => "8005_en.png",
+
+            ],
+            [
+                "game_id" => "0_8004",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Wu Kong",
+                "image" => "8004_en.png",
+
+            ],
+            [
+                "game_id" => "0_8002",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Flirting Scholar Tang",
+                "image" => "8002_en.png",
+
+            ],
+            [
+                "game_id" => "0_8001",
+                "g_type" => "SLOT",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Lucky Dragons",
+                "image" => "8001_en.png",
+
+            ],
+
+            [
+                "game_id" => "22_22009",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Hotline",
+                "image" => "22009_en.png",
+
+            ],
+            [
+                "game_id" => "22_22008",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Mini Roulette",
+                "image" => "22008_en.png",
+
+            ],
+            [
+                "game_id" => "22_22007",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Keno",
+                "image" => "22007_en.png",
+
+            ],
+            [
+                "game_id" => "22_22006",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Hilo",
+                "image" => "22006_en.png",
+
+            ],
+            [
+                "game_id" => "22_22005",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Mines",
+                "image" => "22005_en.png",
+
+            ],
+            [
+                "game_id" => "22_22004",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Plinko",
+                "image" => "22004_en.png",
+
+            ],
+            [
+                "game_id" => "22_22003",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Goal",
+                "image" => "22003_en.png",
+
+            ],
+            [
+                "game_id" => "22_22002",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Dice",
+                "image" => "22002_en.png",
+
+            ],
+            [
+                "game_id" => "22_22001",
+                "provider_id" => 5,
+                "game_type_id" => 4,
+                "name_en" => "Aviator",
+                "image" => "22001_en.png",
+
             ]
+        ];
+
+        foreach ($data as $value) {
+
+            GameList::create([
+                'game_id' => $value['game_id'],
+                'provider_id' => $value['provider_id'],
+                'game_type_id' => $value['game_type_id'],
+                'name_en' => $value['name_en'],
+                'image' => $value['image']
+            ]);
+        }
     }
 }

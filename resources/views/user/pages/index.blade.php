@@ -153,13 +153,26 @@
 
         <div class="row mx-1">
         @foreach ($types->providers as $provider)
-
+          @if($types->id == 3 || $types->id == 2 && $provider->id == 3 || $types->id == 2 && $provider->id == 7 
+            || $types->id == 2 && $provider->id == 2)
           <div class="col-4 mt-4">
-            <a href="{{ route('user.gamelist',['provider_id' => $provider->id ,'game_type_id' => $types->id]) }}" class="text-decoration-none text-white">
-              <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus" style="width: 100%; border-radius: 10px; display: block" />
+            <a href="{{ route('user.directGame',['provider_id' => $provider->id ,'game_type_id' => $types->id]) }}"
+            class="text-decoration-none text-white">
+              <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus"
+              style="width: 100%; border-radius: 10px; display: block" />
                 <span class="text-center mt-2">{{$provider->description}}</span>
             </a>
           </div>
+          @else
+          <div class="col-4 mt-4">
+            <a href="{{ route('user.gamelist',['provider_id' => $provider->id ,'game_type_id' => $types->id]) }}"
+            class="text-decoration-none text-white">
+              <img src="{{ asset('slot_app/images/gametypeicon/' . $provider->pivot->image) }}" alt="olympus"
+               style="width: 100%; border-radius: 10px; display: block" />
+                <span class="text-center mt-2">{{$provider->description}}</span>
+            </a>
+          </div>
+          @endif
         @endforeach
         </div>
 

@@ -540,7 +540,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "PKBD",
-
             'provider_id' => 1,
             'game_type_id' =>4,
             "name_en"=> "Deuces Wild",
@@ -548,7 +547,6 @@ class AGGameListSeeder extends Seeder
            ],
            [
             "game_id"=> "PKBB",
-
             'provider_id' => 1,
             'game_type_id' =>4,
             "name_en"=> "Bonus Deuces Wild",

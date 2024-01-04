@@ -29,7 +29,8 @@ class DatabaseSeeder extends Seeder
             PRGameListSeeder::class,
             REGameListSeeder::class,
             JKGameListSeeder::class,
-            S3GameListSeeder::class
+            S3GameListSeeder::class,
+            JDGameListSeeder::class
         ]);
     }
 }

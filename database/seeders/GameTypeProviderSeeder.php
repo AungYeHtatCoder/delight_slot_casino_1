@@ -17,17 +17,17 @@ class GameTypeProviderSeeder extends Seeder
     {
         //ASIAGAMING
         $provider1 = Provider::find(1);
-        $AgImages = ['sport_2.png','slot_5.png'];
+        $agImages = ['sport_1.jpeg','slot_5.png'];
         $gameTypeId_1 = [3,4];
         foreach ($gameTypeId_1 as $index => $gameTypeId) {
-            $gameTypeData_1[$gameTypeId] = ['image' => $AgImages[$index]];
-        }
+            $gameTypeData_1[$gameTypeId] = ['image' => $agImages[$index]];
+        }   
         $provider1->gameTypes()->attach($gameTypeData_1);
 
 
         //BBIN
         $provider2 = Provider::find(2);
-        $bbinImages = ['live_casino_2.jpeg','slot_1.png'];
+        $bbinImages = ['casino_1.png','slot_1.png'];
         $gameTypeId_2 = [2,4];
         $gameTypeData_2=[];
         foreach ($gameTypeId_2 as $index => $gameTypeId) {
@@ -38,7 +38,7 @@ class GameTypeProviderSeeder extends Seeder
     
         //GAMEPLAY
         $provider3 = Provider::find(3);
-        $provider3->gameTypes()->attach(2 ,['image' => 'live_casino_2.jpeg']);
+        $provider3->gameTypes()->attach(2 ,['image' => 'casino_2.png']);
 
         //JOKER
         $provider4 = Provider::find(4);
@@ -55,7 +55,7 @@ class GameTypeProviderSeeder extends Seeder
 
         //KING855
         $provider7 = Provider::find(7);
-        $provider7->gameTypes()->attach(2,['image' => 'live_casino_2.jpeg']);
+        $provider7->gameTypes()->attach(2,['image' => 'king885_casino.jpg']);
 
         //PGSOFT
         $provider8 = Provider::find(8);
@@ -64,7 +64,7 @@ class GameTypeProviderSeeder extends Seeder
 
         //PRAGMATIC
         $provider9 = Provider::find(9);
-        $prImages = ['live_casino_2.jpeg','slot_3.png'];
+        $prImages = ['casino_3.png','slot_3.png'];
         $gameTypeId_9 = [2,4];
         $gameTypeData_9=[];
         foreach ($gameTypeId_9 as $index => $gameTypeId) {
@@ -80,7 +80,7 @@ class GameTypeProviderSeeder extends Seeder
 
         //SBO
         $provider11 = Provider::find(11);
-        $provider11->gameTypes()->attach(3,['image' => 'sport_1.png']);
+        $provider11->gameTypes()->attach(3,['image' => 'sport_2.jpeg']);
 
 
     }

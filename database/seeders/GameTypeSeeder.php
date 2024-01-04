@@ -19,7 +19,7 @@ class GameTypeSeeder extends Seeder
                 'description' => 'FISH HUNTER',
                 'order' => 1,
                 'icon' => 'fishlogo.png',
-                'status' => 1
+                'status' => 0
             ],
             [
                 'code' => 'LC',
