@@ -7,5 +7,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
 
     // get game type and provider
     Route::get('game-type-lists',[GetGameTypeController::class,'index'])->name('game-type-lists');
-
+    // game link tpye 
 });
