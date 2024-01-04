@@ -67,3 +67,4 @@ class ProviderSeeder extends Seeder
         Provider::insert($data);
     }
 }
+
