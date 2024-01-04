@@ -38,7 +38,7 @@ class GameController extends Controller
         $providerCode = 'G8';
         $signatureString = strtolower($this->operatorCode) . strtoupper($providerCode) . $this->secretKey;
         $signature = ApiHelper::generateSignature($signatureString);
-
+        
         $param = [
             'operatorcode' => config('common.operatorcode'),
             'providercode' =>$providerCode,
@@ -64,8 +64,8 @@ class GameController extends Controller
     public function getGameList($provider_id, $game_type_id)
     {
         $gameLists = GameList::where('provider_id',$provider_id)->where('game_type_id',$game_type_id)->get();
-
-        return view('slot.pages.game-details',compact('gameLists'));
+       
+        return view('user.pages.game-details',compact('gameLists'));
     }
     public function launchGame($id)
     {
@@ -86,7 +86,7 @@ class GameController extends Controller
             'username' => $userName,
             'password' => $password,
             'type' => $type,
-            'gameid' => 0,
+            'gameid' => $gameId,
             'lang' => 'en',
             'html5' => 0,
             'signature' => $signature,
@@ -94,7 +94,6 @@ class GameController extends Controller
         ];
         
         $response = $this->apiService->get($endpoint, $parameters);
-  
         $data = $response['gameUrl'];
         return redirect($data);
 

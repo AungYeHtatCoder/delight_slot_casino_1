@@ -35,51 +35,54 @@ class GameTypeProviderSeeder extends Seeder
         }
         $provider2->gameTypes()->attach($gameTypeData_2);
 
+    
+        //GAMEPLAY
+        $provider3 = Provider::find(3);
+        $provider3->gameTypes()->attach(2 ,['image' => 'live_casino_2.jpeg']);
 
         //JOKER
-        $provider3 = Provider::find(3);
-        $jokerImages = ['slot_2.png'];
-        $gameTypeId_3 = [4];
-        $gameTypeData_3=[];
-        foreach ($gameTypeId_3 as $index => $gameTypeId) {
-            $gameTypeData_3[$gameTypeId] = ['image' => $jokerImages[$index]];
-        }
-        $provider3->gameTypes()->attach($gameTypeData_3);
+        $provider4 = Provider::find(4);
+        $provider4->gameTypes()->attach(4,['image' => 'slot_3.png']);
+
+        //JDB
+        $provider5 = Provider::find(5);
+        $provider5->gameTypes()->attach(4 ,['image' => 'slot_3.png']);
+
+        //NEW LIVE22
+        $provider6 = Provider::find(6);
+        $provider6->gameTypes()->attach(4 ,['image' => 'slot_3.png']);
+
 
         //KING855
-        $provider4 = Provider::find(4);
-        $provider4->gameTypes()->attach(4,['image' => 'king855_1.jpeg']);
+        $provider7 = Provider::find(7);
+        $provider7->gameTypes()->attach(2,['image' => 'live_casino_2.jpeg']);
 
-        $provider5 = Provider::find(5); //PGSOFT
-        $provider5->gameTypes()->attach(10 ,['image' => 'slot_3.png']);
+        //PGSOFT
+        $provider8 = Provider::find(8);
+        $provider8->gameTypes()->attach(4,['image' => 'slot_1.png']);
+
 
         //PRAGMATIC
-        $provider6 = Provider::find(6);
-        $pragmaticImages = ['card_1.png','live_casino_2.jpeg','slot_4.png'];
-        $gameTypeId_6 = [1,4,10];
-        $gameTypeData_6=[];
-        foreach ($gameTypeId_6 as $index => $gameTypeId) {
-            $gameTypeData_6[$gameTypeId] = ['image' => $pragmaticImages[$index]];
+        $provider9 = Provider::find(9);
+        $prImages = ['live_casino_2.jpeg','slot_3.png'];
+        $gameTypeId_9 = [2,4];
+        $gameTypeData_9=[];
+        foreach ($gameTypeId_9 as $index => $gameTypeId) {
+            $gameTypeData_9[$gameTypeId] = ['image' => $prImages[$index]];
         }
-        $provider6->gameTypes()->attach($gameTypeData_6);
+        $provider9->gameTypes()->attach($gameTypeData_9);
 
 
         //KING MAKER
-        $provider7 = Provider::find(7);
-        $provider7->gameTypes()->attach(10,['image' => 'slot_5.png']);
+        $provider10 = Provider::find(10);
+        $provider10->gameTypes()->attach(4,['image' => 'slot_1.png']);
 
 
         //SBO
-        $provider8 = Provider::find(8);
-        $S3Images = ['other_1.png','sport_2.png'];
-        $gameTypeId_8 = [8,9];
-        $gameTypeData_8=[];
-        foreach ($gameTypeId_8 as $index => $gameTypeId) {
-            $gameTypeData_8[$gameTypeId] = ['image' => $S3Images[$index]];
-        }
-
-        $provider8->gameTypes()->attach($gameTypeData_8);
+        $provider11 = Provider::find(11);
+        $provider11->gameTypes()->attach(3,['image' => 'sport_1.png']);
 
 
     }
 }
+

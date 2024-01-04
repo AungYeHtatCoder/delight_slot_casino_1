@@ -17,31 +17,31 @@ class GameTypeSeeder extends Seeder
             [
                 'code' => 'FH',
                 'description' => 'FISH HUNTER',
-                'order' => 3,
+                'order' => 1,
                 'icon' => 'fishlogo.png',
                 'status' => 1
             ],
             [
                 'code' => 'LC',
                 'description' => 'LIVE-CASINO',
-                'order' => 1,
+                'order' => 2,
                 'icon' => 'casinologo.png',
                 'status' => 1
             ],
             [
                 'code' => 'SB',
                 'description' => 'SPORTBOOK',
-                'order' => 4,
+                'order' => 3,
                 'icon' => 'sportlogo.png',
                 'status' => 1
             ],
             [
                 'code' => 'SL',
                 'description' => 'SLOTS',
-                'order' => 2,
+                'order' => 4,
                 'icon' => 'sportlogo.png',
                 'status' => 1
-            ],
+            ]
 
         ];
 
