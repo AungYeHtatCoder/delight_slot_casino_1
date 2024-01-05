@@ -25,9 +25,22 @@ class ProviderSeeder extends Seeder
 
             ],
             [
+                'p_code' => 'G8',
+                'description' => 'GAMEPLAY',
+            ],
+            [
                 'p_code' => 'JK',
                 'description' => 'JOKER',
 
+            ],
+            [
+                'p_code' => 'JD',
+                'description' => 'JDB',
+
+            ],
+            [
+                'p_code' => 'L4',
+                'description' => 'NEW LIVE22',
             ],
             [
                 'p_code' => 'K9',
@@ -48,9 +61,10 @@ class ProviderSeeder extends Seeder
             [
                 'p_code' => 'S3',
                 'description' => 'SBO',
-            ],
+            ]
         ];
 
         Provider::insert($data);
     }
 }
+

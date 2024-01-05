@@ -71,12 +71,6 @@
 @endsection
 @section('scripts')
 <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
-{{-- <script>
-    const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
-      searchable: true,
-      fixedHeight: true
-    });
-  </script> --}}
 <script>
 if (document.getElementById('users-search')) {
  const dataTableSearch = new simpleDatatables.DataTable("#users-search", {

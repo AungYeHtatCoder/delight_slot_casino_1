@@ -16,8 +16,9 @@ Class ApiService{
 
     public function get($endpoint, $params = [])
     {
-        $url = $this->baseUrl . $endpoint;
 
+        $url = $this->baseUrl . $endpoint;
+       
         $response = Http::get($url, $params);
 
         return $response->json();

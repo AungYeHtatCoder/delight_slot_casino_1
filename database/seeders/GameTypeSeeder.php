@@ -15,78 +15,33 @@ class GameTypeSeeder extends Seeder
     {
         $data = [
             [
-                'code' => 'CB',
-                'description' => 'CARD & BOARDGAME',
-                'order' => 5,
-                'icon' => 'cardlogo.png',
-                'status' => 1
-            ],
-
-            [
-                'code' => 'ES',
-                'description' => 'E-GAMES',
-                'order' => 9,
-                'icon' => '',
-                'status' => 0
-            ],
-            [
                 'code' => 'FH',
                 'description' => 'FISH HUNTER',
-                'order' => 3,
+                'order' => 1,
                 'icon' => 'fishlogo.png',
-                'status' => 1
+                'status' => 0
             ],
             [
                 'code' => 'LC',
                 'description' => 'LIVE-CASINO',
-                'order' => 1,
+                'order' => 2,
                 'icon' => 'casinologo.png',
-                'status' => 1
-            ],
-            [
-                'code' => 'LK',
-                'description' => 'LOTTO',
-                'order' => 6,
-                'icon' => 'lottorylogo.png',
-                'status' => 1
-            ],
-            [
-                'code' => 'MG',
-                'description' => 'MINI GAME',
-                'order' => 8,
-                'icon' => '',
-                'status' => 0
-            ],
-            [
-                'code' => 'PK',
-                'description' => 'POKER',
-                'order' => 10,
-                'icon' => '',
-                'status' => 0
-            ],
-
-            [
-                'code' => 'OT',
-                'description' => 'OTHERS',
-                'order' => 7,
-                'icon' => 'sportlogo.png',
                 'status' => 1
             ],
             [
                 'code' => 'SB',
                 'description' => 'SPORTBOOK',
-                'order' => 4,
+                'order' => 3,
                 'icon' => 'sportlogo.png',
                 'status' => 1
             ],
-
             [
                 'code' => 'SL',
                 'description' => 'SLOTS',
-                'order' => 2,
+                'order' => 4,
                 'icon' => 'sportlogo.png',
                 'status' => 1
-            ],
+            ]
 
         ];
 

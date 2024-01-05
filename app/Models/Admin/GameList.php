@@ -2,6 +2,8 @@
 
 namespace App\Models\Admin;
 
+use App\Models\GameType;
+use App\Models\Provider;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,4 +19,15 @@ class GameList extends Model
         'provider_id',
         'click_count'
     ];
+
+
+    public function provider()
+    {
+        return $this->belongsTo(Provider::class);
+    }
+
+    public function gameType()
+    {
+        return $this->belongsTo(GameType::class);
+    }
 }

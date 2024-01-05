@@ -3,9 +3,9 @@
     <li class="nav-item mb-2 mt-0">
       <a data-bs-toggle="collapse" href="#ProfileNav" class="nav-link text-white" aria-controls="ProfileNav" role="button" aria-expanded="false">
         @if (Auth::user()->profile)
-          <img src="{{ Auth::user()->profile }}" class="avatar">
+        <img src="{{ Auth::user()->profile }}" class="avatar" alt="">
         @else
-          <i class="fas fa-user-circle"></i>
+        <i class="fas fa-user-circle"></i>
         @endif
         <span class="nav-link-text ms-2 ps-1">{{ Auth::user()->name }}</span>
       </a>
@@ -22,9 +22,10 @@
     </li>
     <hr class="horizontal light mt-0">
     <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link text-white " aria-controls="dashboardsExamples" role="button" aria-expanded="false">
+      <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link text-white "
+       aria-controls="dashboardsExamples" role="button" aria-expanded="false">
         <i class="material-icons-round opacity-10">dashboard</i>
-        <span class="nav-link-text ms-2 ps-1">Dashboards</span>
+        <span class="nav-link-text ms-2 ps-1">General Setup</span>
       </a>
       <div class="collapse " id="dashboardsExamples">
         <ul class="nav ">
@@ -59,225 +60,43 @@
               <span class="sidenav-normal  ms-2  ps-1"> Promotions </span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="{{ route('admin.game-type-lists')}}">
+              <span class="sidenav-mini-icon">GP </span>
+              <span class="sidenav-normal  ms-2  ps-1"> GameType Provider </span>
+            </a>
+          </li>
           @endcan
 
         </ul>
       </div>
     </li>
-    @foreach (Auth::user()->roles as $role)
-    @if($role->title == "Admin")
-    <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-        <span class="nav-link-text ms-2 ps-1">Admin Control</span>
-      </a>
-      <div class="collapse show" id="pagesExamples">
-        <ul class="nav">
-          <li class="nav-item ">
-            <div class="collapse " id="masterControl">
-              <ul class="nav nav-sm flex-column">
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/real-live-master-list')}}">
-                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> Master Lists </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/real-live-master-create')}}">
-                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> Master Create </span>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> T L </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-daily-status-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> D S </span>
-                    <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-monthly-status-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> M S </span>
-                    <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </li>
-    @elseif($role->title == "Master")
-    <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-        <span class="nav-link-text ms-2 ps-1">Master Control</span>
-      </a>
-       <div class="collapse show" id="pagesExamples">
-          <ul class="nav">
-            <li class="nav-item ">
-              <div class="collapse " id="masterControl">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ route('admin.agent-list')}}">
-                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> Agent Lists </span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ route('admin.agent-create')}}">
-                      <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> Agent Create </span>
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> T L </span>
-                      <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-daily-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> D S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
-                    </a>
-                  </li>
-
-                   <li class="nav-item">
-                    <a class="nav-link text-white " href="{{ url('/admin/get-all-master-to-agent-monthly-status-transfer-log') }}">
-                      <span class="sidenav-mini-icon"> M S </span>
-                      <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-    </li>
-    @elseif($role->title == "Agent")
-    <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
-        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-        <span class="nav-link-text ms-2 ps-1">Agent Control</span>
-      </a>
-      <div class="collapse show" id="pagesExamples">
-        <ul class="nav">
-          <li class="nav-item ">
-            <div class="collapse " id="masterControl">
-              <ul class="nav nav-sm flex-column">
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ route('admin.agent-user-list')}}">
-                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> User Lists </span>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> T L </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-daily-status-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> D S </span>
-                    <span class="sidenav-normal  ms-2  ps-1">Daily Status </span>
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('/admin/get-all-agent-to-user-monthly-status-transfer-log') }}">
-                    <span class="sidenav-mini-icon"> M S </span>
-                    <span class="sidenav-normal  ms-2  ps-1">Monthly Status </span>
-                  </a>
-                </li>
-
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </li>
-    @endif
-    @endforeach
 
     @can('admin_access')
-    <li class="nav-item mt-3">
-      <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder text-white">Management</h6>
-    </li>
-    @endcan
-    @can('admin_access')
     <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#profileExample" class="nav-link text-white" aria-controls="pagesExamples" role="button" aria-expanded="false">
+      <a data-bs-toggle="collapse" href="#profileExample" class="nav-link text-white"
+      aria-controls="pagesExamples" role="button" aria-expanded="false">
         <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
-        <span class="nav-link-text ms-2 ps-1">User Control</span>
+        <span class="nav-link-text ms-2 ps-1">Authorization</span>
       </a>
       <div class="collapse show" id="pagesExamples">
         <ul class="nav">
           <li class="nav-item ">
             <div class="collapse " id="profileExample">
               <ul class="nav nav-sm flex-column">
-                @can('admin_access')
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ route('admin.roles.index') }}">
+                    <span class="sidenav-mini-icon">R</span>
+                    <span class="sidenav-normal  ms-2  ps-1">Roles</span>
+                  </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link text-white " href="{{ route('admin.permissions.index')}}">
                     <span class="sidenav-mini-icon"> P </span>
                     <span class="sidenav-normal  ms-2  ps-1"> Permissions </span>
                   </a>
                 </li>
-                @endcan
-                @can('admin_access')
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ route('admin.roles.index') }}">
-                    <span class="sidenav-mini-icon"> U R </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> User's Roles </span>
-                  </a>
-                </li>
-                @endcan
-                @can('admin_access')
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ route('admin.users.index')}}">
-                    <span class="sidenav-mini-icon"> U </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> Users </span>
-                  </a>
-                </li>
-                @endcan
-                @can('admin_access')
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('  http://ag.gsoftbb.com')}}">
-                    <span class="sidenav-mini-icon"> U </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> Agent System </span>
-                  </a>
-                </li>
-                @endcan
 
-                @can('admin_access')
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="{{ url('https://bbinbo.gsoft688.com/Account/Login.aspx')}}">
-                    <span class="sidenav-mini-icon"> U </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> SlotAccDashboard </span>
-                  </a>
-                </li>
-                @endcan
-
-                @can('admin_access')
-                <li class="nav-item">
-                  <a class="nav-link text-white " href="">
-                    <span class="sidenav-mini-icon"> S P </span>
-                    <span class="sidenav-normal  ms-2  ps-1"> SlotPlayer </span>
-                  </a>
-                </li>
-                @endcan
               </ul>
             </div>
           </li>
@@ -285,34 +104,69 @@
       </div>
     </li>
     @endcan
-    {{-- lottery --}}
-    {{-- lottery --}}
-    @can('admin_access')
+
     <li class="nav-item">
-      <a data-bs-toggle="collapse" href="#applicationsExamples" class="nav-link text-white " aria-controls="applicationsExamples" role="button" aria-expanded="false">
-        {{-- <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">apps</i> --}}
-        <i class="fas fa-gamepad" style="font-size: 16px;"></i>
-        <span class="nav-link-text ms-2 ps-1">Slot Control</span>
+      @can('admin_access')
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples"
+      role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Admin Control</span>
       </a>
-      <div class="collapse " id="applicationsExamples">
-        <ul class="nav ">
-          @can('admin_access')
+      @endcan
+      @can('master_access')
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples"
+      role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Master Control</span>
+      </a>
+      @endcan
+      @can('agent_access')
+      <a data-bs-toggle="collapse" href="#masterControl" class="nav-link text-white" aria-controls="pagesExamples"
+      role="button" aria-expanded="false">
+        <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">manage_accounts</i>
+        <span class="nav-link-text ms-2 ps-1">Agent Control</span>
+      </a>
+      @endcan
+      <div class="collapse show" id="pagesExamples">
+        <ul class="nav">
           <li class="nav-item ">
-            <a class="nav-link text-white " href="{{ url('/admin/game-type-lists') }}">
-              <span class="sidenav-mini-icon"> <i class="fas fa-gamepad"></i> </span>
-              <span class="sidenav-normal  ms-2  ps-1"> GameType&Provider </span>
-            </a>
+            <div class="collapse " id="masterControl">
+              <ul class="nav nav-sm flex-column">
+                @can('admin_access')
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ route('admin.master.index')}}">
+                    <span class="sidenav-mini-icon"> <i class="fas fa-users"></i> </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Master Lists </span>
+                  </a>
+                </li>
+                @endcan
+                @can('transfer_log')
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ url('/admin/get-all-admin-to-master-transfer-log') }}">
+                    <span class="sidenav-mini-icon"> T L </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> TransferLog </span>
+                  </a>
+                </li>
+                @endcan
+                @can('user_index')
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="{{ route('admin.users.index') }}">
+                    <span class="sidenav-mini-icon"> T L </span>
+                    <span class="sidenav-normal  ms-2  ps-1"> Players </span>
+                  </a>
+                </li>
+                @endcan
+
+              </ul>
+            </div>
           </li>
-          @endcan
         </ul>
       </div>
     </li>
-    @endcan
-    {{-- end lottery --}}
-    {{-- end lottery --}}
 
     <li class="nav-item">
-      <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link text-white">
+      <a href="{{ route('logout') }}" onclick="event.preventDefault();
+      document.getElementById('logout-form').submit();" class="nav-link text-white">
         <span class="sidenav-mini-icon"> <i class="fas fa-right-from-bracket text-white"></i> </span>
         <span class="sidenav-normal ms-2 ps-1">Logout</span>
       </a>
