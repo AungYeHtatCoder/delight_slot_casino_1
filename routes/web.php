@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\Admin\GameController;
+use App\Http\Controllers\User\GameController;
 use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Admin\BannerController;
@@ -55,6 +55,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'App\Http\Co
   Route::put('/change-join-date', [ProfileController::class, 'JoinDate'])->name('addJoinDate');
   Route::resource('banners', BannerController::class);
   Route::resource('games', GameController::class);
+  
   Route::resource('text', BannerTextController::class);
   Route::resource('/promotions', PromotionController::class);
   // master list route

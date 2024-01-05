@@ -141,7 +141,8 @@
     </div>
   </div>
   @foreach ($gameTypes as $types)
-  <div class="mt-3">
+
+  <div class="mt-3" id="{{ $types->id }}">
     <div class="game-content-title">
       <span style="font-size: 16px">
         <img src="{{ asset('slot_app/images/icon').'/'.$types->icon }}" alt="livecasino" style="width: 30px; height: 30px" class="ms-2" />
