@@ -61,7 +61,7 @@ class HomeController extends Controller
         $agentIds = User::where('agent_id', $userId)->pluck('id');
             return view('admin.agent.agent_dashboard', compact('agentIds'));
         } else {
-            return view('welcome');
+            return view('user.pages.user-info');
         }
     }
 }
