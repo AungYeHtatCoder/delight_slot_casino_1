@@ -133,7 +133,7 @@ class UsersController extends Controller
                 'agent_id' => Auth::user()->id,
             ]);
 
-            $agentRole = Role::where('title', 'User')->first();
+            $agentRole = Role::where('title', 'Player')->first();
             $user->roles()->sync($agentRole->id);
 
             return redirect()->route('admin.users.index')->with('success', 'Create New Player Successfully!');
