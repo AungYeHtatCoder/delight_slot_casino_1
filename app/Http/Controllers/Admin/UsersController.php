@@ -115,9 +115,7 @@ class UsersController extends Controller
             $md5_hash = md5($operatorcode . $username . $secret_key); //signature
             // change to UpperCase $md5_hash
             $md5_hash = strtoupper($md5_hash);
-           // $backend_password = 'pass1234';
             $backend_password = $this->backendPassword;
-
             $url = 'https://gsmd.336699bet.com/createMember.aspx?operatorcode=' . $operatorcode . '&username=' . $username . '&signature=' . $md5_hash;
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
