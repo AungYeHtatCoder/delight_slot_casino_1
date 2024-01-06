@@ -58,11 +58,7 @@
   <div class="tab-pane fade show active" id="tab1">
    <div>
 
-    <div class="p-3 rounded" style="background: linear-gradient(
-                    to left ,
-                    rgba(102, 0, 149, 1) 0%,
-                    rgba(52, 0, 87, 1) 56%
-                  );position: relative;">
+    <div class="p-3 rounded" style="background-color:#002635;position: relative;">
      <p>မိတ်ဖက်များကို ဖိတ်ခေါ်ပါ။</p>
      <label for="url" style="font-size: 12px;">ဖိတ်ကြားရန် url</label>
      <input type="text" class="w-100 h-25 rounded p-2 mt-2">
@@ -77,11 +73,7 @@
      </div>
     </div>
 
-    <div class="p-3 rounded mt-3" style="background: linear-gradient(
-                    to left,
-                    rgba(102, 0, 149, 1) 0%,
-                    rgba(52, 0, 87, 1) 56%
-                  );">
+    <div class="p-3 rounded mt-3" style="background-color:#002635">
 
      <p class="text-center">လစဉ်ဝင်ငွေပန်းတိုင်</p>
      <p style="color: gold;">Ks 0.00</p>
@@ -90,11 +82,7 @@
 
     <p class="my-2" style="font-size: 20px;">proxy money ဘယ်လိုအလုပ်လုပ်သလဲ။</p>
 
-    <div class="p-3 rounded mt-3" style="background: linear-gradient(
-                    to left,
-                    rgba(102, 0, 149, 1) 0%,
-                    rgba(52, 0, 87, 1) 56%
-                  );">
+    <div class="p-3 rounded mt-3" style="background-color:#002635">
 
      <p>ဖိတ်စာဆုကြေး</p>
      <p style="color: #ddd;font-size: 14px;">အားပြန်သွင်းအသုံးပြုသူတိုင်း အနည်းဆုံး ရနိုင်သည်။ပြန်လည်ဖြည့်သွင်းသည့် ပမာဏ ပိုများလေ၊ သက်ဆိုင်ရာ အဆင့်၏ ဖိတ်ကြားချက် ဘောနပ်စ် ပိုများလေ ဖြစ်သည်။</p>
@@ -135,11 +123,7 @@
 
     <p class="my-4" style="font-size: 20px;">လောင်းကြေးကော်မရှင်ကို ဘယ်လိုရယူမလဲ။</p>
 
-    <div class="p-3 rounded mt-3" style="background: linear-gradient(
-                    to left,
-                    rgba(102, 0, 149, 1) 0%,
-                    rgba(52, 0, 87, 1) 56%
-                  );color: #ddd;font-size: 14px;">
+    <div class="p-3 rounded mt-3" style="background-color:#002635;color: #ddd;font-size: 14px;">
      <p>၎င်းသည် သင်၏ရေရှည်၀င်ငွေဖြစ်သည်။ သင်၏ရည်ညွှန်းလင့်ခ်မှတစ်ဆင့် ပလပ်ဖောင်းတွင်ပါဝင်သူတစ်ဦးသည် သင့်ရည်ညွှန်းသူဖြစ်လာသည့်အခါတိုင်း၊ သင်သည် မတူညီသောကော်မရှင်ရာခိုင်နှုန်းကို ရရှိမည်ဖြစ်ပြီး စေတနာအပြည့်ဖြင့် ဘောနပ်စ်များကို ရရှိမည်ဖြစ်သည်။</p>
 
      <p class="my-1">3 အဆင့်၏ စကေးမှာ အောက်ပါအတိုင်းဖြစ်သည်။</p>
@@ -164,11 +148,7 @@
 
     </div>
 
-    <div class="rounded p-3 mt-3" style="background: linear-gradient(
-                  to left,
-                  rgba(102, 0, 149, 1) 0%,
-                  rgba(52, 0, 87, 1) 56%
-                );">
+    <div class="rounded p-3 mt-3" style="background-color:#002635;">
      <p class="text-center" style="font-size: 14px;">ဦးဆောင်သူ</p>
      <div class="d-flex justify-content-center align-items-center">
       <div class="text-center">
