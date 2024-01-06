@@ -11,7 +11,7 @@
    </div>
    <div class="currency-balance mt-3 ms-1">
     <span class="text-white-50">MMK</span>
-    <span class="ms-2">0.00</span>
+    <span class="ms-2">{{ number_format(Auth::user()->balance) }}</span>
    </div>
   </div>
   <div class="d-flex justify-content-around my-5">
@@ -39,7 +39,7 @@
     </svg>
     <span class="text-center">ငွေသွင်းရန်</span>
    </a>
-   <a href="#topupModal" role="button" data-bs-toggle="modal" class="d-flex flex-column align-items-center text-decoration-none text-white">
+   <a href="#withdrawModal" role="button" data-bs-toggle="modal" class="d-flex flex-column align-items-center text-decoration-none text-white">
     <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" color="#340057">
      <g id="icon/ä¸ªäººä¸&shy;å¿ƒ/æçŽ°1">
       <g id="ç¼–ç»„ 3">
@@ -63,7 +63,7 @@
     </svg>
     <span>ငွေထုတ်ရန်</span>
    </a>
-   <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
+   {{-- <a href="#" class="d-flex flex-column align-items-center text-decoration-none text-white">
     <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" color="#340057" border="1px solid white">
      <g>
       <g>
@@ -82,7 +82,7 @@
      </defs>
     </svg>
     <span>ကတ်စီမံခန့်ခွဲမှု</span>
-   </a>
+   </a> --}}
   </div>
  </div>
 </div>
