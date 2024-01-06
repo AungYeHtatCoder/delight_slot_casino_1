@@ -1,10 +1,14 @@
 <?php
 
 
+use App\Http\Controllers\Admin\CashInRequestController;
+use App\Http\Controllers\Admin\CashOutRequestController;
 use App\Http\Controllers\User\GameController;
 use App\Http\Controllers\User\LoginController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
+
+
 
 Route::get('/', [UserController::class, 'index'])->name('slot.index');
 
