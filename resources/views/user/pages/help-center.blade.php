@@ -4,7 +4,7 @@
 <div style="padding-top: 50px;">
  <div class="list-group">
   <div class="d-flex justify-content-between align-items-center p-2 bg-transparent my-2">
-   <a href="#item1" class="text-white text-decoration-none" data-toggle="collapse">ကြှနျုပျတို့အကွောငျး</a>
+   <a href="#myModal1" role="button" class="text-white text-decoration-none" data-bs-toggle="modal" >ကျွနိုပ်တို့အကြောင်း</a>
    <i class="fa-solid fa-chevron-right"></i>
   </div>
   <div class="collapse" id="item1">
@@ -19,7 +19,7 @@
 
      <!-- Modal Header -->
      <div class="modal-header">
-      <h4 class="modal-title " style="font-size: 14px;">ကြှနျုပျတို့အကွောငျး</h4>
+      <h4 class="modal-title " style="font-size: 14px;">ကျွန်တော်တို့အကြောင်း</h4>
       <button type="button" class="close bg-transparent text-white" data-dismiss="modal">&times;</button>
      </div>
 
@@ -50,7 +50,7 @@
   </div>
 
   <div class="d-flex justify-content-between align-items-center p-2 bg-transparent">
-   <a href="#item2" class="text-white text-decoration-none" data-toggle="collapse">အသင်းအဖွဲ့ရေးရာ</a>
+   <a href="#myModal2" role="button" class="text-white text-decoration-none" data-bs-toggle="modal" >အသင်းအဖွဲ့ရေးရာ</a>
    <i class="fa-solid fa-chevron-right"></i>
   </div>
   <div class="collapse" id="item2">

@@ -3,11 +3,11 @@
 @section('content')
 <div>
 {{-- to do new feature --}}
- <div class="user-information" style="margin-top: 60px; padding: 10px">
+ <div class="user-information" style="margin-top: 60px; padding: 5px">
   <div class="card">
    <div class="card-header">အကောင့်အချက်အလက်</div>
    <div class="card-body">
-    <div class="py-3">
+    <div class="py-3" style="font-size:14px">
      <a href="#userInformationModal" role="button" data-bs-toggle="modal" class="text-decoration-none text-white">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
        <g id="icon/ä¸ªäººä¸&shy;å¿ƒ/ä¸ªäººä¿¡æ¯">
@@ -16,7 +16,7 @@
         <path id="è·¯å¾„" d="M18.0178 18.4218C16.7968 16.3727 14.5588 15 12.0002 15C9.56042 15 7.41217 16.2482 6.15918 18.1408" stroke="currentColor" stroke-width="1.18108"></path>
        </g>
       </svg>
-      <span> သတင်းအချက်အလက် ပြန်လည်ပြင်ဆင်ပါ။ </span>
+      <span > သတင်းအချက်အလက် ပြန်လည်ပြင်ဆင်ပါ။ </span>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
        <g id="icon/äºŒçº§é¡µé¢/è¿”å›ž">
         <rect id="çŸ©å½¢" opacity="0.01" width="24" height="24" fill="currentColor"></rect>
@@ -27,7 +27,7 @@
       </svg>
      </a>
     </div>
-    <div class="py-3">
+    <div class="py-3" style="font-size:14px">
      <a href="#changePasswordModal" role="button" data-bs-toggle="modal" class="text-decoration-none text-white">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
        <g id="icon/ä¸ªäººä¸&shy;å¿ƒ/ç™»å½•å¯†ç&nbsp;">
