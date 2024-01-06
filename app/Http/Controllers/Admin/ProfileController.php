@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Admin\AdminAddBalance;
 use Carbon\Carbon;
 use App\Models\User;
 use Illuminate\Support\Str;
@@ -149,6 +150,11 @@ class ProfileController extends Controller
     $this->authorize('updateAdminBalance', $user);
     $user->update([
         'balance' => $user->balance + $request->balance,
+    ]);
+    AdminAddBalance::create([
+        'user_id' => Auth::user()->id,
+        'balance_up' => $request->balance,
+        'remark' => $request->remark ?? "",
     ]);
 
     return redirect()->back()->with('toast_success', "Admin Balance has been Updated.");
