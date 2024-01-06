@@ -165,15 +165,21 @@
       </div>
     </li>
     <li class="nav-item">
+      @php
+        $req_count1 = App\Models\CashInRequest::all()->count();
+      @endphp
       <a class="nav-link text-white " href="{{ route('admin.cash-in-request-list') }}">
         <span class="sidenav-mini-icon"> <i class="fas fa-coins"></i> </span>
-        <span class="sidenav-normal  ms-2  ps-1"> Cash In Requests </span>
+        <span class="sidenav-normal  ms-2  ps-1"> Cash In Requests <span class="badge text-bg-light">{{ $req_count1 }}</span></span>
       </a>
     </li>
     <li class="nav-item">
+      @php
+        $req_count2 = App\Models\CashOutRequest::all()->count();
+      @endphp
       <a class="nav-link text-white " href="{{ route('admin.cash-out-request-list') }}">
         <span class="sidenav-mini-icon"> <i class="fas fa-coins"></i> </span>
-        <span class="sidenav-normal  ms-2  ps-1"> Cash Out Requests </span>
+        <span class="sidenav-normal  ms-2  ps-1"> Cash Out Requests  <span class="badge text-bg-light">{{ $req_count2 }}</span></span>
       </a>
     </li>
     <li class="nav-item">
