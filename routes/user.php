@@ -1,13 +1,20 @@
 <?php
 
 
+use App\Http\Controllers\Admin\CashInRequestController;
+use App\Http\Controllers\Admin\CashOutRequestController;
 use App\Http\Controllers\User\GameController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::get('/', [UserController::class, 'index'])->name('slot.index');
 
-Route::prefix('user')->group(function () {
+Route::group([
+    'prefix' => 'user',
+    'middleware' => ['auth', 'checkBanned']
+  ], function () {
 
     //Slot routes
     Route::get('slot-login', [UserController::class, 'login'])->name('user.login');
@@ -28,4 +35,6 @@ Route::prefix('user')->group(function () {
     Route::get('/directGame/{provider_id}/game_type/{game_type_id}',
         [GameController::class, 'directGame'])->name('user.directGame');
 
+    Route::post('/deposit-request', [CashInRequestController::class, 'deposit'])->name('deposit');
+    Route::post('/withdraw-request', [CashOutRequestController::class, 'withdraw'])->name('withdraw');
 });
