@@ -53,25 +53,33 @@
                     </div>
                     <div class="card-header mx-4 p-3 text-center">
                          <h6 class="text-center mb-0">Total Balance</h6>
+                         <span class="badge text-bg-info">Admin</span>
                         <hr class="horizontal dark my-3">
-                        <h5 class="mb-0"> {{ Auth::user()->balance}} </h5>
+                        <h5 class="mb-0"> {{ number_format(Auth::user()->balance) }} <small>MMK</small></h5>
                     </div>
                     <div class="card-body pt-0 p-3 text-center">
                     <form action="{{ route('admin.admin-update-balance', Auth::user()->id) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="input-group input-group-outline is-valid my-3">
-                        <label class="form-label">Enter  Balance Amount</label>
-                        <input type="text" class="form-control" name="balance">
-                    </div>
+                            <label class="form-label">Enter  Balance Amount</label>
+                            <input type="text" class="form-control" name="balance">
+                        </div>
+                        <div class="input-group input-group-outline is-valid my-3">
+                            <label class="form-label">
+                                Enter Remark (Optional)
+                            </label>
+                            <textarea name="remark" class="form-control" id="" cols="30" rows="10"></textarea>
+                            {{-- <input type="text" class="form-control" name="remark"> --}}
+                        </div>
                     <div class="input-group input-group-outline is-valid my-3">
-                        <button type="submit" class="btn btn-primary">UpdateAdminBalance</button>
+                        <button type="submit" class="btn btn-primary">Add Balance</button>
                     </div>
                        </form>
                     </div>
                 </div>
 
-                <div class="card-body">
+                {{-- <div class="card-body">
 
                     <div class="card mt-4" id="basic-info">
                         <div class="card-header">
@@ -116,7 +124,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <div class="col-lg-9 mt-lg-0 mt-4">
                 <!-- Card Profile -->
@@ -238,7 +246,33 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="card mt-4">
+                    <div class="card-header">Admin Balance Records</div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table text-center" id="datatablesSimple">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2021-01-01</td>
+                                        <td>$100</td>
+                                        <td>Pending</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm">View</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
