@@ -63,10 +63,10 @@
  <div class="col-lg-12">
   <div class="container mt-2">
    <div class="d-flex justify-content-between">
-    <h4>User Information -- <span>
+    <h4>Agent Information -- <span>
     User ID : {{ $transfer_user->id }}
     </span></h4>
-    <a class="btn btn-icon btn-2 btn-primary" href="{{ url('/admin/agent-user-list') }}">
+    <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.agent.index') }}">
      <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
     </a>
    </div>
@@ -94,14 +94,9 @@
          @endforeach
         </td>
        </tr>
-
        <tr>
-        <th>Create Date</th>
-        <td>{!! $transfer_user->created_at !!}</td>
-       </tr>
-       <tr>
-        <th>Update Date</th>
-        <td>{!! $transfer_user->updated_at !!}</td>
+        <th>Balance</th>
+        <td>{!! $transfer_user->balance !!}</td>
        </tr>
       </tbody>
      </table>
@@ -118,7 +113,7 @@
     <div class="card-header pb-0">
      <div class="d-lg-flex">
       <div>
-       <h5 class="mb-0">User ထံသို့ ငွေလွဲပေးမည်</h5>
+       <h5 class="mb-0">Agent ထံသို့ ငွေလွဲပေးမည်</h5>
 
       </div>
       <div class="ms-auto my-auto mt-lg-0 mt-4">
@@ -132,7 +127,7 @@
      </div>
     </div>
     <div class="card-body">
-    <form action="{{ route('admin.agent-user-transfer-store') }}" method="POST">
+    <form action="{{ route('admin.agent.makeTransfer') }}" method="POST">
       @csrf
   <div class="row">
     <div class="col-md-6">
@@ -161,14 +156,14 @@
   <div class="row">
     <div class="col-md-6">
       <div class="input-group input-group-outline is-valid my-3">
-        <label class="form-label">User ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
+        <label class="form-label">Agent ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
         <input type="text" class="form-control" name="cash_in">
 
 
       </div>
       @error('cash_in')
          <span class="d-block text-danger">*{{ $message }}</span>
-         @enderror
+        @enderror
     </div>
     <div class="col-md-6">
       <div class="input-group input-group-outline is-valid my-3">
@@ -185,7 +180,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="input-group input-group-outline is-valid my-3">
-        <button type="submit" class="btn btn-primary">User ထံသို့ ငွေလွဲပေးမည်</button>
+        <button type="submit" class="btn btn-primary">Agent ထံသို့ ငွေလွဲပေးမည်</button>
       </div>
     </div>
   </div>
@@ -208,12 +203,22 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script> --}}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    var errorMessage =  @json(session('error'));
+    var successMessage =  @json(session('success'));
+    console.log(successMessage);
     @if(session('success'))
     Swal.fire({
       icon: 'success',
-      title: 'Success! သင်၏ User ထံသို့ ငွေလွဲပေးမှု အောင်မြင်ပါသည်',
-      text: '{{ session('
-      SuccessRequest ') }}',
+      title: 'Success',
+      text: successMessage,
+      timer: 3000,
+      showConfirmButton: false
+    });
+    @elseif(session('error'))
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: errorMessage,
       timer: 3000,
       showConfirmButton: false
     });

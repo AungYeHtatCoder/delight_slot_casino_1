@@ -65,7 +65,7 @@ class GameController extends Controller
     {
         $game = GameList::where('id', $id)->first();
         $endpoint = '/launchGames.aspx';
-        $password = 'pass1234';
+        $password = 'test1234';
         $providerCode = $game->provider->p_code;
         $userName = 'sophia';
         $type = $game->gameType->code;

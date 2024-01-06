@@ -125,6 +125,11 @@ class PermissionsTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'title'      => 'master_transfer',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
                 'title'      => 'agent_access',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -135,12 +140,27 @@ class PermissionsTableSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+                'title'      => 'agent_index',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
                 'title'      => 'agent_create',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
+                'title'      => 'agent_store',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
                 'title'      => 'agent_edit',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title'      => 'agent_update',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -151,6 +171,11 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'title'      => 'agent_delete',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'title'      => 'agent_transfer',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

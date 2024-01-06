@@ -71,7 +71,7 @@
       </div>
       <div class="ms-auto my-auto mt-lg-0 mt-4">
        <div class="ms-auto my-auto">
-        <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.users.index') }}">
+        <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.user.index') }}">
          <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
         </a>
 
@@ -80,34 +80,26 @@
      </div>
     </div>
     <div class="card-body">
-     <form role="form" class="text-start" action="">
+     <form role="form" class="text-start" method ='post' action="{{route('admin.user.update',$user->id)}}">
       @csrf
+      @method('PUT')
       <div class="custom-form-group">
        <label for="title">User Name</label>
-       <input type="text" id="name" name="name" class="form-control">
+       <input type="text" id="name" name="name" class="form-control" value="{{$user->name}}">
       </div>
       <div class="custom-form-group">
-       <label for="title">Email</label>
-       <input type="email" id="email" name="email" class="form-control">
+       <label for="title">Phone No</label>
+       <input type="text" id="" name="phone" class="form-control" value="{{$user->phone}}">
       </div>
       <div class="custom-form-group">
        <label for="title">Password</label>
        <input type="password" id="password" password="password" class="form-control">
       </div>
 
-      <div class="custom-form-group">
-       <label for="choices-role">Choose Role</label>
-       <select class="form-control" name="roles[]" id="choices-roles" multiple>
-        @foreach ($roles as $id => $role)
-        <option value="{{ $id }}" {{ in_array($id, old('roles', [])) ? 'selected' : '' }}>
-         {{ $role }}
-        </option>
-        @endforeach
-       </select>
-      </div>
+    
 
       <div class="custom-form-group">
-       <button class="btn btn-primary" type="button">Edit</button>
+       <button class="btn btn-primary" type="submit">Update</button>
       </div>
      </form>
     </div>

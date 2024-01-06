@@ -21,13 +21,13 @@
       <div class="card-header pb-0">
         <div class="d-lg-flex">
           <div>
-            <h5 class="mb-0">Player Dashboards</h5>
+            <h5 class="mb-0">Agent List Dashboards</h5>
 
           </div>
           <div class="ms-auto my-auto mt-lg-0 mt-4">
             <div class="ms-auto my-auto">
-              <a href="{{ route('admin.user.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Create New
-                Player</a>
+              <a href="{{ route('admin.agent.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Create New
+                Agent</a>
               <button class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1" data-type="csv" type="button" name="button">Export</button>
             </div>
           </div>
@@ -47,10 +47,12 @@
           <tbody>
             @foreach ($users as $user)
             <tr>
-              <td>{{ $loop->iteration }}</td>
+              <td>{{ $loop->index + 1 }}</td>
               <td>
                 <span class="d-block">{{ $user->name }}</span>
-                  
+                @foreach ($user->roles as $role)
+                <span class="badge badge-pill badge-primary">{{ $role->title }}</span>
+                @endforeach
               </td>
               <td>{{ $user->phone }}</td>
               <td>
@@ -72,13 +74,13 @@
                   @method('PUT')
                 </form>
 
-                <a class="me-1" href="{{ route('admin.user.edit', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit User">
+                <a class="me-1" href="{{ route('admin.agent.edit', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit User">
                   <i class="fas fa-pen-to-square text-info" style="font-size: 20px;"></i>
                 </a>
-                <a class="me-1" href="{{ route('admin.user.show', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview User Detail">
+                <a class="me-1" href="{{ route('admin.agent.show', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview User Detail">
                   <i class="fas fa-eye text-warning" style="font-size: 20px;"></i>
                 </a>
-                <form class="d-inline" action="{{ route('admin.user.destroy', $user->id) }}" method="POST">
+                <form class="d-inline" action="{{ route('admin.agent.destroy', $user->id) }}" method="POST">
                   @csrf
                   @method('DELETE')
                   <button type="submit" class="transparent-btn" data-bs-toggle="tooltip" data-bs-original-title="Delete User">
@@ -87,18 +89,16 @@
                 </form>
               </td>
               <td>
-                <a href="{{ route('admin.user.getTransfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Player" class="btn btn-info btn-sm">
+                <a href="{{ route('admin.agent.getTransfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Master" class="btn btn-info btn-sm">
                   <i class="fas fa-right-left text-white me-1"></i>
                   {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
                   ငွေလွဲမည်
                 </a>
-                <a href="{{ route('admin.user.getCashOut', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Player" class="btn btn-warning btn-sm">
+                <a href="{{ route('admin.master.cashOut', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Master" class="btn btn-warning btn-sm">
                   <i class="fas fa-right-left text-white me-1"></i>
                   {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
                   ငွေထုတ်မည်
                 </a>
-
-               
 
               </td>
             </tr>

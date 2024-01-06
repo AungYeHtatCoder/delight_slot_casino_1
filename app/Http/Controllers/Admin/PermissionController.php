@@ -33,7 +33,6 @@ class PermissionController extends Controller
      */
     public function store(Request $request)
     {
-       //dd($request->all());
         $validator = Validator::make($request->all(), [
         'title' => 'required|unique:permissions,title',
 
@@ -48,42 +47,38 @@ class PermissionController extends Controller
         Permission::create([
             'title' => $request->title
         ]);
-        // redirect
-        //Alert::success('Premission has been Created successfully', 'WoW!');
-        //toast::success('Success New Permission', 'Permission created successfully.');
-
+      
         return redirect()->route('admin.permissions.index')->with('toast_success', 'Permission created successfully.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Permission $permission)
     {
-        $permission_detail = Permission::find($id);
-        return view('admin.permission.show', compact('permission_detail'));
+        return view('admin.permission.show', compact('permission'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit($id)
+    public function edit(Permission $permission)
     {
-        $permission_edit = Permission::find($id);
-        return view('admin.permission.edit', compact('permission_edit'));
+        
+        return view('admin.permission.edit', compact('permission'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Permission $permission)
     {
         /// validate the request
         $request->validate([
-            'title' => 'required|unique:permissions,title,' . $id,
+            'title' => 'required|unique:permissions,title,' . $permission->id,
         ]);
+
         // update
-        $permission = Permission::findOrFail($id);
         $permission->update([
             'title' => $request->title
         ]);
@@ -94,9 +89,8 @@ class PermissionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(Permission $permission)
     {
-        $permission = Permission::findOrFail($id);
         $permission->delete();
         return redirect()->route('admin.permissions.index')->with('toast_success', 'Permission deleted successfully.');
     }

@@ -12,33 +12,15 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="{{ asset('slot_app/images/banner/banner1.png') }}" style="max-height: 500px" class="d-block w-100" alt="..." />
-        <!-- <div class="marquee">
-                <div class="marquee-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorem ea id exercitationem. Quos consequuntur vitae soluta
-                  aliquid odit temporibus beatae iste autem?
-                </div>
-              </div> -->
+
       </div>
       <div class="carousel-item">
         <img src="{{ asset('slot_app/images/banner/banner2.png') }}" style="max-height: 500px" class="d-block w-100" alt="..." />
-        <!-- <div class="marquee">
-                <div class="marquee-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorem ea id exercitationem. Quos consequuntur vitae soluta
-                  aliquid odit temporibus beatae iste autem?
-                </div>
-              </div> -->
+     
       </div>
       <div class="carousel-item">
         <img src="{{ asset('slot_app/images/banner/banner3.png') }}" style="max-height: 500px" class="d-block w-100" />
-        <!-- <div class="marquee">
-                <div class="marquee-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorem ea id exercitationem. Quos consequuntur vitae soluta
-                  aliquid odit temporibus beatae iste autem?
-                </div>
-              </div> -->
+
       </div>
     </div>
   </div>
@@ -151,7 +133,7 @@
     </div>
 
     <div class="game-content mt-2">
-
+      
         <div class="row mx-1">
         @foreach ($types->providers as $provider)
           @if($types->id == 3 || $types->id == 2 && $provider->id == 3 || $types->id == 2 && $provider->id == 7 

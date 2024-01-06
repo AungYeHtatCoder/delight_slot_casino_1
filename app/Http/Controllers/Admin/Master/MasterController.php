@@ -12,13 +12,20 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
+use Symfony\Component\HttpFoundation\Response;
 
 class MasterController extends Controller
 {
 
     public function index()
     {
+        abort_if(
+            Gate::denies('master_index'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
 
         $masterId = auth()->id(); // ID of the Admin
         $users = User::where('agent_id', $masterId)->latest()->get();
@@ -28,11 +35,22 @@ class MasterController extends Controller
 
     public function create()
     {
+        abort_if(
+            Gate::denies('master_create'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
+
         return view('admin.master.create');
     }
 
     public function store(MasterRequest $request)
     {
+        abort_if(
+            Gate::denies('maste_store'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
         $inputs = $request->validated();
         $this->authorize('createMaster', User::class);
         $userPrepare = array_merge($inputs, [
@@ -47,6 +65,12 @@ class MasterController extends Controller
 
     public function show(string $id)
     {
+        abort_if(
+            Gate::denies('user_show'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
+
         $user_detail = User::find($id);
         return view('admin.master.show', compact('user_detail'));
     }
@@ -54,12 +78,23 @@ class MasterController extends Controller
 
     public function edit(string $id)
     {
+        abort_if(
+            Gate::denies('user_edit'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
+
         $user = User::find($id);
         return view('admin.master.edit', compact('user'));
     }
 
     public function update(MasterRequest $request, string $id)
     {
+        abort_if(
+            Gate::denies('user_update'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
         $inputs = $request->validated();
         $user = User::find($id);
         if ($inputs['password']) {
@@ -71,19 +106,34 @@ class MasterController extends Controller
 
     public function destroy(string $id)
     {
+        abort_if(
+            Gate::denies('master_delete'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
         $user = User::find($id);
         $user->delete();
         return redirect(route('admin.master.index'))->with('success', 'Master has been deleted successfully.');
     }
 
-    public function transfer(string $id)
+    public function getTransfer(string $id)
     {
+        abort_if(
+            Gate::denies('master_index'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
         $transfer_user = User::find($id);
         return view('admin.master.transfer', compact('transfer_user'));
     }
 
     public function cashOutUpdate(Request $request, string $id)
     {
+        abort_if(
+            Gate::denies('user_index'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
         $request->validate([
             'name' => 'required|min:3',
             'phone' => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/'],
@@ -117,8 +167,13 @@ class MasterController extends Controller
         return redirect()->back()->with('success', 'Money fill request submitted successfully!');
     }
 
-    public function transferStore(TransferLogRequest $request)
+    public function makeTransfer(TransferLogRequest $request)
     {
+        abort_if(
+            Gate::denies('master_index'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
 
         try {
             $inputs = $request->validated();

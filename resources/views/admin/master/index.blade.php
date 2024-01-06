@@ -69,7 +69,7 @@
                   <i class="fas fa-user-check text-success" style="font-size: 20px;"></i>
                 </a>
                 @endif
-                <form class="d-none" id="banUser-{{ $user->id }}" action="{{ route('admin.users.ban', $user->id) }}" method="post">
+                <form class="d-none" id="banUser-{{ $user->id }}" action="{{ route('admin.user.ban', $user->id) }}" method="post">
                   @csrf
                   @method('PUT')
                 </form>
@@ -89,7 +89,7 @@
                 </form>
               </td>
               <td>
-                <a href="{{ route('admin.master.transfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Master" class="btn btn-info btn-sm">
+                <a href="{{ route('admin.master.getTransfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Master" class="btn btn-info btn-sm">
                   <i class="fas fa-right-left text-white me-1"></i>
                   {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
                   ငွေလွဲမည်

@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('admin_add_balances', function (Blueprint $table) {
             $table->id();
             $table->float('balance_up');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('admin_id');
             $table->string('remark');
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('admin_id')->references('id')->on('admins')->onDelete('cascade');
         });
     }
 

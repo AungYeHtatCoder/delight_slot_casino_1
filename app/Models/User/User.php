@@ -1,10 +1,7 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\User;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\Admin\Role;
-use App\Models\Admin\Permission;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -21,14 +18,10 @@ class User extends Authenticatable
      */
      protected $fillable = [
         'name',
-        'operatorcode',
-        'signature',
         'profile',
         'email',
         'password',
         'profile',
-        'profile_mime',
-        'profile_size',
         'phone',
         'address',
         'kpay_no',
@@ -36,7 +29,7 @@ class User extends Authenticatable
         'wavepay_no',
         'ayapay_no',
         'balance',
-        'agent_id',
+        'admin_id',
 
     ];
     protected $dates = ['created_at', 'updated_at'];
@@ -62,58 +55,23 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function getIsAdminAttribute()
-    {
-        return $this->roles()->where('id', 1)->exists();
-    }
-
-    public function getIsMasterAttribute()
-    {
-        return $this->roles()->where('id', 2)->exists();
-    }
-
-    public function getIsAgentAttribute()
-    {
-        return $this->roles()->where('id', 3)->exists();
-    }
-    public function getIsUserAttribute()
-    {
-        return $this->roles()->where('id', 4)->exists();
-    }
-
-    public function roles()
-    {
-        return $this->belongsToMany(Role::class);
-
-    }
-
-    public function permissions()
-    {
-        return $this->belongsToMany(Permission::class);
-    }
-    public function hasRole($role)
-    {
-        return $this->roles->contains('title', $role);
-    }
-
-    public function hasPermission($permission)
-    {
-        return $this->roles->flatMap->permissions->pluck('title')->contains($permission);
-    }
-
     public function user(){
         return $this->belongsTo(User::class);
     }
 
     // Other users that this user (a master) has created (agents)
+    public function createdAdmin()
+    {
+        return $this->hasMany(Admin::class, 'admin_id');
+    }
     public function createdAgents()
     {
-        return $this->hasMany(User::class, 'agent_id');
+        return $this->hasMany(Admin::class, 'admin_id');
     }
 
     // The master that created this user (an agent)
     public function createdByMaster()
     {
-        return $this->belongsTo(User::class, 'agent_id');
+        return $this->belongsTo(Admin::class, 'admin_id');
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Policies;
 
-use App\Models\User;
+use App\Models\Admin\Admin;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Auth\Access\Response;
 use Illuminate\Auth\Access\HandlesAuthorization;
@@ -13,51 +13,51 @@ class AgentPolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function before(User $user, $ability)
+    public function before(Admin $admin, $ability)
     {
         // If the user is an Admin, they can perform any action
-        if ($user->hasRole('Admin')) {
+        if ($admin->hasRole('Admin')) {
             return true;
         }
     }
 
-    public function createMaster(User $user)
+    public function createMaster(Admin $admin)
     {
         // Only Admin can create a Master
-        return $user->hasRole('Admin');
+        return $admin->hasRole('Admin');
     }
 
-    public function createAgent(User $user)
+    public function createAgent(Admin $admin)
     {
         // Only Admin and Master can create an Agent
-        return $user->hasRole('Admin') || $user->hasRole('Master');
+        return $admin->hasRole('Admin') || $admin->hasRole('Master');
     }
 
-    public function createUser(User $user)
+    public function createUser(Admin $admin)
     {
         // Only Admin, Master, and Agent can create a User
-        return $user->hasRole('Admin') || $user->hasRole('Master') || $user->hasRole('Agent');
+        return $admin->hasRole('Admin') || $admin->hasRole('Master') || $admin->hasRole('Agent');
     }
     
     // ... other methods for update, view, delete, etc.
     // admin only view 
-    public function viewAdminTransferLog(User $user)
+    public function viewAdminTransferLog(Admin $admin)
     {
-        return $user->hasRole('Admin');
+        return $admin->hasRole('Admin');
     }
     // master only view
-    public function viewMasterTransferLog(User $user)
+    public function viewMasterTransferLog(Admin $admin)
     {
-        return $user->hasRole('Master');
+        return $admin->hasRole('Master');
     }
     // agent only view
-    public function viewAgentTransferLog(User $user)
+    public function viewAgentTransferLog(Admin $admin)
     {
-        return $user->hasRole('Agent');
+        return $admin->hasRole('Agent');
     }
     // admin only update balance 
-    public function updateAdminBalance(User $user)
+    public function updateAdminBalance(Admin $admin)
     {
-        return $user->hasRole('Admin');
+        return $admin->hasRole('Admin');
     }
 }

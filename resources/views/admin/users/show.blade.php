@@ -64,7 +64,7 @@
   <div class="container mt-2">
    <div class="d-flex justify-content-between">
     <h4>User Detail</h4>
-    <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.users.index') }}">
+    <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.user.index') }}">
      <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
     </a>
    </div>
