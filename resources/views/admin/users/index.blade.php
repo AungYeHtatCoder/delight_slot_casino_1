@@ -21,7 +21,7 @@
    <div class="card-header pb-0">
     <div class="d-lg-flex">
      <div>
-      <h5 class="mb-0">User Dashboards</h5>
+      <h5 class="mb-0">Player Dashboards</h5>
       @if(Session::has('success'))
       <div class="alert alert-success">
           {{session('message')}}
