@@ -59,14 +59,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css">
 @endsection
 @section('content')
+
 <div class="row justify-content-center">
   <div class="col-lg-12">
     <div class="container mt-2">
       <div class="d-flex justify-content-between">
-        <h4>Master Information -- <span>
-            Master ID : {{ $transfer_user->id }}
+        <h4>Player Information -- <span>
+            Player ID : {{ $user->id }}
           </span></h4>
-        <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.master.index') }}">
+        <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.user.index') }}">
           <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
         </a>
       </div>
@@ -76,19 +77,19 @@
             <tbody>
               <tr>
                 <th>ID</th>
-                <td>{!! $transfer_user->id !!}</td>
+                <td>{!! $user->id !!}</td>
               </tr>
               <tr>
                 <th>User Name</th>
-                <td>{!! $transfer_user->name !!}</td>
+                <td>{!! $user->name !!}</td>
               </tr>
               <tr>
                 <th>Phone</th>
-                <td>{!! $transfer_user->phone !!}</td>
+                <td>{!! $user->phone !!}</td>
               </tr>
               <tr>
                 <th>Balance</th>
-                <td>{!! $transfer_user->balance !!}</td>
+                <td>{!! $user->balance !!}</td>
               </tr>
             </tbody>
           </table>
@@ -98,6 +99,7 @@
   </div>
 
 </div>
+
 <div class="row mt-4">
   <div class="col-lg-12">
     <div class="card">
@@ -105,19 +107,20 @@
       <div class="card-header pb-0">
         <div class="d-lg-flex">
           <div>
-            <h5 class="mb-0">Master ထံသို့ ငွေလွဲပေးမည်</h5>
+            <h5 class="mb-0">Player ထံသို့ ငွေလွဲပေးမည်</h5>
 
           </div>
         </div>
       </div>
       <div class="card-body">
-        <form action="{{ route('admin.master.makeTransfer') }}" method="POST">
+        
+        <form action="{{ route('admin.user.makeTransfer') }}" method="POST">
           @csrf
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Master Real Name</label>
-                <input type="text" class="form-control" name="name" value="{{ $transfer_user->name }}" readonly>
+                <input type="text" class="form-control" name="name" value="{{ $user->name }}" readonly>
 
               </div>
               @error('name')
@@ -127,7 +130,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Phone</label>
-                <input type="text" class="form-control" name="phone" value="{{ $transfer_user->phone }}" readonly>
+                <input type="text" class="form-control" name="phone" value="{{ $user->phone }}" readonly>
 
               </div>
               @error('phone')
@@ -136,13 +139,12 @@
             </div>
           </div>
           <input type="hidden" name="from_user_id" value="{{ Auth::user()->id }}">
-          <input type="hidden" name="to_user_id" value="{{ $transfer_user->id }}">
+          <input type="hidden" name="to_user_id" value="{{ $user->id }}">
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
-                <label class="form-label">Master ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
-                <input type="text" class="form-control" name="cash_in">
-
+                <label class="form-label">Player ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
+                <input type="decimal" class="form-control" name="amount">
 
               </div>
               @error('cash_in')
@@ -151,9 +153,23 @@
             </div>
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
+                <select class="form-control" name="p_code" id="choices-code" required>
+                  <option value="">Choose Provider Code</option>
+                  @foreach ($providers as  $provider)
+                    <option value="{{ $provider->p_code }}" >
+                    {{ $provider->p_code }}
+                    </option>
+                    @endforeach
+                  </select>
+              </div>
+              @error('p_code')
+              <span class="d-block text-danger">*{{ $message }}</span>
+              @enderror
+            </div>
+            <div class="col-md-6">
+              <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Addition Note (optional)</label>
                 <input type="text" class="form-control" name="note">
-
               </div>
               @error('note')
               <span class="d-block text-danger">*{{ $message }}</span>
@@ -164,7 +180,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="input-group input-group-outline is-valid my-3">
-                <button type="submit" class="btn btn-primary">Master ထံသို့ ငွေလွဲပေးမည်</button>
+                <button type="submit" class="btn btn-primary">Player ထံသို့ ငွေလွဲပေးမည်</button>
               </div>
             </div>
           </div>
@@ -173,8 +189,6 @@
     </div>
   </div>
 </div>
-
-
 @endsection
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -187,7 +201,6 @@
   document.addEventListener('DOMContentLoaded', function() {
     var errorMessage =  @json(session('error'));
     var successMessage =  @json(session('success'));
-    console.log(successMessage);
     @if(session('success'))
     Swal.fire({
       icon: 'success',

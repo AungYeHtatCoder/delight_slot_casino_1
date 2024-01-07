@@ -1,29 +1,25 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Transfer;
+namespace App\Http\Controllers\Admin\TransferLog;
 
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Admin\Transter\TransferLog;
+use App\Models\Admin\TransferLog;
 
 class TransferLogController extends Controller
 {
-    public function AdminToMasterTransferLog()
+    public function index()
     {
         // authorize 
-        $this->authorize('viewAdminTransferLog', User::class);
+        $this->authorize('transfer_log', User::class);
+      
         // Get all TransferLog records
         $id = auth()->id(); // ID of the Admin
-        $transfer_user = User::findOrFail($id);
 
-        $transferLogs = TransferLog::where('from_user_id', $id)
-        ->orWhere('to_user_id', $id)
-        ->get();
-
-        return view('admin.trans_log.admin_transfer_log', compact('transferLogs'));
-        //return response()->json($transferLogs);
+        $transferLogs = TransferLog::where('from_user_id', $id)->get();
+        return view('admin.trans_log.index', compact('transferLogs'));
     }
 
 

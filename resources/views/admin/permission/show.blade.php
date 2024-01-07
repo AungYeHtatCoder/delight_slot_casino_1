@@ -74,19 +74,19 @@
       <tbody>
        <tr>
         <th>ID</th>
-        <td>{!! $permission_detail->id !!}</td>
+        <td>{!! $permission->id !!}</td>
        </tr>
        <tr>
         <th>Permission Name</th>
-        <td>{!! $permission_detail->name !!}</td>
+        <td>{!! $permission->title !!}</td>
        </tr>
        <tr>
         <th>Create Date</th>
-        <td>{!! $permission_detail->created_at !!}</td>
+        <td>{!! $permission->created_at !!}</td>
        </tr>
        <tr>
         <th>Update Date</th>
-        <td>{!! $permission_detail->updated_at !!}</td>
+        <td>{!! $permission->updated_at !!}</td>
        </tr>
       </tbody>
      </table>

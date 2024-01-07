@@ -63,10 +63,14 @@
   <div class="col-lg-12">
     <div class="container mt-2">
       <div class="d-flex justify-content-between">
-        <h4>Master Information -- <span>
-            Master ID : {{ $transfer_user->id }}
-          </span></h4>
-        <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.master.index') }}">
+        <h6>Player Information -- <span>
+            Player ID : {{ $user->id }}
+          </span>
+          <span>
+            Player Balance :
+          </span>
+        </h6>
+        <a class="btn btn-icon btn-2 btn-primary" href="{{ url('/admin/real-live-master-list') }}">
           <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
         </a>
       </div>
@@ -76,19 +80,15 @@
             <tbody>
               <tr>
                 <th>ID</th>
-                <td>{!! $transfer_user->id !!}</td>
+                <td>{!! $user->id !!}</td>
               </tr>
               <tr>
                 <th>User Name</th>
-                <td>{!! $transfer_user->name !!}</td>
+                <td>{!! $user->name ?? "" !!}</td>
               </tr>
               <tr>
                 <th>Phone</th>
-                <td>{!! $transfer_user->phone !!}</td>
-              </tr>
-              <tr>
-                <th>Balance</th>
-                <td>{!! $transfer_user->balance !!}</td>
+                <td>{!! $user->phone !!}</td>
               </tr>
             </tbody>
           </table>
@@ -96,6 +96,7 @@
       </div>
     </div>
   </div>
+
 
 </div>
 <div class="row mt-4">
@@ -105,19 +106,23 @@
       <div class="card-header pb-0">
         <div class="d-lg-flex">
           <div>
-            <h5 class="mb-0">Master ထံသို့ ငွေလွဲပေးမည်</h5>
-
+            <h5 class="mb-0">{{ $admin->name ?? "" }} ထံမှ ငွေထုတ်ယူမည် ||
+              <span>Current Balance - {{ number_format($adminBalance['data'],2)  }} ||
+                <span id="current_date">{{ now()}}</span>
+              </span>
+            </h5>
           </div>
+
         </div>
       </div>
       <div class="card-body">
-        <form action="{{ route('admin.master.makeTransfer') }}" method="POST">
+        <form action="{{ route('admin.user.makeCashOut') }}" method="POST">
           @csrf
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
-                <label class="form-label">Master Real Name</label>
-                <input type="text" class="form-control" name="name" value="{{ $transfer_user->name }}" readonly>
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" name="name" value="{{ $user->name }}" readonly>
 
               </div>
               @error('name')
@@ -127,7 +132,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Phone</label>
-                <input type="text" class="form-control" name="phone" value="{{ $transfer_user->phone }}" readonly>
+                <input type="text" class="form-control" name="phone" value="{{ $user->phone }}" readonly>
 
               </div>
               @error('phone')
@@ -136,16 +141,30 @@
             </div>
           </div>
           <input type="hidden" name="from_user_id" value="{{ Auth::user()->id }}">
-          <input type="hidden" name="to_user_id" value="{{ $transfer_user->id }}">
+          <input type="hidden" name="to_user_id" value="{{ $user->id }}">
+        
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
-                <label class="form-label">Master ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
-                <input type="text" class="form-control" name="cash_in">
-
-
+                <label class="form-label">Admin ထံမှငွေနုတ်ယူမည့်ပမာဏ</label>
+                <input type="text" class="form-control" name="amount" required>
               </div>
-              @error('cash_in')
+              @error('cash_out')
+              <span class="d-block text-danger">*{{ $message }}</span>
+              @enderror
+            </div>
+            <div class="col-md-6">
+              <div class="input-group input-group-outline is-valid my-3">
+                <select class="form-control" name="p_code" id="choices-code" required>
+                  <option value="">Choose Provider Code</option>
+                  @foreach ($providers as  $provider)
+                    <option value="{{ $provider->p_code }}" >
+                    {{ $provider->p_code }}
+                    </option>
+                    @endforeach
+                  </select>
+              </div>
+              @error('p_code')
               <span class="d-block text-danger">*{{ $message }}</span>
               @enderror
             </div>
@@ -164,7 +183,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="input-group input-group-outline is-valid my-3">
-                <button type="submit" class="btn btn-primary">Master ထံသို့ ငွေလွဲပေးမည်</button>
+                <button type="submit" class="btn btn-primary">Admin ထံမှ ငွေထုတ်ယူမည်</button>
               </div>
             </div>
           </div>
@@ -173,7 +192,45 @@
     </div>
   </div>
 </div>
+<div class="row mt-4">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>Admin To Player Transfer History</h4>
+      </div>
+      <div class="card-body">
 
+        <table class="table">
+          <tr>
+            <th>#</th>
+            <th>RefrenceId</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Cash In</th>
+            <th>Cash Out</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+          <tbody>
+            @foreach ($transfer_logs as  $log)
+            <tr>
+              <td>{{ $loop->iteration }}</td>
+              <td>{{$log->refrence_id}}</td>
+              <td>{{ $log->fromUser->name }} </td>
+              <td>{{ $log->toUser->name }}</td>
+              <td>{{$log->cash_in}}</td>
+              <td>{{$log->cash_out}}</td>
+              <td><small class="badge badge-success">{{$log->status}}</small></td>
+              <td>{{ $log->created_at->format('d-m-Y H:i:s') }}</td>
+            </tr>
+            @endforeach
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 @endsection
 @section('scripts')
@@ -182,24 +239,25 @@
 <script src="{{ asset('admin_app/assets/js/plugins/choices.min.js') }}"></script>
 <script src="{{ asset('admin_app/assets/js/plugins/quill.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var errorMessage =  @json(session('error'));
     var successMessage =  @json(session('success'));
-    console.log(successMessage);
-    @if(session('success'))
+   
+
+    @if(session()->has('success'))
     Swal.fire({
       icon: 'success',
-      title: 'Success',
-      text: successMessage,
+      title: successMessage,
+      text: '{{ session('
+      SuccessRequest ') }}',
       timer: 3000,
       showConfirmButton: false
     });
-    @elseif(session('error'))
+    @elseif(session()->has('error'))
     Swal.fire({
       icon: 'error',
-      title: 'Error',
+      title: '',
       text: errorMessage,
       timer: 3000,
       showConfirmButton: false
@@ -207,14 +265,4 @@
     @endif
   });
 </script>
-
-<script>
-  if (document.getElementById('choices-tags-edit')) {
-    var tags = document.getElementById('choices-tags-edit');
-    const examples = new Choices(tags, {
-      removeItemButton: true
-    });
-  }
-</script>
-
 @endsection

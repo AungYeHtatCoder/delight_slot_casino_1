@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Admin\Transter;
+namespace App\Models\Admin;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
@@ -16,7 +16,10 @@ class TransferLog extends Model
         'to_user_id',
         'cash_in',
         'cash_out',
+        'p_code',
         'cash_balance',
+        'refrence_id',
+        'status',
         'note',
     ];
     protected $dates = ['created_at', 'updated_at'];

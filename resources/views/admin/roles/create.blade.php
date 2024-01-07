@@ -82,17 +82,7 @@
          <label for="title">Role Name</label>
          <input type="text" id="title" name="title" class="form-control">
         </div>
-        <!-- <div class="custom-form-group">
-         <label for="choices-role">Permission</label>
-         <select class="form-control" name="roles[]" id="choices-roles" multiple>
-          @foreach ($permissions as $id => $permission)
-          <option value="{{ $id }}"
-           {{ in_array($id, old('permissions', [])) || (isset($role) && $role->permissions->contains($id)) ? 'selected' : '' }}>
-           {{ $permission }}
-          </option>
-          @endforeach
-         </select>
-        </div> -->
+       
         <div class="row custom-form-group">
          <div class="col-12">
           <label>Permission</label>

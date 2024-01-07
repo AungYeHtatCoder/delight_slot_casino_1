@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\GameType;
+use App\Models\Admin\GameType;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 

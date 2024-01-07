@@ -5,12 +5,26 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\Banner;
 use App\Models\Admin\BannerText;
-use App\Models\GameType;
+use App\Models\Admin\GameType;
 use App\Models\Provider;
+use App\Services\ApiService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    protected $apiService;
+    protected $operatorCode;
+    protected $secreteKey;
+    protected $backendPassword;
+
+    public function __construct(ApiService $apiService)
+    {
+        $this->apiService = $apiService;
+        $this->operatorCode = config('common.operatorcode');
+        $this->secreteKey  = config('common.secret_key');
+        $this->backendPassword = config('commont.backend_password');
+    }
     public function index()
     {
         $banners = Banner::latest()->take(3)->get();
@@ -37,6 +51,10 @@ class UserController extends Controller
 
     public function wallet()
     {
+
+        // $endpoint = 'getBalance.aspx';
+        // $signaturString = ;
+
         return view('user.pages.wallet');
     }
     public function betRecord()

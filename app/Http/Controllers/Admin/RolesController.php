@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Admin\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
-use App\Models\Admin\Permission;
+use App\Models\Permission;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;
@@ -55,17 +55,7 @@ class RolesController extends Controller
         return response()->json(['success' => true, 'message' => 'Role created successfully.']);
     }
 
-    // public function store(Request $request)
-    // {
-    //      $request->validate([
-    //         'title' => 'required|unique:roles,title'
-    //     ]);
-    //      $role = Role::create($request->all());
-    //      $role->permissions()->sync($request->input('permissions', []));
-    //     // redirect
-    //     return redirect()->route('admin.roles.index')->with('toast_success', 'Role created successfully.');
-    // }
-
+    
     /**
      * Display the specified resource.
      */
@@ -92,7 +82,7 @@ class RolesController extends Controller
             '403 Forbidden |You cannot  Access this page because you do not have permission'
         );
         $role = Role::find($id);
-        $permissions = Permission::all()->pluck('title', 'id');
+        $permissions = Permission::all();
         return view('admin.roles.edit', compact('role', 'permissions'));
     }
 
@@ -101,8 +91,12 @@ class RolesController extends Controller
      */
     public function update(Request $request, Role $role)
     {
-        $role->update($request->all());
-        $role->permissions()->sync($request->input('permissions', []));
+        
+        $role->update([
+            'title' => $request->title
+        ]);
+        
+        $role->permissions()->sync($request->permissions);
         return redirect()->route('admin.roles.index')->with('toast_success', 'Role updated successfully.');
     }
 

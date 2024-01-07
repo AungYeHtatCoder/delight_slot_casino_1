@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\ApiHelper;
+use App\Models\Admin\Admin;
 use App\Models\User;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\VarDumper\Caster\RedisCaster;
 
-class HomeController extends Controller
+class HomeController extends ApiController
 {
     /**
      * Create a new controller instance.
@@ -38,30 +40,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (auth()->user()->hasRole('Admin')) {
+            $admin = Auth::user();
+            
+            if($admin->hasRole('Admin'))
+            {
+                $response = $this->getAdminBalance();
+                return view('admin.profile.admin_profile',compact('response'));
+            }else{
 
-            $endPoint = '/checkAgentCredit.aspx';
-            $signatureString = $this->operatorCode . $this->secretKey;
-            $signature = ApiHelper::generateSignature($signatureString);
+                return redirect('/');
+            }
         
-            $param =[
-                'operatorcode' => $this->operatorCode,
-                'signature' => $signature
-            ];
-            $response = $this->apiService->get($endPoint,$param);
-           
-            return view('admin.profile.admin_profile',compact('response'));
-        } elseif (auth()->user()->hasRole('Master')) {
-        $agents = User::where('agent_id', Auth::user()->id)->count();
-
-            return view('admin.master.master_dashboard', compact('agents'));
-        } elseif (auth()->user()->hasRole('Agent')) {
-        $userId = auth()->id(); // ID of the master user
-        // Retrieve agents created by this master user
-        $agentIds = User::where('agent_id', $userId)->pluck('id');
-            return view('admin.agent.agent_dashboard', compact('agentIds'));
-        } else {
-            return view('user.pages.user-info');
-        }
     }
 }

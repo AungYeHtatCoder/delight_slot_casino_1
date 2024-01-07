@@ -21,12 +21,12 @@
    <div class="card-header pb-0">
     <div class="d-lg-flex">
      <div>
-      <h5 class="mb-0">User Dashboards</h5>
+      <h5 class="mb-0">Transfer Log</h5>
 
      </div>
      <div class="ms-auto my-auto mt-lg-0 mt-4">
       <div class="ms-auto my-auto">
-       <a href="{{ route('admin.users.create') }}" class="btn bg-gradient-primary btn-sm mb-0 py-2"></a>
+       <a href="{{ route('admin.user.create') }}" class="btn bg-gradient-primary btn-sm mb-0 py-2"></a>
        <button class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1 " data-type="csv" type="button"
         name="button">Export</button>
       </div>
@@ -45,7 +45,6 @@
             <th>Cash In</th>
             <th>Cash Out</th>
             <th>Profit</th>
-            <th>Cash Balance</th>
             <th>Note</th>
         </tr>
     </thead>
@@ -74,7 +73,6 @@
                       <span class="text-success">{{ $profit }}</span>
                   @endif
                 </td>
-                <td>{{ $log->cash_balance }}</td>
                 <td>{{ $log->note }}</td>
             </tr>
         @endforeach

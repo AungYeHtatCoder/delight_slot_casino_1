@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\GameType;
-use App\Models\Provider;
-use App\Models\ProviderCode;
+use App\Models\Admin\Provider;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,7 +19,7 @@ class GameTypeProviderSeeder extends Seeder
         $gameTypeId_1 = [3,4];
         foreach ($gameTypeId_1 as $index => $gameTypeId) {
             $gameTypeData_1[$gameTypeId] = ['image' => $agImages[$index]];
-        }   
+        }
         $provider1->gameTypes()->attach($gameTypeData_1);
 
 

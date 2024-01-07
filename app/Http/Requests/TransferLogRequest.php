@@ -24,10 +24,15 @@ class TransferLogRequest extends FormRequest
         return [
             'name' => 'required|min:3',
             'phone' => ['required', 'regex:/^([0-9\s\-\+\(\)]*)$/'],
-            'cash_in' => 'required|numeric',
+            'amount' => 'nullable|numeric',
             'from_user_id' => ['required','exists:users,id'],
             'to_user_id' => ['required','exists:users,id'],
-            'note' => ['nullable','string']
+            'p_code' => ['required','exists:providers,p_code'],
+            'note' => ['nullable','string'],
+            'status' => ['nullable']
         ];
     }
+
+   
+
 }

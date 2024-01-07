@@ -76,14 +76,16 @@
        </div>
       </div>
       <div class="card-body">
-       <form role="form" class="text-start" action="{{ route('admin.permissions.store') }}">
+       <form role="form" method="post" class="text-start" action="{{ route('admin.permissions.update',$permission->id) }}">
         @csrf
+        @method('PUT')
         <div class="custom-form-group">
          <label for="title">Permission Name</label>
-         <input type="text" id="title" value="" name="title" class="form-control">
+   
+         <input type="text" id="title"  name="title" class="form-control" value="{{$permission->title}}">
         </div>
         <div class="custom-form-group">
-         <button class="btn btn-primary" type="button">Edit</button>
+         <button class="btn btn-primary" type="submit">Edit</button>
         </div>
        </form>
       </div>

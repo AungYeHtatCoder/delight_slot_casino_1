@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
-    public function userLogin()
+    public function showLogin()
     {
         if(Auth::check()){
             return redirect()->back()->with('error', "Already Logged In.");
@@ -19,23 +20,23 @@ class LoginController extends Controller
     }
 
     public function login(Request $request)
-    {
-        //dd($request->all());
+    {   
+        
         $request->validate([
-            'login' => 'required', // Input field named 'login' can hold either email or phone
+            'phone' => 'required', // Input field named 'login' can hold either email or phone
             'password' => ['required', 'string', 'min:6'],
         ]);
 
-        $loginField = filter_var($request->input('login'), FILTER_VALIDATE_EMAIL) ? 'email' : 'phone';
 
         $credentials = [
-            $loginField => $request->input('login'),
+            'phone' => $request->input('phone'),
             'password' => $request->input('password'),
         ];
 
         if (Auth::attempt($credentials)) {
             // Authentication passed
-            return redirect('/home')->with('success', 'Login Success!');
+           
+            return redirect('/')->with('success', 'Login Success!');
         } else {
             return redirect()->back()->with('error', 'Invalid credentials. Please try again.');
         }

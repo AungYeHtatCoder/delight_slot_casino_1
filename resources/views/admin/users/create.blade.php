@@ -66,12 +66,12 @@
         <div class="card-header pb-0">
           <div class="d-lg-flex">
             <div>
-              <h5 class="mb-0">User Create Dashboards</h5>
+              <h5 class="mb-0">Create New Player</h5>
 
             </div>
             <div class="ms-auto my-auto mt-lg-0 mt-4">
               <div class="ms-auto my-auto">
-                <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.users.index') }}">
+                <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.user.index') }}">
                   <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
                 </a>
               </div>
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="card-body">
-          <form role="form" method="POST" class="text-start" action="{{ route('admin.users.store') }}">
+          <form role="form" method="POST" class="text-start" action="{{ route('admin.user.store') }}">
             @csrf
             <div class="custom-form-group">
               <label for="title">Player Name</label>

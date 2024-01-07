@@ -32,10 +32,10 @@
            {{-- login --}}
             <div class="d-flex justify-content-around align-items-center">
               @guest
-              <a href="{{ route('login') }}" class="btn-login text-decoration-none d-block w-100 text-center"><i class="fas fa-unlock me-2"></i>အကောင့်ဝင်ပါ။</a>
-              {{-- <a href="{{ route('register') }}" class="btn-register text-decoration-none mx-2">အကောင့်သစ်ဖွင့်ရန်</a> --}}
+              <a href="{{ route('showLogin') }}" class="btn-login text-decoration-none d-block">လော့ဂ်အင်</a>
+              <a href="{{ route('register') }}" class="btn-register text-decoration-none mx-2">အကောင့်သစ်ဖွင့်ရန်</a>
               @else
-              <a href="{{ route('user.user_info') }}" class="btn-login text-decoration-none d-block">{{ Auth::user()->name }}</a>
+              <a href="{{ route('user.user_info') }}" class="btn-login text-decoration-none d-block">{{ Auth::user()  ->name }}</a>
 
               <a href="{{ route('logout') }}" class="btn-register text-decoration-none mx-2" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">အကောင့်ထွက်ရန်</a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

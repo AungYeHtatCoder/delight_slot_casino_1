@@ -76,38 +76,31 @@
        </div>
       </div>
       <div class="card-body">
-       <form role="form" class="text-start" action="{{ route('admin.roles.store') }}">
+       <form role="form" method="post" class="text-start" action="{{ route('admin.roles.update',$role->id) }}">
         @csrf
+        @method('PUT')
         <div class="custom-form-group">
          <label for="title">Role Name</label>
-         <input type="text" id="title" name="title" class="form-control">
+         <input type="text" id="title" name="title" class="form-control" value="{{$role->title}}">
         </div>
-        <!-- <div class="custom-form-group">
-         <label for="choices-role">Permission</label>
-         <select class="form-control" name="roles[]" id="choices-roles" multiple>
-          @foreach ($permissions as $id => $permission)
-          <option value="{{ $id }}"
-           {{ in_array($id, old('permissions', [])) || (isset($role) && $role->permissions->contains($id)) ? 'selected' : '' }}>
-           {{ $permission }}
-          </option>
-          @endforeach
-         </select>
-        </div> -->
+        
         <div class="row custom-form-group">
          <div class="col-12">
           <label for="choices-role">Permission</label>
-          <select class="form-control" name="roles[]" id="choices-tags-edit" multiple>
-           @foreach ($permissions as $id => $permission)
-           <option value="{{ $id }}"
-            {{ in_array($id, old('permissions', [])) || (isset($role) && $role->permissions->contains($id)) ? 'selected' : '' }}>
-            {{ $permission }}
+          <select class="form-control" name="permissions[]" id="choices-tags-edit" multiple>
+           @foreach ($permissions as  $permission)
+           
+           <option value="{{ $permission->id }}"
+            {{ in_array($permission->id, old('permissions', [])) ||
+              (isset($role) && $role->permissions->contains($permission->id)) ? 'selected' : '' }}>
+            {{ $permission->title }}
            </option>
            @endforeach
           </select>
          </div>
         </div>
         <div class="custom-form-group">
-         <button class="btn btn-primary" type="button">Edit</button>
+         <button class="btn btn-primary" type="submit">Edit</button>
         </div>
        </form>
       </div>
