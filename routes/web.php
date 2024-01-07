@@ -25,6 +25,8 @@ require_once __DIR__ . '/admin.php';
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/api_dashboard', [App\Http\Controllers\HomeController::class, 'apiDashboard'])->name('api_dashboard');
+Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
 
 //auth routes
 Route::get('/login', [LoginController::class, 'showLogin'])->name('showLogin');

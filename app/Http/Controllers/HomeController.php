@@ -23,13 +23,15 @@ class HomeController extends ApiController
 
     protected $secretKey;
 
+    protected $apiDashbaord;
+
     public function __construct(ApiService $apiService)
     {
         $this->middleware('auth');
         $this->apiService = $apiService;
         $this->operatorCode = config('common.operatorcode');
         $this->secretKey  = config('common.secret_key');
-
+        $this->apiDashbaord = config('common.api_dashboard');
 
     }
 
@@ -45,11 +47,23 @@ class HomeController extends ApiController
             if($admin->hasRole('Admin'))
             {
                 $response = $this->getAdminBalance();
-                return view('admin.profile.admin_profile',compact('response'));
+                $userCount = User::wherenull('agent_id')->count();
+               
+                return view('admin.dashboard',compact('response','userCount'));
             }else{
 
                 return redirect('/');
             }
         
     }
-}
+
+    public function apiDashboard()
+    {
+        return view('admin.api_dashboard')->with(['apiDashboard' => $this->apiDashbaord]);
+    }
+    public function profile()
+    {
+        return view('admin.profile.admin_profile');
+    }
+
+} 

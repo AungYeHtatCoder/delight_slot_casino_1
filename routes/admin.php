@@ -62,10 +62,10 @@ Route::group([
     
     Route::get('transer-log',[TransferLogController::class,'index'])->name('transferLog');
     Route::get('cash-in-request-list', [CashInRequestController::class, 'index'])->name('cash-in-request-list');
-    Route::get('cash-transfer/{user}',[CashInRequestController::class,'getTransfer'])->name('user.getTransfer');
-    Route::post('cash-transfer',[CashInRequestController::class,'makeTransfer'])->name('user.makeTransfer');
-    Route::get('cash-out/{user}',[CashOutRequestController::class,'getCashOut'])->name('user.getCashOut');
-    Route::post('cash-out',[CashOutRequestController::class,'makeCashOut'])->name('user.makeCashOut');
+    Route::get('cash-transfer/{cash}',[CashInRequestController::class,'getTransfer'])->name('getTransfer');
+    Route::post('cash-transfer',[CashInRequestController::class,'makeTransfer'])->name('makeTransfer');
+    Route::get('cash-out/{cash}',[CashOutRequestController::class,'getCashOut'])->name('getCashOut');
+    Route::post('cash-out',[CashOutRequestController::class,'makeCashOut'])->name('makeCashOut');
     Route::get('cash-out-request-list', [CashOutRequestController::class, 'index'])->name('cash-out-request-list');
 
 

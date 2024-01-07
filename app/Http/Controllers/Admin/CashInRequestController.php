@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\ApiHelper;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TransferLogRequest;
@@ -15,6 +16,8 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Gate;
+use Symfony\Component\HttpFoundation\Response;
+
 
 class CashInRequestController extends ApiController
 {
@@ -79,13 +82,14 @@ class CashInRequestController extends ApiController
     }
 
    
-    public function getTransfer(User $user)
+    public function getTransfer(CashInRequest $cash)
     {
+        
         $providers = Provider::all();
-
-        return view('admin.users.transfer', compact(['user', 'providers']));
+        
+        return view('admin.cash_request.transfer', compact(['cash', 'providers']));
     }
-    public function makeTransfer(TransferLogRequest $request)
+    public function makeTransfer(TransferLogRequest $request,CashInRequest $cash)
     {
 
         
@@ -101,14 +105,14 @@ class CashInRequestController extends ApiController
             $inputs =array_merge($request->validated(),['refrence_id' => $refrence_id]);
             $user = User::findOrFail($inputs['to_user_id']);
             $endpoint = '/makeTransfer.aspx';
-        
+            
             // Create transfer log
             $signature = $this->getSignature($inputs,$user,$this->deposit);
             
             $param = $this->getParam($inputs,$signature,$user,$this->deposit);
           
             $data = $this->apiService->get($endpoint, $param);
-           
+  
             if ($data['errCode'] == 0) {
 
                 TransferLog::create(array_merge($inputs,['cash_in' => $inputs['amount'],'status' => $data['errMsg']]));
@@ -129,56 +133,7 @@ class CashInRequestController extends ApiController
         }
 
     }
-    public function getCashOut(User $user)
-    {
-        $admin = Auth()->user();
-        $transfer_logs = TransferLog::where('to_user_id', $user->id)->get();
-        $adminBalance = $this->getAdminBalance();
-        $providers  = Provider::all();
-        return view('admin.users.cash_out', compact('user', 'admin', 'transfer_logs', 'adminBalance','providers'));
-    }
-
-    public function makeCashOut(TransferLogRequest $request)
-    {
-        
-        abort_if(
-            Gate::denies('make_transfer'),
-            Response::HTTP_FORBIDDEN,
-            '403 Forbidden |You cannot  Access this page because you do not have permission'
-        );
-      
-        try {
-           
-            $refrence_id = $this->getRefrenceId();
-            $inputs =array_merge($request->validated(),['refrence_id' => $refrence_id]);
-            $user = User::findOrFail($inputs['to_user_id']);
-            $endpoint = '/makeTransfer.aspx';
-        
-            // Create transfer log
-            $signature = $this->getSignature($inputs,$user,$this->withdraw);
-            
-            $param = $this->getParam($inputs,$signature,$user,$this->withdraw);
-          
-            $data = $this->apiService->get($endpoint, $param);
-           
-            TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
-
-            if ($data['errCode'] == 0) {
-
-                return redirect()->back()->with('success', 'Money Cashout request submitted successfully!');
-            }else{
-
-                return redirect()->back()->with('error', $data['errMsg']);
-
-            }
-
-          
-        } catch (Exception $e) {
-
-            return redirect()->back()->with('error',$e->getMessage());
-
-        }
-    }
+   
 
     private function getRefrenceId($prefix = 'REF')
     {
