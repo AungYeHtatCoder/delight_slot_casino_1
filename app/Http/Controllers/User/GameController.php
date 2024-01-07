@@ -123,11 +123,16 @@ class GameController extends Controller
             $endpoint,
             $this->getParam($password, $userName, $signature, $providerCode, $type)
         );
-        
+        if($response['errCode'] == 0)
+        {
+            $data = $response['gameUrl'];
+       
+            return redirect($data);
+        }else{
 
-        $data = $response['gameUrl'];
+            return redirect('/')->with(['error' =>  $response['errMsg']]);
+        }
 
-        return redirect($data);
     }
     private function getSignature($operatorCode, $password, $providerCode, $type, $userName, $secretKey)
     {
