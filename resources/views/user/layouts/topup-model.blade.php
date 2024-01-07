@@ -50,11 +50,11 @@
 
           <div class="mb-3">
           <label for="amount" class="form-label text-white fw-bold">သွင်းငွေပမာဏ</label>
-          <input type="number" class="form-control text-success" name="amount" id="amount" autocomplete="off" />
+          <input type="number" class="form-control text-dark" name="amount" id="amount" autocomplete="off" />
           </div>
           <div class="mb-3">
           <label for="phone" class="form-label text-white fw-bold">ငွေသွင်းသူဖုန်းနံပါတ်</label>
-          <input type="number" class="form-control text-success" id="phone" name="phone" autocomplete="off" />
+          <input type="number" class="form-control text-dark" id="phone" name="phone" autocomplete="off" />
           </div>
           <div class="modal-footer">
             <button class="btn-login">ငွေသွင်းရန်</button>
@@ -78,9 +78,9 @@
     </div>
     <div class="modal-body">
       {{-- withdraw code start --}}
-      <div class="my-3">
+      <div class="my-3 withdraw">
         <div class="topuptypes">
-        <h4 class="text-white mb-5">ငွေပေးချေမှုအမျိုးအစားများ withdraw</h4>
+        <h4 class="text-white mb-5">ငွေပေးချေမှုအမျိုးအစားများ</h4>
         <div class="d-flex justify-content-around mt-2 mb-5">
           <div class="bank ck text-center w-100 active pt-3" >
             <label for="kpay1">

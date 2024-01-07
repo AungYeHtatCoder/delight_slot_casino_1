@@ -16,11 +16,11 @@
  </div>
 
  <div class="bet-total p-3">
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between mt-1">
    <p>စုစုပေါင်းဝင်ငွေး</p>
    <span>0.00 (MMK)</span>
   </div>
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between mt-1">
    <p>စုစုပေါင်းကုန်ကျစရိတ်း</p>
    <span>0.00 (MMK)</span>
   </div>
