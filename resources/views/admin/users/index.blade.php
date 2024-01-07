@@ -15,20 +15,6 @@
 @endsection
 @section('content')
 <div class="row mt-4">
-<<<<<<< HEAD
- <div class="col-12">
-  <div class="card">
-   <!-- Card header -->
-   <div class="card-header pb-0">
-    <div class="d-lg-flex">
-     <div>
-      <h5 class="mb-0">Player Dashboards</h5>
-      @if(Session::has('success'))
-      <div class="alert alert-success">
-          {{session('message')}}
-      </div>
-      @endif
-=======
   <div class="col-12">
     <div class="card">
       <!-- Card header -->
@@ -36,7 +22,6 @@
         <div class="d-lg-flex">
           <div>
             <h5 class="mb-0">Player Dashboards</h5>
->>>>>>> 07f309f9ade6a8abf0a859f92fc40dc1e651fce9
 
           </div>
           <div class="ms-auto my-auto mt-lg-0 mt-4">
@@ -174,4 +159,4 @@ console.log(successMessage);
   })
   @endif
 </script> 
-@endsection
+@endsectionhttps://us05web.zoom.us/j/84592172122?pwd=LBd53CkN6D14MhBsbvbbzYlxQGbaKM.1
