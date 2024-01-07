@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Banner;
+use App\Models\Admin\BannerText;
 use App\Models\Admin\GameType;
 use App\Models\Provider;
 use App\Services\ApiService;
@@ -25,10 +27,11 @@ class UserController extends Controller
     }
     public function index()
     {
+        $banners = Banner::latest()->take(3)->get();
+        $bannerText = BannerText::latest()->first();
 
          $gameTypes = GameType::with('providers')->orderBy('order','asc')->where('status',1)->get();
-        
-        return view('user.pages.index',compact('gameTypes'));
+        return view('user.pages.index',compact('gameTypes', 'banners', 'bannerText'));
     }
 
     public function promotion()

@@ -241,12 +241,24 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    @if(session('success'))
+    var errorMessage =  @json(session('error'));
+    var successMessage =  @json(session('success'));
+   
+
+    @if(session()->has('success'))
     Swal.fire({
       icon: 'success',
-      title: 'Success! သင်၏ User ထံမှ ငွေနုတ်ယူမှု အောင်မြင်ပါသည်',
+      title: successMessage,
       text: '{{ session('
       SuccessRequest ') }}',
+      timer: 3000,
+      showConfirmButton: false
+    });
+    @elseif(session()->has('error'))
+    Swal.fire({
+      icon: 'error',
+      title: '',
+      text: errorMessage,
       timer: 3000,
       showConfirmButton: false
     });

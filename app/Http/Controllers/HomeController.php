@@ -40,13 +40,15 @@ class HomeController extends ApiController
      */
     public function index()
     {
-            $admin = Auth::guard('admin')->user();
+            $admin = Auth::user();
             
-            
+            if($admin->hasRole('Admin'))
+            {
                 $response = $this->getAdminBalance();
-           
-            
-            return view('admin.profile.admin_profile',compact('response'));
+                return view('admin.profile.admin_profile',compact('response'));
+            }else{
+                return back();
+            }
         
     }
 }

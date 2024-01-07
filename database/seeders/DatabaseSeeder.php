@@ -14,12 +14,12 @@ class DatabaseSeeder extends Seeder
     {
 
             $this->call([
-            AdminTableSeeder::class,
+            // AdminTableSeeder::class,
             PermissionsTableSeeder::class,
             RolesTableSeeder::class,
             PermissionRoleTableSeeder::class,
             UsersTableSeeder::class,
-            RoleAdminTableSeeder::class,
+            RoleUserTableSeeder::class,
             GameTypeSeeder::class,
             ProviderSeeder::class,
             GameTypeProviderSeeder::class,

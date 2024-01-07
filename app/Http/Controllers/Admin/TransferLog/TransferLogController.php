@@ -13,7 +13,8 @@ class TransferLogController extends Controller
     public function index()
     {
         // authorize 
-        $this->authorize('viewAdminTransferLog', User::class);
+        $this->authorize('transfer_log', User::class);
+      
         // Get all TransferLog records
         $id = auth()->id(); // ID of the Admin
 

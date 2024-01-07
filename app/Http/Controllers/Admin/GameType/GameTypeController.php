@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin\GameType;
 
-use App\Models\GameType;
+use App\Models\Admin\GameType;
 use App\Models\Provider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;

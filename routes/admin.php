@@ -3,6 +3,8 @@
 use App\Http\Controllers\Admin\Agent\AgentController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\BannerTextController;
+use App\Http\Controllers\Admin\CashInRequestController;
+use App\Http\Controllers\Admin\CashOutRequestController;
 use App\Http\Controllers\Admin\GameController;
 use App\Http\Controllers\Admin\GameType\GameTypeController;
 use App\Http\Controllers\Admin\Master\MasterController;
@@ -63,6 +65,10 @@ Route::group([
     Route::post('agent-transfer',[AgentController::class,'makeTransfer'])->name('agent.makeTransfer');
     
     Route::get('transer-log',[TransferLogController::class,'index'])->name('transferLog');
+    Route::get('cash-in-request-list', [CashInRequestController::class, 'index'])->name('cash-in-request-list');
+    Route::get('cash-out-request-list', [CashOutRequestController::class, 'index'])->name('cash-out-request-list');
+
+
     // Route::resource('/promotions', PromotionController::class);
     // // agent user list route
     // Route::get('/agent-user-list', [AgentController::class, 'index'])->name('agent-user-list');

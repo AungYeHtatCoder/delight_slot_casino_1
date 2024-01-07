@@ -138,7 +138,7 @@
               @enderror
             </div>
           </div>
-          <input type="hidden" name="from_user_id" value="{{ Auth::guard('admin')->id() }}">
+          <input type="hidden" name="from_user_id" value="{{ Auth::user()->id }}">
           <input type="hidden" name="to_user_id" value="{{ $user->id }}">
           <div class="row">
             <div class="col-md-6">
@@ -201,7 +201,6 @@
   document.addEventListener('DOMContentLoaded', function() {
     var errorMessage =  @json(session('error'));
     var successMessage =  @json(session('success'));
-    console.log(successMessage);
     @if(session('success'))
     Swal.fire({
       icon: 'success',

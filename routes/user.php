@@ -30,11 +30,12 @@ Route::group(['prefix' => 'user'], function () {
         Route::get('cashrecord', [UserController::class, 'cashRecord'])->name('user.cash');
         Route::get('feedback', [UserController::class, 'feedback'])->name('user.feedback');
         Route::get('game-details', [UserController::class, 'asiagaming'])->name('user.game_detail');
-    
+        
         Route::get('/launchGame/{id}', [GameController::class, 'launchGame'])->name('user.launchGame');
         Route::get('/directGame/{provider_id}/game_type/{game_type_id}',
             [GameController::class, 'directGame'])->name('user.directGame');
-    
+            
+        
     });
    
 });

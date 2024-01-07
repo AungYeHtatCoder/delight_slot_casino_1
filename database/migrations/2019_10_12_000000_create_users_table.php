@@ -22,10 +22,10 @@ return new class extends Migration
             $table->string('profile', 2000)->nullable();
             $table->integer('balance')->default(0);
              $table->integer('status')->default(0);
-            $table->unsignedBigInteger('admin_id');
+            $table->unsignedBigInteger('agent_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->foreign('admin_id')->references('id')->on('admins')->onDelete('cascade');
+            $table->foreign('agent_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

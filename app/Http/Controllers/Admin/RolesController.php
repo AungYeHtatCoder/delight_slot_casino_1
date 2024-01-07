@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Admin\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
-use App\Models\Admin\Permission;
+use App\Models\Permission;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Gate;
 use Symfony\Component\HttpFoundation\Response;

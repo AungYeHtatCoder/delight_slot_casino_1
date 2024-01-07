@@ -112,6 +112,9 @@
 @endsection
 @section('scripts')
 <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
 {{-- <script>
     const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
       searchable: true,
@@ -149,5 +152,26 @@
   var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+  var errorMessage =  @json(session('error'));
+    var successMessage =  @json(session('success'));
+  
+console.log(successMessage);
 </script>
+<script>
+@if(session()->has('success'))
+  Swal.fire({
+    icon: 'success',
+    title: successMessage,
+    showConfirmButton: false,
+    timer: 1500
+  })
+  @elseif(session()->has('error'))
+  Swal.fire({
+    icon: 'error',
+    title: errorMessage,
+    showConfirmButton: false,
+    timer: 1500
+  })
+  @endif
+</script> 
 @endsection

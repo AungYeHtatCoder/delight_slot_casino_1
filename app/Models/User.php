@@ -1,32 +1,32 @@
 <?php
 
-namespace App\Models\Admin;
+namespace App\Models;
 
-use App\Models\Admin\Permission;
-use App\Models\Admin\Role;
-use App\Models\User\User;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Authenticatable
+class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-
-    protected $fillable = [
-
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+     protected $fillable = [
         'name',
+        'profile',
         'email',
         'password',
         'profile',
         'phone',
         'balance',
         'agent_id',
-    ];
 
+    ];
     protected $dates = ['created_at', 'updated_at'];
 
 
@@ -50,6 +50,7 @@ class Admin extends Authenticatable
         'password' => 'hashed',
     ];
 
+   
     public function getIsAdminAttribute()
     {
         return $this->roles()->where('id', 1)->exists();
@@ -96,12 +97,12 @@ class Admin extends Authenticatable
     // Other users that this user (a master) has created (agents)
     public function createdAgents()
     {
-        return $this->hasMany(Admin::class, 'agent_id');
+        return $this->hasMany(User::class, 'agent_id');
     }
 
     // The master that created this user (an agent)
     public function createdByMaster()
     {
-        return $this->belongsTo(Admin::class, 'agent_id');
+        return $this->belongsTo(User::class, 'agent_id');
     }
 }

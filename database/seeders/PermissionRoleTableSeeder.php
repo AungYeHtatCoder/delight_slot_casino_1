@@ -1,9 +1,9 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\Admin\Role;
+use App\Models\Role;
 use Illuminate\Database\Seeder;
-use App\Models\Admin\Permission;
+use App\Models\Permission;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class PermissionRoleTableSeeder extends Seeder

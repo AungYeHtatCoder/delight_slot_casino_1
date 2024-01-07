@@ -7,22 +7,20 @@ use Exception;
 use App\Helpers\ApiHelper;
 use App\Http\Controllers\ApiController;
 use App\Http\Requests\TransferLogRequest;
-use App\Models\Admin\Role;
+use App\Models\Role;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
-use App\Models\Admin\Permission;
+use App\Models\Permission;
 use App\Http\Requests\UserRequest;
-use App\Models\Admin\Admin;
 use App\Models\Admin\TransferLog;
 use App\Models\Admin\Provider;
-use App\Models\User\User;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Str;
+
 
 class UserController extends ApiController
 {
@@ -59,7 +57,7 @@ class UserController extends ApiController
 
         // users data with order by id desc
      
-        $users = User::where('admin_id',Auth::guard('admin')->id()  )->orderBy('id', 'desc')->get();
+        $users = User::where('agent_id',Auth::user()->id  )->orderBy('id', 'desc')->get();
         return response()->view('admin.users.index', compact('users'));
     }
 
@@ -85,6 +83,7 @@ class UserController extends ApiController
 
         try {
             $inputs = $request->validated();
+            
             $endpoint = '/createMember.aspx';
             $signatureString = strtolower($this->operatorCode) . $inputs['name'] . $this->secretKey;
             $signature = ApiHelper::generateSignature($signatureString);
@@ -95,24 +94,29 @@ class UserController extends ApiController
                 'signature' => $signature,
             ];
 
+            
             DB::transaction(function () use ($inputs, $endpoint, $param) {
                 $data = $this->apiService->get($endpoint, $param);
-
-                if ($data->errCode !== 0) {
-                    throw new \Exception($data->errMsg);
+               
+                if ($data['errCode'] != 0) {
+              
+                    return redirect()->route('admin.users.index')->with('error', $data['errMsg']);
                 }
 
                 $userPrepare = array_merge(
                     $inputs,
                     ['password' => Hash::make($inputs['password']), 'agent_id' => Auth::user()->id]
                 );
-                Admin::create($userPrepare)->roles()->sync(4);
+             
+                User::create($userPrepare);
+
+                return redirect()->route('admin.user.index')->with('success', 'User created successfully');
+
             });
 
-            return redirect()->route('admin.users.index')->with('success', 'User created successfully');
         } catch (Exception $e) {
 
-            return redirect()->back()->with('error', $e->getMessage());
+            return redirect()->route('admin.user.index')->with('error', $e->getMessage());
         }
     }
 
@@ -226,21 +230,23 @@ class UserController extends ApiController
            
             if ($data['errCode'] == 0) {
 
-                TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
+                TransferLog::create(array_merge($inputs,['cash_in' => $inputs['amount'],'status' => $data['errMsg']]));
 
-                session()->flash('success', 'Money Cashout request submitted successfully!');
+                return redirect()->back()
+                ->with('success',' Money Cashout request submitted successfully!');
+
 
             }else{
 
-                session()->flash('error', $data['errMsg']);
+                return redirect()->back()->with('error',$data['errMsg']);
             }
             
-            return redirect()->back();
         } catch (Exception $e) {
 
-            session()->flash('error', $e->getMessage());
-            return redirect()->back()->with('error', $e->getMessage());
+            return redirect()->back()->with('error',$e->getMessage());
+
         }
+
     }
     public function getCashOut(User $user)
     {
@@ -274,22 +280,22 @@ class UserController extends ApiController
           
             $data = $this->apiService->get($endpoint, $param);
            
+            TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
+
             if ($data['errCode'] == 0) {
 
-                TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
-
-                session()->flash('success', 'Money Cashout request submitted successfully!');
-
+                return redirect()->back()->with('success', 'Money Cashout request submitted successfully!');
             }else{
 
-                session()->flash('error', $data['errMsg']);
+                return redirect()->back()->with('error', $data['errMsg']);
+
             }
-            
-            return redirect()->back();
+
+          
         } catch (Exception $e) {
 
-            session()->flash('error', $e->getMessage());
-            return redirect()->back()->with('error', $e->getMessage());
+            return redirect()->back()->with('error',$e->getMessage());
+
         }
     }
 
