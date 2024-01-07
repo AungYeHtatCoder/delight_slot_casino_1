@@ -9,7 +9,7 @@ class CashOutRequest extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'payment_method', 'amount', 'phone', 'user_id'
+        'payment_method', 'amount', 'phone', 'user_id', 'status'
     ];
 
     public function user(){

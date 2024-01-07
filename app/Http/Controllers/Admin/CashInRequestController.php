@@ -57,16 +57,27 @@ class CashInRequestController extends ApiController
     {
         $request->validate([
             'payment_method' => 'required',
+            'last_6_num' => 'required',
+            'receipt' => 'required|file|image',
             'amount' => 'required|numeric',
             'phone' => 'required|numeric',
         ]);
-        CashInRequest::create([
+
+        $image = $request->file('receipt');
+        $ext = $image->getClientOriginalExtension();
+        $filename = uniqid('receipt') . '.' . $ext;
+        $image->move(public_path('assets/img/receipts/'), $filename);
+
+        $cashIn = CashInRequest::create([
             'payment_method' => $request->payment_method,
+            'last_6_num' => $request->last_6_num,
+            'receipt' => $filename,
             'amount' => $request->amount,
             'phone' => $request->phone,
             'user_id' => auth()->id(),
         ]);
         $user = User::find(auth()->id());
+        $receipt = CashInRequest::find($cashIn->id);
         $toMail = "delightdeveloper4@gmail.com";
         $mail = [
             'status' => "Deposit Request",
@@ -75,6 +86,8 @@ class CashInRequestController extends ApiController
             'payment_method'=> $request->payment_method,
             'phone' => $request->phone,
             'amount' => $request->amount,
+            'receipt' => $receipt->img_url,
+            'last_6_num' => $request->last_6_num,
         ];
         // return $message;
         Mail::to($toMail)->send(new CashRequest($mail));
@@ -160,6 +173,20 @@ class CashInRequestController extends ApiController
             'type' => $type,
             'amount' => number_format($inputs['amount'], 2),
         ];
+    }
+
+    public function statusChange(Request $request, $id){
+        $request->validate([
+            'status' => 'required|in:0,1,2,3',
+        ]);
+        CashInRequest::find($id)->update(['status' => $request->status]);
+        return redirect()->back()->with('success', 'Status Changed Successfully');
+    }
+
+    public function show($id){
+        $cash = CashInRequest::find($id);
+        // return $cash;
+        return view('admin.cash_request.cash_in_show', compact('cash'));
     }
 
 }

@@ -156,4 +156,15 @@ class CashOutRequestController extends ApiController
             'amount' => number_format($inputs['amount'], 2),
         ];
     }
+    public function statusChange(Request $request, $id){
+        $request->validate([
+            'status' => 'required|in:0,1,2,3',
+        ]);
+        CashOutRequest::find($id)->update(['status' => $request->status]);
+        return redirect()->back()->with('success', 'Status Changed Successfully');
+    }
+    public function show($id){
+        $cash = CashOutRequest::find($id);
+        return view('admin.cash_request.cash_out_show', compact('cash'));
+    }
 }

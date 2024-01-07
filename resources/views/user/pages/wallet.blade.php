@@ -1,8 +1,20 @@
 @extends('user.layouts.app')
 
+@section('style')
+<style>
+  .input:focus{
+    background: #000;
+    color: #fff
+  }
+  .input{
+    color: #fff;
+  }
+</style>
+@endsection
+
 @section('content')
 {{-- to do --}}
-<div class="wallet-content" style="margin-top: 60px; padding-top: 10px">
+<div class="wallet-content" style="margin: 60px 0 120px 0; padding-top: 10px">
  <div class="wallet-top">
   <div class="wallet-top-content p-4">
    <div class="currency">
@@ -84,7 +96,18 @@
     <span>ကတ်စီမံခန့်ခွဲမှု</span>
    </a> --}}
   </div>
+  {{-- payment --}}
+  <div class="container-fluid" style="padding-bottom: 100px;">
+    @foreach ($payments as $payment)
+    <div class="card bg-transparent p-3 border border-1 border-success text-white">
+        <p>နည်းလမ်း - {{ $payment->payment_method }}</p>
+        <p>ဖုန်းနံပါတ် - {{ $payment->phone }}</p>
+        <p>လက်ခံသူအမည် - {{ $payment->receiver_name }}</p>
+    </div>
+    @endforeach
+  </div>
+  {{-- payment --}}
  </div>
 </div>
-@include('user.layouts.sub-footer')
+{{-- @include('user.layouts.sub-footer') --}}
 @endsection

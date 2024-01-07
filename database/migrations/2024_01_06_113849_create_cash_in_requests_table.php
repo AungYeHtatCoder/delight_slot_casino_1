@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('payment_method');
             $table->integer('amount');
             $table->string('phone');
+            $table->integer('last_6_num');
+            $table->string('receipt');
             $table->unsignedBigInteger('user_id');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
