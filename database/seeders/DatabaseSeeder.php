@@ -34,7 +34,6 @@ class DatabaseSeeder extends Seeder
             S3GameListSeeder::class,
             JDGameListSeeder::class
 
-           
         ]);
       
     }

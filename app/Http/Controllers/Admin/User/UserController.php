@@ -92,7 +92,6 @@ class UserController extends Controller
             ];
 
             
-            DB::transaction(function () use ($inputs, $endpoint, $param) {
                 $data = $this->apiService->get($endpoint, $param);
                
                 if ($data['errCode'] != 0) {
@@ -109,7 +108,6 @@ class UserController extends Controller
 
                 return redirect()->route('admin.user.index')->with('success', 'User created successfully');
 
-            });
 
         } catch (Exception $e) {
 
