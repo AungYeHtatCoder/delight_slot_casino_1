@@ -49,6 +49,10 @@
             <td>{{ $cash->last_6_num }}</td>
         </tr>
         <tr>
+          <th>Provider Code</th>
+          <td>{{ $cash->provider->p_code }}</td>
+        </tr>
+        <tr>
             <th>Payment Receipt</th>
             <td>
                 <img src="{{ $cash->img_url }}" class="rounded" width="600px" alt="">

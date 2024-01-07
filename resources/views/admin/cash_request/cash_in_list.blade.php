@@ -41,6 +41,7 @@
       <th>Phone</th>
       <th>Amount</th>
       <th>Method</th>
+      <th>Provider</th>
       <th>Status</th>
       <th>Created_at</th>
       <th>Action</th> 
@@ -55,6 +56,7 @@
        <td>{{ $cash->phone }}</td>
        <td>{{ number_format($cash->amount) }}</td>
        <td>{{ $cash->payment_method }}</td>
+       <td>{{ $cash->provider->p_code }}</td>
        <td>
         <span class="badge text-bg-{{ $cash->status == 0 ? 'danger' : 'success' }} text-white mb-2">{{ $cash->status == 0 ? "pending" : "done" }}</span>
         <a href="#" onclick="event.preventDefault(); document.getElementById('statusChange{{ $cash->id }}').submit();"><i class="fas fa-pen-to-square"></i></a>

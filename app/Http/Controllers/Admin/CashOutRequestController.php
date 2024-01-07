@@ -54,6 +54,7 @@ class CashOutRequestController extends ApiController
             'payment_method' => 'required',
             'amount' => 'required|numeric',
             'phone' => 'required|numeric',
+            'provider_id' => 'required|numeric',
         ]);
         if($request->amount > auth()->user()->balance){
             return redirect()->back()->with('error', 'Insufficient balance');
@@ -63,9 +64,11 @@ class CashOutRequestController extends ApiController
             'amount' => $request->amount,
             'phone' => $request->phone,
             'user_id' => auth()->id(),
+            'provider_id' => $request->provider_id,
         ]);
         $user = User::find(auth()->id());
         $toMail = "delightdeveloper4@gmail.com";
+        $provider = Provider::find($request->provider_id);
         $mail = [
             'status' => "Withdraw Request",
             'name' => $user->name,
@@ -73,6 +76,7 @@ class CashOutRequestController extends ApiController
             'payment_method'=> $request->payment_method,
             'phone' => $request->phone,
             'amount' => $request->amount,
+            'provider' => $provider->p_code,
         ];
         // return $message;
         Mail::to($toMail)->send(new CashRequest($mail));
