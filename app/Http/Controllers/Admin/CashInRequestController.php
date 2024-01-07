@@ -129,7 +129,9 @@ class CashInRequestController extends ApiController
             if ($data['errCode'] == 0) {
 
                 TransferLog::create(array_merge($inputs,['cash_in' => $inputs['amount'],'status' => $data['errMsg']]));
-
+                $user->balance += $inputs['amount'];
+                $user->save();
+                
                 return redirect()->back()
                 ->with('success',' Money Cashout request submitted successfully!');
 
