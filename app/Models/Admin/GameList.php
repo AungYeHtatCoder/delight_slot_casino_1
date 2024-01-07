@@ -2,8 +2,7 @@
 
 namespace App\Models\Admin;
 
-use App\Models\GameType;
-use App\Models\Provider;
+use App\Models\Admin\Provider;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

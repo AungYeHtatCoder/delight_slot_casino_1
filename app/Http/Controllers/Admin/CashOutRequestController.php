@@ -136,7 +136,7 @@ class CashOutRequestController extends ApiController
     }
     private function getSignature($inputs,$user,$type)
     {
-        $signatureString = number_format($inputs['amount'], 2) . $this->operatorCode . $this->backendPassword .
+        $signatureString = $inputs['amount'].'.00' . $this->operatorCode . $this->backendPassword .
                 $inputs['p_code'] . $inputs['refrence_id'] . $type . $user->name . $this->secretKey;
 
        
@@ -153,7 +153,7 @@ class CashOutRequestController extends ApiController
             'signature' => $signature,
             'referenceid' => $inputs['refrence_id'],
             'type' => $type,
-            'amount' => number_format($inputs['amount'], 2),
+            'amount' => $inputs['amount'].'.00',
         ];
     }
 }
