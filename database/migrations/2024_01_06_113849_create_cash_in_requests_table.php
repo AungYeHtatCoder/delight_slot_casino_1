@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('amount');
             $table->string('phone');
             $table->integer('last_6_num');
-            $table->string('receipt');
+            // $table->string('receipt');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('provider_id');
             $table->tinyInteger('status')->default(0);

@@ -70,10 +70,10 @@ $providers = Provider::all();
             <label for="amount" class="form-label text-white fw-bold">နောက်ဆုံးဂဏန်း၆လုံး</label>
             <input type="number" class="form-control input" name="last_6_num" id="amount" autocomplete="off" />
           </div>
-          <div class="mb-3">
+          {{-- <div class="mb-3">
             <label for="amount1" class="form-label text-white fw-bold">ငွေလွှဲမိတ္တူ</label>
             <input type="file" class="form-control input" name="receipt" id="amount1" autocomplete="off" />
-          </div>
+          </div> --}}
           <div class="mb-3">
           <label for="phone" class="form-label text-white fw-bold">ငွေသွင်းသူဖုန်းနံပါတ်</label>
           <input type="number" class="form-control input" id="phone" name="phone" autocomplete="off" />

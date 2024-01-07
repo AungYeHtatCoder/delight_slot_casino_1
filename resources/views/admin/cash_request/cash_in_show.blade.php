@@ -52,12 +52,12 @@
           <th>Provider Code</th>
           <td>{{ $cash->provider->p_code }}</td>
         </tr>
-        <tr>
+        {{-- <tr>
             <th>Payment Receipt</th>
             <td>
                 <img src="{{ $cash->img_url }}" class="rounded" width="600px" alt="">
             </td>
-        </tr>
+        </tr> --}}
         <tr>
             <th>Status</th>
             <td>
