@@ -141,7 +141,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Player ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
-                <input type="decimal" class="form-control" name="amount" >
+                <input type="decimal" class="form-control" name="amount" value="{{$cash->amount}}">
 
               </div>
               @error('cash_in')

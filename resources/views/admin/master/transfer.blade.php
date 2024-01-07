@@ -141,7 +141,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Master ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
-                <input type="text" class="form-control" name="cash_in">
+                <input type="text" class="form-control" name="cash_in" value="{{$cash->amount}}">
 
 
               </div>

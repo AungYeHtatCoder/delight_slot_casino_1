@@ -147,7 +147,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Admin ထံမှငွေနုတ်ယူမည့်ပမာဏ</label>
-                <input type="text" class="form-control" name="amount" required>
+                <input type="text" class="form-control" name="amount" required value="{{$cash->amount}}">
               </div>
               @error('cash_out')
               <span class="d-block text-danger">*{{ $message }}</span>
