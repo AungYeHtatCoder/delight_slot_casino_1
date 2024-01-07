@@ -42,7 +42,6 @@
             <th>Status</th>
             <th>Created_at</th>
             <th>Action</th>
-            <th>Transfer</th>
           </thead>
           <tbody>
             @foreach ($users as $user)
@@ -86,21 +85,7 @@
                   </button>
                 </form>
               </td>
-              <td>
-                <a href="{{ route('admin.user.getTransfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Player" class="btn btn-info btn-sm">
-                  <i class="fas fa-right-left text-white me-1"></i>
-                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
-                  ငွေလွဲမည်
-                </a>
-                <a href="{{ route('admin.user.getCashOut', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Player" class="btn btn-warning btn-sm">
-                  <i class="fas fa-right-left text-white me-1"></i>
-                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
-                  ငွေထုတ်မည်
-                </a>
-
-               
-
-              </td>
+             
             </tr>
             @endforeach
           </tbody>

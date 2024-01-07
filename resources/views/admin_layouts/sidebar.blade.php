@@ -7,7 +7,19 @@
             </a>
           </li>
 
-   
+          <li class="nav-item active">
+            <a class="nav-link text-white " href="https://mdbo.1199119.com/" target="_">
+              <span class="sidenav-mini-icon"> <i class="fas fa-dashboard"></i> </span>
+              <span class="sidenav-normal  ms-2  ps-1">Member Dashboard </span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white " href="https://www.partnerbo88.net/" target="_">
+              <span class="sidenav-mini-icon"> <i class="fas fa-dashboard"></i> </span>
+              <span class="sidenav-normal  ms-2  ps-1">JOKER Dashboard </span>
+            </a>
+          </li>
+         <!-- username FJ69M password P@rtxtjtf74xfbe -->
     <hr class="horizontal light mt-0">
     <li class="nav-item">
       <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link text-white "

@@ -2,21 +2,43 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\ApiHelper;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UserRequest;
 use App\Models\User;
+use App\Services\ApiService;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
-{
+{   
+    protected $apiService;
+    protected $operatorCode;
+    protected $secretKey;
+    protected $backendPassword;
+    protected $deposit;
+    protected $withdraw;
+
+
+
+    public function __construct(ApiService $apiService)
+    {
+
+        $this->apiService = $apiService;
+        $this->operatorCode = config('common.operatorcode');
+        $this->secretKey  = config('common.secret_key');
+        $this->backendPassword  = config('common.backend_password');
+        $this->deposit  = config('common.deposit');
+        $this->withdraw = config('common.withdraw');
+    }
+
     public function showLogin()
     {
-        if(Auth::guard('user')->check()){
-            return redirect()->back()->with('error', "Already Logged In.");
-        }else{
-            return view('auth.login');
-        }
+
+        return view('auth.login');
     }
 
     public function login(Request $request)
@@ -34,38 +56,60 @@ class LoginController extends Controller
             'password' => $request->input('password'),
         ];
 
-        if (Auth::guard('admin')->attempt($credentials)) {
+        if (Auth::attempt($credentials)) {
+          
             // Authentication passed
-            return redirect('/home')->with('success', 'Login Success!');
+            return redirect()->route('home')->with('success', 'Login Success!');
         } else {
             return redirect()->back()->with('error', 'Invalid credentials. Please try again.');
         }
     }
 
 
-    public function register(Request $request)
+    public function register(UserRequest $request)
     {
-        $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['nullable', 'string', 'email', 'max:255', 'unique:users'],
-            'phone' => ['nullable', 'string', 'min:11', 'unique:users'],
-            'password' => ['required', 'string', 'min:6', 'confirmed'],
-        ]);
+        
+        try {
+            $inputs = $request->validated();
+            
+            $endpoint = '/createMember.aspx';
+            $signatureString = strtolower($this->operatorCode) . $inputs['name'] . $this->secretKey;
+            $signature = ApiHelper::generateSignature($signatureString);
 
-        // Create user based on provided credentials
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'password' => Hash::make($request->password),
-        ]);
+            $param = [
+                'operatorcode' => $this->operatorCode,
+                'username' => $inputs['name'],
+                'signature' => $signature,
+            ];
 
-        if ($user) {
-            Auth::login($user);
-            return redirect('/home')->with('success', 'Logged In Successful.');
-        } else {
-            return redirect()->back()->with('error', 'Registration failed. Please try again.');
+            
+                $data = $this->apiService->get($endpoint, $param);
+               
+                if ($data['errCode'] != 0) {
+                   
+                    return redirect()->back()->with('error', $data['errMsg']);
+                }
+                
+                $userPrepare = array_merge(
+                    $inputs,
+                    ['password' => Hash::make($inputs['password']), 'agent_id' => 1]
+                );
+             
+                $user = User::create($userPrepare);
+                if($user)
+                {
+                    Auth::login($user);
+                    return redirect()->route('home')->with('success', 'Register successfully');
+                }else {
+                        return redirect()->back()->with('error', 'Registration failed. Please try again.');
+                    }
+        
+
+        } catch (Exception $e) {
+
+            return back()->with('error', $e->getMessage());
         }
+
     }
 
 
@@ -74,6 +118,7 @@ class LoginController extends Controller
         if(Auth::check()){
             return redirect()->back()->with('error', "Already Logged In.");
         }else{
+           
             return view('auth.register');
         }
     }

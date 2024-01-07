@@ -20,7 +20,6 @@ Route::group(['prefix' => 'user'], function () {
     Route::get('/gamelist/{provider_id}/game_type/{game_type_id}',
     [GameController::class, 'getGameList'])->name('user.gamelist');
 
-    Route::get('user-login', [UserController::class, 'login'])->name('user.login');
 
     Route::middleware(['auth'])->group(function () {
         Route::get('agent', [UserController::class, 'agent'])->name('agent');
@@ -34,7 +33,8 @@ Route::group(['prefix' => 'user'], function () {
         Route::get('/launchGame/{id}', [GameController::class, 'launchGame'])->name('user.launchGame');
         Route::get('/directGame/{provider_id}/game_type/{game_type_id}',
             [GameController::class, 'directGame'])->name('user.directGame');
-            
+        Route::post('/deposit-request', [CashInRequestController::class, 'deposit'])->name('deposit');
+        Route::post('/withdraw-request', [CashOutRequestController::class, 'withdraw'])->name('withdraw');    
         
     });
    

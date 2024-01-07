@@ -39,7 +39,7 @@
         </div>
 
         <div class="mt-2">
-        <form action= method="POST">
+        <form action="{{ route('deposit') }}" method="POST">
           @csrf
           <div class="d-none">
             <input type="radio" checked name="payment_method" value="KBZ Pay" id="kpay">
@@ -110,7 +110,7 @@
         </div>
 
         <div class="mt-2">
-        <form action="" method="POST">
+        <form action="{{ route('withdraw') }}" method="POST">
           @csrf
           <div class="d-none">
             <input type="radio" checked name="payment_method" value="KBZ Pay" id="kpay1">

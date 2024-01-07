@@ -32,7 +32,7 @@
            {{-- login --}}
             <div class="d-flex justify-content-around align-items-center">
               @guest
-              <a href="{{ route('user.login') }}" class="btn-login text-decoration-none d-block">လော့ဂ်အင်</a>
+              <a href="{{ route('showLogin') }}" class="btn-login text-decoration-none d-block">လော့ဂ်အင်</a>
               <a href="{{ route('register') }}" class="btn-register text-decoration-none mx-2">အကောင့်သစ်ဖွင့်ရန်</a>
               @else
               <a href="{{ route('user.user_info') }}" class="btn-login text-decoration-none d-block">{{ Auth::user()  ->name }}</a>

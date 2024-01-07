@@ -27,7 +27,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //auth routes
-Route::get('/login', [LoginController::class, 'showLogin'])->name('login');
+Route::get('/login', [LoginController::class, 'showLogin'])->name('showLogin');
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/register', [LoginController::class, 'register'])->name('register');
 Route::get('/register', [LoginController::class, 'userRegister'])->name('register');

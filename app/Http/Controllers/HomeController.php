@@ -8,7 +8,7 @@ use App\Models\User;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Symfony\Component\VarDumper\Caster\RedisCaster;
 
 class HomeController extends ApiController
 {
@@ -47,7 +47,8 @@ class HomeController extends ApiController
                 $response = $this->getAdminBalance();
                 return view('admin.profile.admin_profile',compact('response'));
             }else{
-                return back();
+
+                return redirect('/');
             }
         
     }

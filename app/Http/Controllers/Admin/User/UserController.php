@@ -2,18 +2,15 @@
 
 namespace App\Http\Controllers\Admin\User;
 
-use App\Http\Controllers\Controller;
 use Exception;
 use App\Helpers\ApiHelper;
 use App\Http\Controllers\ApiController;
-use App\Http\Requests\TransferLogRequest;
+use App\Http\Controllers\Controller;
 use App\Models\Role;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
 use App\Models\Permission;
 use App\Http\Requests\UserRequest;
-use App\Models\Admin\TransferLog;
-use App\Models\Admin\Provider;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -22,7 +19,7 @@ use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Response;
 
 
-class UserController extends ApiController
+class UserController extends Controller
 {
 
     protected $apiService;
@@ -198,131 +195,5 @@ class UserController extends ApiController
             'User ' . ($user->status == 1 ? 'activated' : 'banned') . ' successfully'
         );
     }
-    public function getTransfer(User $user)
-    {
-        $providers = Provider::all();
-
-        return view('admin.users.transfer', compact(['user', 'providers']));
-    }
-    public function makeTransfer(TransferLogRequest $request)
-    {
-
-        
-        abort_if(
-            Gate::denies('make_transfer'),
-            Response::HTTP_FORBIDDEN,
-            '403 Forbidden |You cannot  Access this page because you do not have permission'
-        );
-      
-        try {
-           
-            $refrence_id = $this->getRefrenceId();
-            $inputs =array_merge($request->validated(),['refrence_id' => $refrence_id]);
-            $user = User::findOrFail($inputs['to_user_id']);
-            $endpoint = '/makeTransfer.aspx';
-        
-            // Create transfer log
-            $signature = $this->getSignature($inputs,$user,$this->deposit);
-            
-            $param = $this->getParam($inputs,$signature,$user,$this->deposit);
-          
-            $data = $this->apiService->get($endpoint, $param);
-           
-            if ($data['errCode'] == 0) {
-
-                TransferLog::create(array_merge($inputs,['cash_in' => $inputs['amount'],'status' => $data['errMsg']]));
-
-                return redirect()->back()
-                ->with('success',' Money Cashout request submitted successfully!');
-
-
-            }else{
-
-                return redirect()->back()->with('error',$data['errMsg']);
-            }
-            
-        } catch (Exception $e) {
-
-            return redirect()->back()->with('error',$e->getMessage());
-
-        }
-
-    }
-    public function getCashOut(User $user)
-    {
-        $admin = Auth()->user();
-        $transfer_logs = TransferLog::where('to_user_id', $user->id)->get();
-        $adminBalance = $this->getAdminBalance();
-        $providers  = Provider::all();
-        return view('admin.users.cash_out', compact('user', 'admin', 'transfer_logs', 'adminBalance','providers'));
-    }
-
-    public function makeCashOut(TransferLogRequest $request)
-    {
-        
-        abort_if(
-            Gate::denies('make_transfer'),
-            Response::HTTP_FORBIDDEN,
-            '403 Forbidden |You cannot  Access this page because you do not have permission'
-        );
-      
-        try {
-           
-            $refrence_id = $this->getRefrenceId();
-            $inputs =array_merge($request->validated(),['refrence_id' => $refrence_id]);
-            $user = User::findOrFail($inputs['to_user_id']);
-            $endpoint = '/makeTransfer.aspx';
-        
-            // Create transfer log
-            $signature = $this->getSignature($inputs,$user,$this->withdraw);
-            
-            $param = $this->getParam($inputs,$signature,$user,$this->withdraw);
-          
-            $data = $this->apiService->get($endpoint, $param);
-           
-            TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
-
-            if ($data['errCode'] == 0) {
-
-                return redirect()->back()->with('success', 'Money Cashout request submitted successfully!');
-            }else{
-
-                return redirect()->back()->with('error', $data['errMsg']);
-
-            }
-
-          
-        } catch (Exception $e) {
-
-            return redirect()->back()->with('error',$e->getMessage());
-
-        }
-    }
-
-    private function getRefrenceId($prefix = 'REF')
-    {
-        return  uniqid($prefix);
-    }
-    private function getSignature($inputs,$user,$type)
-    {
-        $signatureString = number_format($inputs['amount'], 2) . $this->operatorCode . $this->backendPassword .
-                $inputs['p_code'] . $inputs['refrence_id'] . $type . $user->name . $this->secretKey;
-
-       
-        return ApiHelper::generateSignature($signatureString);
-    }
-
-    private function getParam($inputs,$signature,$user,$type)
-    {
-        return  [
-            'operatorcode' => $this->operatorCode,
-            'providercode' => $inputs['p_code'],
-            'username' => $user->name,
-            'password' => $this->backendPassword,
-            'signature' => $signature,
-            'referenceid' => $inputs['refrence_id'],
-            'type' => $type,
-            'amount' => number_format($inputs['amount'], 2),
-        ];
-    }
+    
 }
