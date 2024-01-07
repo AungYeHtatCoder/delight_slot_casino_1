@@ -186,7 +186,7 @@
         <span class="sidenav-normal  ms-2  ps-1"> Payment Lists</span>
       </a>
     </li>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       @php
         $req_count1 = App\Models\CashInRequest::where('status', 0)->get()->count();
       @endphp
@@ -203,7 +203,7 @@
         <span class="sidenav-mini-icon"> <i class="fas fa-coins"></i> </span>
         <span class="sidenav-normal  ms-2  ps-1"> Cash Out Requests  <span class="badge text-bg-light">{{ $req_count2 }}</span></span>
       </a>
-    </li>
+    </li> -->
     <li class="nav-item">
       <a href="{{ route('logout') }}" onclick="event.preventDefault();
       document.getElementById('logout-form').submit();" class="nav-link text-white">

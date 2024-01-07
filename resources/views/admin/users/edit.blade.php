@@ -85,7 +85,7 @@
       @method('PUT')
       <div class="custom-form-group">
        <label for="title">User Name</label>
-       <input type="text" id="name" name="name" class="form-control" value="{{$user->name}}" readonly>
+       <input type="text" id="name" name="name" class="form-control" value="{{$user->name}}" >
       </div>
       <div class="custom-form-group">
        <label for="title">Phone No</label>

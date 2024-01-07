@@ -10,6 +10,7 @@ use App\Models\Admin\Provider;
 use App\Services\ApiService;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
@@ -19,6 +20,7 @@ class GameController extends Controller
     protected $operatorCode;
 
     protected $secretKey;
+    protected $backendDefault;
 
 
 
@@ -28,6 +30,7 @@ class GameController extends Controller
         $this->apiService = $apiService;
         $this->operatorCode = config('common.operatorcode');
         $this->secretKey  = config('common.secret_key');
+        $this->backendDefault = config('common.backend_password');
     }
 
     public function gameListAPI()
@@ -49,7 +52,7 @@ class GameController extends Controller
 
         // Replace with your API endpoint
         $data = $this->apiService->get($endpoint, $param);
-
+       
         $games = json_decode($data['gamelist'], true);
 
         return $games;
@@ -64,10 +67,11 @@ class GameController extends Controller
     public function launchGame($id)
     {
         $game = GameList::where('id', $id)->first();
+       
         $endpoint = '/launchGames.aspx';
-        $password = 'test1234';
+        $password = $this->backendDefault;
         $providerCode = $game->provider->p_code;
-        $userName = 'sophia';
+        $userName = Auth::user()->name;
         $type = $game->gameType->code;
         $gameId = $game->game_id;
 
@@ -79,21 +83,30 @@ class GameController extends Controller
             $userName,
             $this->secretKey
         );
+     
         $response = $this->apiService->get(
             $endpoint,
             $this->getParam($password, $userName, $signature, $providerCode, $type, $gameId)
         );
 
-        $data = $response['gameUrl'];
+        if($response['errCode'] == 0)
+        {
+            $data = $response['gameUrl'];
        
-        return redirect($data);
+            return redirect($data);
+        }else{
+
+            return redirect('/')->with(['error' =>  $response['errMsg']]);
+        }
+
+        
     }
     public function directGame(Provider $provider_id, GameType $game_type_id)
     {
 
         $endpoint = '/launchGames.aspx';
-        $password = 'pass1234';
-        $userName = 'sophia';
+        $password = $this->backendDefault;
+        $userName = Auth::user()->name;
         $providerCode = $provider_id->p_code;
         $type  = $game_type_id->code;
 
@@ -110,6 +123,7 @@ class GameController extends Controller
             $endpoint,
             $this->getParam($password, $userName, $signature, $providerCode, $type)
         );
+        
 
         $data = $response['gameUrl'];
 
