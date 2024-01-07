@@ -39,7 +39,7 @@
         </div>
 
         <div class="mt-2">
-        <form action="{{ route('deposit') }}" method="POST">
+        <form action="{{ route('deposit') }}" method="POST" enctype="multipart/form-data">
           @csrf
           <div class="d-none">
             <input type="radio" checked name="payment_method" value="KBZ Pay" id="kpay">
@@ -50,11 +50,19 @@
 
           <div class="mb-3">
           <label for="amount" class="form-label text-white fw-bold">သွင်းငွေပမာဏ</label>
-          <input type="number" class="form-control text-dark" name="amount" id="amount" autocomplete="off" />
+          <input type="number" class="form-control input" name="amount" id="amount" autocomplete="off" />
+          </div>
+          <div class="mb-3">
+            <label for="amount" class="form-label text-white fw-bold">နောက်ဆုံးဂဏန်း၆လုံး</label>
+            <input type="number" class="form-control input" name="last_6_num" id="amount" autocomplete="off" />
+          </div>
+          <div class="mb-3">
+            <label for="amount1" class="form-label text-white fw-bold">ငွေလွှဲမိတ္တူ</label>
+            <input type="file" class="form-control input" name="receipt" id="amount1" autocomplete="off" />
           </div>
           <div class="mb-3">
           <label for="phone" class="form-label text-white fw-bold">ငွေသွင်းသူဖုန်းနံပါတ်</label>
-          <input type="number" class="form-control text-dark" id="phone" name="phone" autocomplete="off" />
+          <input type="number" class="form-control input" id="phone" name="phone" autocomplete="off" />
           </div>
           <div class="modal-footer">
             <button class="btn-login">ငွေသွင်းရန်</button>
@@ -120,11 +128,11 @@
           </div>
           <div class="mb-3">
           <label for="amount" class="form-label text-white fw-bold">ထုတ်ငွေပမာဏ</label>
-          <input type="number" class="form-control text-success" name="amount" id="amount" autocomplete="off" />
+          <input type="number" class="form-control input" name="amount" id="amount" autocomplete="off" />
           </div>
           <div class="mb-3">
           <label for="phone" class="form-label text-white fw-bold">ငွေထုတ်သူဖုန်းနံပါတ်</label>
-          <input type="number" class="form-control text-success" name="phone" id="phone" autocomplete="off" />
+          <input type="number" class="form-control input" name="phone" id="phone" autocomplete="off" />
           </div>
           <div class="text-end">
             <button type="submit" class="btn-login">ငွေထုတ်ရန်</button>

@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\CashOutRequestController;
 use App\Http\Controllers\Admin\GameController;
 use App\Http\Controllers\Admin\GameType\GameTypeController;
 use App\Http\Controllers\Admin\Master\MasterController;
+use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\PromotionController;
@@ -46,6 +47,7 @@ Route::group([
     Route::resource('games', GameController::class);
     Route::resource('text', BannerTextController::class);
     Route::resource('/promotions', PromotionController::class);
+    Route::resource('/payments', PaymentController::class);
 
     Route::resource('master', MasterController::class);
     Route::get('master-transfer/{id}', [MasterController::class, 'getTransfer'])->name('master.getTransfer');
@@ -67,7 +69,10 @@ Route::group([
     Route::get('cash-out/{cash}',[CashOutRequestController::class,'getCashOut'])->name('getCashOut');
     Route::post('cash-out',[CashOutRequestController::class,'makeCashOut'])->name('makeCashOut');
     Route::get('cash-out-request-list', [CashOutRequestController::class, 'index'])->name('cash-out-request-list');
-
+    Route::post('statusChangeCashIn/{id}', [CashInRequestController::class, 'statusChange'])->name('statusChangeCashIn');
+    Route::post('statusChangeCashOut/{id}', [CashOutRequestController::class, 'statusChange'])->name('statusChangeCashOut');
+    Route::get('/cashInRequest/show/{id}', [CashInRequestController::class, 'show']);
+    Route::get('/cashOutRequest/show/{id}', [CashOutRequestController::class, 'show']);
 
     // Route::resource('/promotions', PromotionController::class);
     // // agent user list route

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Banner;
 use App\Models\Admin\BannerText;
 use App\Models\Admin\GameType;
+use App\Models\Admin\PaymentList;
 use App\Models\Provider;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
@@ -54,8 +55,8 @@ class UserController extends Controller
 
         // $endpoint = 'getBalance.aspx';
         // $signaturString = ;
-
-        return view('user.pages.wallet');
+        $payments = PaymentList::all();
+        return view('user.pages.wallet', compact('payments'));
     }
     public function betRecord()
     {

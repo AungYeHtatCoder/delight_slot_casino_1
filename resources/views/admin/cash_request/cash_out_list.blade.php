@@ -41,6 +41,7 @@
         <th>Phone</th>
         <th>Requested Amount</th>
         <th>Payment Method</th>
+        <th>Status</th>
         <th>Created_at</th>
         <th>Action</th>
       </thead>
@@ -52,12 +53,19 @@
             <span class="d-block">{{ $cash->user->name }}</span>
           </td>
           <td>{{ $cash->phone }}</td>
-          <td>{{ number_format($cash->user->balance) }}</td>
           <td>{{ number_format($cash->amount) }}</td>
           <td>{{ $cash->payment_method }}</td>
+          <td>
+            <span class="badge text-bg-{{ $cash->status == 0 ? 'danger' : 'success' }} text-white mb-2">{{ $cash->status == 0 ? "pending" : "done" }}</span>
+            <a href="#" onclick="event.preventDefault(); document.getElementById('statusChange{{ $cash->id }}').submit();"><i class="fas fa-pen-to-square"></i></a>
+            <form id="statusChange{{ $cash->id }}" action="{{ url('/admin/statusChangeCashOut/'.$cash->id) }}" method="post" style="display: none;">
+              @csrf
+              <input type="hidden" name="status" value="{{ $cash->status == 0 ? 1 : 0 }}">
+            </form>
+          </td> 
           <td>{{ $cash->created_at->format('d-m-Y') }}</td>
           <td>
-
+            <a  class="btn btn-warning me-1" href="{{ url('/admin/cashOutRequest/show/'.$cash->id) }}"><i class="fas fa-eye"></i></a>
             <a href="{{ route('admin.getCashOut', $cash->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Player" class="btn btn-warning btn-sm">
               <i class="fas fa-right-left text-white me-1"></i>
               {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}

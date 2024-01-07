@@ -15,7 +15,7 @@ return [
         'BBIN' => [
             'url' => 'https://bbinbo.gsoft688.com/Account/Login.aspx',
             'username' => 'Q78',
-            'password' => 'word1'
+            'password' => 'delightwebteam'
         ],
         'ASIAGAMING' => [
             'url' => 'http://mdbo.1199119.com/',
