@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Helpers\ApiHelper;
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TransferLogRequest;
 use App\Mail\CashRequest;
@@ -14,9 +15,10 @@ use App\Services\ApiService;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Support\Facades\Mail;
 
-class CashOutRequestController extends Controller
+class CashOutRequestController extends ApiController
 {
     protected $apiService;
     protected $operatorCode;
@@ -24,9 +26,7 @@ class CashOutRequestController extends Controller
     protected $backendPassword;
     protected $deposit;
     protected $withdraw;
-
-
-
+    
     public function __construct(ApiService $apiService)
     {
 
@@ -79,13 +79,13 @@ class CashOutRequestController extends Controller
         return redirect()->back()->with('success', 'Withdraw request submitted successfully');
     }
 
-    public function getCashOut(User $user)
+    public function getCashOut(CashOutRequest  $cash)
     {
         $admin = Auth()->user();
-        $transfer_logs = TransferLog::where('to_user_id', $user->id)->get();
+        $transfer_logs = TransferLog::where('to_user_id', $cash->user_id)->get();
         $adminBalance = $this->getAdminBalance();
         $providers  = Provider::all();
-        return view('admin.users.cash_out', compact('user', 'admin', 'transfer_logs', 'adminBalance','providers'));
+        return view('admin.cash_request.cash_out', compact('cash', 'admin', 'transfer_logs', 'adminBalance','providers'));
     }
 
     public function makeCashOut(TransferLogRequest $request)

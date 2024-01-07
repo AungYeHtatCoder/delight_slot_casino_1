@@ -64,7 +64,7 @@
     <div class="container mt-2">
       <div class="d-flex justify-content-between">
         <h6>Player Information -- <span>
-            Player ID : {{ $user->id }}
+            Player ID : {{ $cash->user->id }}
           </span>
           <span>
             Player Balance :
@@ -80,15 +80,15 @@
             <tbody>
               <tr>
                 <th>ID</th>
-                <td>{!! $user->id !!}</td>
+                <td>{!! $cash->user->id !!}</td>
               </tr>
               <tr>
                 <th>User Name</th>
-                <td>{!! $user->name ?? "" !!}</td>
+                <td>{!! $cash->user->name ?? "" !!}</td>
               </tr>
               <tr>
                 <th>Phone</th>
-                <td>{!! $user->phone !!}</td>
+                <td>{!! $cash->user->phone !!}</td>
               </tr>
             </tbody>
           </table>
@@ -116,13 +116,13 @@
         </div>
       </div>
       <div class="card-body">
-        <form action="{{ route('admin.user.makeCashOut') }}" method="POST">
+        <form action="{{ route('admin.makeCashOut') }}" method="POST">
           @csrf
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">User Name</label>
-                <input type="text" class="form-control" name="name" value="{{ $user->name }}" readonly>
+                <input type="text" class="form-control" name="name" value="{{ $cash->user->name }}" readonly>
 
               </div>
               @error('name')
@@ -132,7 +132,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Phone</label>
-                <input type="text" class="form-control" name="phone" value="{{ $user->phone }}" readonly>
+                <input type="text" class="form-control" name="phone" value="{{ $cash->user->phone }}" readonly>
 
               </div>
               @error('phone')
@@ -141,7 +141,7 @@
             </div>
           </div>
           <input type="hidden" name="from_user_id" value="{{ Auth::user()->id }}">
-          <input type="hidden" name="to_user_id" value="{{ $user->id }}">
+          <input type="hidden" name="to_user_id" value="{{ $cash->user_id }}">
         
           <div class="row">
             <div class="col-md-6">

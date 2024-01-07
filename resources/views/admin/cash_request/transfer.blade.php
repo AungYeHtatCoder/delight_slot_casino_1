@@ -65,7 +65,7 @@
     <div class="container mt-2">
       <div class="d-flex justify-content-between">
         <h4>Player Information -- <span>
-            Player ID : {{ $user->id }}
+            Player ID : {{ $cash->user->id }}
           </span></h4>
         <a class="btn btn-icon btn-2 btn-primary" href="{{ route('admin.user.index') }}">
           <span class="btn-inner--icon mt-1"><i class="material-icons">arrow_back</i>Back</span>
@@ -77,20 +77,17 @@
             <tbody>
               <tr>
                 <th>ID</th>
-                <td>{!! $user->id !!}</td>
+                <td>{!! $cash->user->id !!}</td>
               </tr>
               <tr>
                 <th>User Name</th>
-                <td>{!! $user->name !!}</td>
+                <td>{!! $cash->user->name !!}</td>
               </tr>
               <tr>
                 <th>Phone</th>
-                <td>{!! $user->phone !!}</td>
+                <td>{!! $cash->user->phone !!}</td>
               </tr>
-              <tr>
-                <th>Balance</th>
-                <td>{!! $user->balance !!}</td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
@@ -114,13 +111,13 @@
       </div>
       <div class="card-body">
         
-        <form action="{{ route('admin.user.makeTransfer') }}" method="POST">
+        <form action="{{ route('admin.makeTransfer') }}" method="POST">
           @csrf
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Master Real Name</label>
-                <input type="text" class="form-control" name="name" value="{{ $user->name }}" readonly>
+                <input type="text" class="form-control" name="name" value="{{ $cash->user->name }}" readonly>
 
               </div>
               @error('name')
@@ -130,7 +127,7 @@
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Phone</label>
-                <input type="text" class="form-control" name="phone" value="{{ $user->phone }}" readonly>
+                <input type="text" class="form-control" name="phone" value="{{ $cash->user->phone }}" readonly>
 
               </div>
               @error('phone')
@@ -139,12 +136,12 @@
             </div>
           </div>
           <input type="hidden" name="from_user_id" value="{{ Auth::user()->id }}">
-          <input type="hidden" name="to_user_id" value="{{ $user->id }}">
+          <input type="hidden" name="to_user_id" value="{{ $cash->user_id }}">
           <div class="row">
             <div class="col-md-6">
               <div class="input-group input-group-outline is-valid my-3">
                 <label class="form-label">Player ထံသို့ ငွေလွဲပေးမည့်ပမာဏ</label>
-                <input type="decimal" class="form-control" name="amount">
+                <input type="decimal" class="form-control" name="amount" >
 
               </div>
               @error('cash_in')
