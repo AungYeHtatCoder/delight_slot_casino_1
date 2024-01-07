@@ -77,7 +77,7 @@ Thanks,<br>
                 <th>ပမာဏ</th>
                 <th>ငွေလွှဲနည်းလမ်း</th>
                 <th>နောက်ဆုံးဂဏန်း၆လုံး</th>
-                {{-- <th>လွှဲပြောင်းမှတ်တမ်း</th> --}}
+                <th>Provider</th>
             </tr>
             <tr>
                 <td>
@@ -91,6 +91,9 @@ Thanks,<br>
                 </td>
                 <td>
                     {{ $mail['last_6_num'] ?? "" }}
+                </td>
+                <td>
+                    {{ $mail['provider'] ?? "" }}
                 </td>
                 {{-- <td>
                     <img src="{{ $mail['receipt'] }}" width="100px" alt="">

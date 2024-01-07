@@ -45,6 +45,10 @@
             <td>{{ $cash->payment_method }}</td>
         </tr>
         <tr>
+          <th>Provider Code</th>
+          <td>{{ $cash->provider->p_code }}</td>
+        </tr>
+        <tr>
             <th>Status</th>
             <td>
               <span class="badge text-white text-bg-{{ $cash->status == 1 ? 'success' : 'danger' }}">{{ $cash->status == 1 ? 'Done' : 'Pending' }}</span>

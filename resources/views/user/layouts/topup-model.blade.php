@@ -1,4 +1,9 @@
- <div class="modal fade" id="topupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+@php
+use App\Models\Admin\Provider;
+$providers = Provider::all();
+@endphp
+
+<div class="modal fade" id="topupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
    <div class="modal-content">
     <div class="modal-header text-white">
@@ -47,7 +52,16 @@
             <input type="radio" name="payment_method" value="Wave Pay" id="wpay">
             <input type="radio" name="payment_method" value="AYA Pay" id="apay">
           </div>
+          <div class="mb-3">
+            <label for="provider" class="form-label text-white fw-bold">Provider ရွေးချယ်ပါ</label>
+            <select name="provider_id" id="provider" class="form-control form-select">
+              <option value="">Choose Provider</option>
 
+              @foreach ($providers as $provider)
+                <option value="{{ $provider->id }}">{{ $provider->p_code }}</option>
+              @endforeach
+            </select>
+          </div>
           <div class="mb-3">
           <label for="amount" class="form-label text-white fw-bold">သွင်းငွေပမာဏ</label>
           <input type="number" class="form-control input" name="amount" id="amount" autocomplete="off" />
@@ -64,6 +78,7 @@
           <label for="phone" class="form-label text-white fw-bold">ငွေသွင်းသူဖုန်းနံပါတ်</label>
           <input type="number" class="form-control input" id="phone" name="phone" autocomplete="off" />
           </div>
+
           <div class="modal-footer">
             <button class="btn-login">ငွေသွင်းရန်</button>
           </div>
@@ -125,6 +140,15 @@
             <input type="radio" name="payment_method" value="CB Pay" id="cpay1">
             <input type="radio" name="payment_method" value="Wave Pay" id="wpay1">
             <input type="radio" name="payment_method" value="AYA Pay" id="apay1">
+          </div>
+          <div class="mb-3">
+            <label for="provider" class="form-label text-white fw-bold">Provider ရွေးချယ်ပါ</label>
+            <select name="provider_id" id="provider" class="form-control form-select">
+              <option value="">Choose Provider</option>
+              @foreach ($providers as $provider)
+                <option value="{{ $provider->id }}">{{ $provider->p_code }}</option>
+              @endforeach
+            </select>
           </div>
           <div class="mb-3">
           <label for="amount" class="form-label text-white fw-bold">ထုတ်ငွေပမာဏ</label>

@@ -19,10 +19,12 @@ return new class extends Migration
             $table->integer('last_6_num');
             $table->string('receipt');
             $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('provider_id');
             $table->tinyInteger('status')->default(0);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('provider_id')->references('id')->on('providers')->onDelete('cascade');
         });
     }
 

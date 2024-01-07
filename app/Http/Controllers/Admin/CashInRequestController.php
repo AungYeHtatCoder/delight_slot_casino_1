@@ -61,6 +61,7 @@ class CashInRequestController extends ApiController
             'receipt' => 'required|file|image',
             'amount' => 'required|numeric',
             'phone' => 'required|numeric',
+            'provider_id' => 'required|numeric',
         ]);
 
         $image = $request->file('receipt');
@@ -75,9 +76,11 @@ class CashInRequestController extends ApiController
             'amount' => $request->amount,
             'phone' => $request->phone,
             'user_id' => auth()->id(),
+            'provider_id' => $request->provider_id,
         ]);
         $user = User::find(auth()->id());
         $receipt = CashInRequest::find($cashIn->id);
+        $provider = Provider::find($request->provider_id);
         $toMail = "delightdeveloper4@gmail.com";
         $mail = [
             'status' => "Deposit Request",
@@ -88,6 +91,7 @@ class CashInRequestController extends ApiController
             'amount' => $request->amount,
             'receipt' => $receipt->img_url,
             'last_6_num' => $request->last_6_num,
+            'provider' => $provider->p_code
         ];
         // return $message;
         Mail::to($toMail)->send(new CashRequest($mail));

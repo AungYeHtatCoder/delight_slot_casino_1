@@ -7,7 +7,6 @@ use App\Models\Admin\Banner;
 use App\Models\Admin\BannerText;
 use App\Models\Admin\GameType;
 use App\Models\Admin\PaymentList;
-use App\Models\Provider;
 use App\Services\ApiService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,8 +29,8 @@ class UserController extends Controller
     {
         $banners = Banner::latest()->take(3)->get();
         $bannerText = BannerText::latest()->first();
-
-         $gameTypes = GameType::with('providers')->orderBy('order','asc')->where('status',1)->get();
+        $payments = PaymentList::all();
+        $gameTypes = GameType::with('providers')->orderBy('order','asc')->where('status',1)->get();
         return view('user.pages.index',compact('gameTypes', 'banners', 'bannerText'));
     }
 
@@ -52,9 +51,6 @@ class UserController extends Controller
 
     public function wallet()
     {
-
-        // $endpoint = 'getBalance.aspx';
-        // $signaturString = ;
         $payments = PaymentList::all();
         return view('user.pages.wallet', compact('payments'));
     }
