@@ -44,12 +44,12 @@
       <th>Requested Amount</th>
       <th>Payment Method</th>
       <th>Created_at</th>
-      {{-- <th>Action</th> --}}
+      <th>Action</th> 
      </thead>
      <tbody>
       @foreach ($cashes as $cash)
       <tr>
-       <td>{{ $loop->index + 1 }}</td>
+       <td>{{ $loop->iteration }}</td>
         <td>
           <span class="d-block">{{ $cash->user->name }}</span>
         </td>
@@ -58,6 +58,19 @@
        <td>{{ number_format($cash->amount) }}</td>
        <td>{{ $cash->payment_method }}</td>
        <td>{{ $cash->created_at->format('d-m-Y') }}</td>
+       <td>
+                <a href="{{ route('admin.user.getTransfer', $cash->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Player" class="btn btn-info btn-sm">
+                  <i class="fas fa-right-left text-white me-1"></i>
+                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
+                  ငွေလွဲမည်
+                </a>
+                <a href="{{ route('admin.user.getCashOut', $cash->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Player" class="btn btn-warning btn-sm">
+                  <i class="fas fa-right-left text-white me-1"></i>
+                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
+                  ငွေထုတ်မည်
+                </a>
+
+              </td>
       </tr>
       @endforeach
      </tbody>

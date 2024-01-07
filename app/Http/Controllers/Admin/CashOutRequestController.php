@@ -2,18 +2,43 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\ApiHelper;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\TransferLogRequest;
 use App\Mail\CashRequest;
+use App\Models\Admin\Provider;
+use App\Models\Admin\TransferLog;
 use App\Models\CashOutRequest;
 use App\Models\User;
+use App\Services\ApiService;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Mail;
 
 class CashOutRequestController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $apiService;
+    protected $operatorCode;
+    protected $secretKey;
+    protected $backendPassword;
+    protected $deposit;
+    protected $withdraw;
+
+
+
+    public function __construct(ApiService $apiService)
+    {
+
+        $this->apiService = $apiService;
+        $this->operatorCode = config('common.operatorcode');
+        $this->secretKey  = config('common.secret_key');
+        $this->backendPassword  = config('common.backend_password');
+        $this->deposit  = config('common.deposit');
+        $this->withdraw = config('common.withdraw');
+    }
+
+
     public function index()
     {
         $cashes = CashOutRequest::with('user')->latest()->get();
@@ -54,43 +79,81 @@ class CashOutRequestController extends Controller
         return redirect()->back()->with('success', 'Withdraw request submitted successfully');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+    public function getCashOut(User $user)
     {
-        //
+        $admin = Auth()->user();
+        $transfer_logs = TransferLog::where('to_user_id', $user->id)->get();
+        $adminBalance = $this->getAdminBalance();
+        $providers  = Provider::all();
+        return view('admin.users.cash_out', compact('user', 'admin', 'transfer_logs', 'adminBalance','providers'));
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function makeCashOut(TransferLogRequest $request)
     {
-        //
+        
+        abort_if(
+            Gate::denies('make_transfer'),
+            Response::HTTP_FORBIDDEN,
+            '403 Forbidden |You cannot  Access this page because you do not have permission'
+        );
+      
+        try {
+           
+            $refrence_id = $this->getRefrenceId();
+            $inputs =array_merge($request->validated(),['refrence_id' => $refrence_id]);
+            $user = User::findOrFail($inputs['to_user_id']);
+            $endpoint = '/makeTransfer.aspx';
+        
+            // Create transfer log
+            $signature = $this->getSignature($inputs,$user,$this->withdraw);
+            
+            $param = $this->getParam($inputs,$signature,$user,$this->withdraw);
+          
+            $data = $this->apiService->get($endpoint, $param);
+           
+            TransferLog::create(array_merge($inputs,['cash_out' => $inputs['amount'],'status' => $data['errMsg']]));
+
+            if ($data['errCode'] == 0) {
+
+                return redirect()->back()->with('success', 'Money Cashout request submitted successfully!');
+            }else{
+
+                return redirect()->back()->with('error', $data['errMsg']);
+
+            }
+
+          
+        } catch (Exception $e) {
+
+            return redirect()->back()->with('error',$e->getMessage());
+
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    private function getRefrenceId($prefix = 'REF')
     {
-        //
+        return  uniqid($prefix);
+    }
+    private function getSignature($inputs,$user,$type)
+    {
+        $signatureString = number_format($inputs['amount'], 2) . $this->operatorCode . $this->backendPassword .
+                $inputs['p_code'] . $inputs['refrence_id'] . $type . $user->name . $this->secretKey;
+
+       
+        return ApiHelper::generateSignature($signatureString);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    private function getParam($inputs,$signature,$user,$type)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return  [
+            'operatorcode' => $this->operatorCode,
+            'providercode' => $inputs['p_code'],
+            'username' => $user->name,
+            'password' => $this->backendPassword,
+            'signature' => $signature,
+            'referenceid' => $inputs['refrence_id'],
+            'type' => $type,
+            'amount' => number_format($inputs['amount'], 2),
+        ];
     }
 }

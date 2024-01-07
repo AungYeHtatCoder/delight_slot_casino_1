@@ -2,9 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\Admin\Role;
-use App\Models\Admin\Permission;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -21,20 +18,11 @@ class User extends Authenticatable
      */
      protected $fillable = [
         'name',
-        'operatorcode',
-        'signature',
         'profile',
         'email',
         'password',
         'profile',
-        'profile_mime',
-        'profile_size',
         'phone',
-        'address',
-        'kpay_no',
-        'cbpay_no',
-        'wavepay_no',
-        'ayapay_no',
         'balance',
         'agent_id',
 
@@ -62,6 +50,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+   
     public function getIsAdminAttribute()
     {
         return $this->roles()->where('id', 1)->exists();
@@ -84,7 +73,6 @@ class User extends Authenticatable
     public function roles()
     {
         return $this->belongsToMany(Role::class);
-
     }
 
     public function permissions()
@@ -101,7 +89,8 @@ class User extends Authenticatable
         return $this->roles->flatMap->permissions->pluck('title')->contains($permission);
     }
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 

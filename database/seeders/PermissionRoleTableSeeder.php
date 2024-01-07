@@ -1,9 +1,9 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\Admin\Role;
+use App\Models\Role;
 use Illuminate\Database\Seeder;
-use App\Models\Admin\Permission;
+use App\Models\Permission;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class PermissionRoleTableSeeder extends Seeder
@@ -28,40 +28,54 @@ class PermissionRoleTableSeeder extends Seeder
             'permission_edit',
             'permission_update',
             'permission_delete',
-            'master_index',
-            'master_create',
-            'master_store',
-            'master_edit',
-            'master_update',
-            'master_delete',
-            'transfer_log',
-            'game_type_access'
-        ]);
-        Role::findOrFail(1)->permissions()->sync($admin_permissions->pluck('id'));
-
-        // Master gets specific permissions
-        $master_permissions = Permission::whereIn('title', [
-            'master_access',
-            'agent_create',
-            'agent_edit',
-            'agent_show',
-            'agent_delete',
-            'transfer_log'
-        ])->pluck('id');
-        Role::findOrFail(2)->permissions()->sync($master_permissions);
-
-        // Agent gets specific permissions
-        $agent_permissions = Permission::whereIn('title', [
+            // 'master_index',
+            // 'master_create',
+            // 'master_store',
+            // 'master_edit',
+            // 'master_update',
+            // 'master_delete',
+            // 'transfer_log',
+            // 'master_transfer',
+            'game_type_access',
             'user_index',
             'user_create',
             'user_edit',
             'user_show',
+            'user_update',
             'user_delete',
-            'agent_access',
             'make_transfer',
             'transfer_log'
-        ])->pluck('id');
-        Role::findOrFail(3)->permissions()->sync($agent_permissions);
+        ]);
+        Role::findOrFail(1)->permissions()->sync($admin_permissions->pluck('id'));
+
+        // // Master gets specific permissions
+        // $master_permissions = Permission::whereIn('title', [
+        //     'master_access',
+        //     'agent_index',
+        //     'agent_create',
+        //     'agent_store',
+        //     'agent_edit',
+        //     'agent_show',
+        //     'agent_delete',
+        //     'agent_update',
+        //     'agent_transfer',
+        //     'transfer_log'
+        // ])->pluck('id');
+        // Role::findOrFail(2)->permissions()->sync($master_permissions);
+
+        // // Agent gets specific permissions
+        // $agent_permissions = Permission::whereIn('title', [
+        //     'user_index',
+        //     'user_create',
+        //     'user_edit',
+        //     'user_show',
+        //     'user_update',
+        //     'user_delete',
+        //     'agent_access',
+        //     'make_transfer',
+        //     'transfer_log'
+        // ])->pluck('id');
+        // Role::findOrFail(3)->permissions()->sync($agent_permissions);
 
         
     }

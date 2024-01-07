@@ -17,9 +17,12 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->unsignedBigInteger('from_user_id');
             $table->unsignedBigInteger('to_user_id');
-            $table->decimal('cash_in', 10, 2)->nullable();
-            $table->decimal('cash_out', 10, 2)->nullable();
-            $table->decimal('cash_balance', 10, 2)->default(1);
+            $table->decimal('cash_in')->default(0);
+            $table->decimal('cash_out')->default(0);
+            $table->decimal('cash_balance')->default(0);
+            $table->string('p_code')->nullable();
+            $table->string('refrence_id');
+            $table->string('status');
             $table->string('note')->nullable();
             $table->timestamps();
             // Add foreign key constraints if needed

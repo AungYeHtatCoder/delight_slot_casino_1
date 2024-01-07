@@ -4,31 +4,21 @@
 <!-- CAROUSEL START -->
 <div class="" style="margin-top: 60px; padding-top: 10px">
   <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade px-2" data-bs-ride="carousel">
-    {{-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div> --}}
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{ asset('slot_app/images/banner/banner1.png') }}" style="max-height: 500px" class="d-block w-100" alt="..." />
-        <!-- <div class="marquee">
-                <div class="marquee-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorem ea id exercitationem. Quos consequuntur vitae soluta
-                  aliquid odit temporibus beatae iste autem?
-                </div>
-              </div> -->
+      @foreach ($banners ?? "" as  $banner)
+      <div class="carousel-item {{ $banners[0] ? 'active' : '' }}">
+        <img src="{{ $banner->img_url }}" style="max-height: 500px" class="d-block w-100" alt="..." />
+        <div class="marquee">
+                <small class="marquee-text d-block py-1">
+                  {{ $bannerText->text }}
+                </small>
+              </div>
       </div>
-      <div class="carousel-item">
+      @endforeach
+
+      {{-- <div class="carousel-item">
         <img src="{{ asset('slot_app/images/banner/banner2.png') }}" style="max-height: 500px" class="d-block w-100" alt="..." />
-        <!-- <div class="marquee">
-                <div class="marquee-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolorem ea id exercitationem. Quos consequuntur vitae soluta
-                  aliquid odit temporibus beatae iste autem?
-                </div>
-              </div> -->
+     
       </div>
       <div class="carousel-item">
         <img src="{{ asset('slot_app/images/banner/banner3.png') }}" style="max-height: 500px" class="d-block w-100" />
@@ -39,14 +29,14 @@
                   aliquid odit temporibus beatae iste autem?
                 </div>
               </div> -->
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>
 <!-- CAROUSEL END -->
 
 <!-- GAME START -->
-<div class="game mt-2">
+<div class="game mt-5">
   <div>
     <div class="game-content-title">
       <span>
@@ -151,7 +141,7 @@
     </div>
 
     <div class="game-content mt-2">
-
+      
         <div class="row mx-1">
         @foreach ($types->providers as $provider)
           @if($types->id == 3 || $types->id == 2 && $provider->id == 3 || $types->id == 2 && $provider->id == 7 

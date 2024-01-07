@@ -92,15 +92,6 @@
          data-bs-original-title="Preview Permission Detail">
          <i class="material-icons text-secondary position-relative text-lg">visibility</i>
         </a>
-        <form class="d-inline" action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST">
-         @csrf
-         @method('DELETE')
-         <button type="submit" class="transparent-btn" data-bs-toggle="tooltip"
-          data-bs-original-title="Delete permission">
-          <i class="material-icons text-secondary position-relative text-lg">delete</i>
-         </button>
-
-        </form>
        </td>
       </tr>
       @endforeach

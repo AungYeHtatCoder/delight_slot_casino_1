@@ -15,34 +15,19 @@
 @endsection
 @section('content')
 <div class="row mt-4">
-<<<<<<< HEAD
- <div class="col-12">
-  <div class="card">
-   <!-- Card header -->
-   <div class="card-header pb-0">
-    <div class="d-lg-flex">
-     <div>
-      <h5 class="mb-0">Player Dashboards</h5>
-      @if(Session::has('success'))
-      <div class="alert alert-success">
-          {{session('message')}}
-      </div>
-      @endif
-=======
   <div class="col-12">
     <div class="card">
       <!-- Card header -->
       <div class="card-header pb-0">
         <div class="d-lg-flex">
           <div>
-            <h5 class="mb-0">Player Dashboards</h5>
->>>>>>> 07f309f9ade6a8abf0a859f92fc40dc1e651fce9
+            <h5 class="mb-0">Agent List Dashboards</h5>
 
           </div>
           <div class="ms-auto my-auto mt-lg-0 mt-4">
             <div class="ms-auto my-auto">
-              <a href="{{ route('admin.user.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Create New
-                Player</a>
+              <a href="{{ route('admin.agent.create') }}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Create New
+                Agent</a>
               <button class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1" data-type="csv" type="button" name="button">Export</button>
             </div>
           </div>
@@ -57,14 +42,17 @@
             <th>Status</th>
             <th>Created_at</th>
             <th>Action</th>
+            <th>Transfer</th>
           </thead>
           <tbody>
             @foreach ($users as $user)
             <tr>
-              <td>{{ $loop->iteration }}</td>
+              <td>{{ $loop->index + 1 }}</td>
               <td>
                 <span class="d-block">{{ $user->name }}</span>
-                  
+                @foreach ($user->roles as $role)
+                <span class="badge badge-pill badge-primary">{{ $role->title }}</span>
+                @endforeach
               </td>
               <td>{{ $user->phone }}</td>
               <td>
@@ -86,13 +74,13 @@
                   @method('PUT')
                 </form>
 
-                <a class="me-1" href="{{ route('admin.user.edit', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit User">
+                <a class="me-1" href="{{ route('admin.agent.edit', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Edit User">
                   <i class="fas fa-pen-to-square text-info" style="font-size: 20px;"></i>
                 </a>
-                <a class="me-1" href="{{ route('admin.user.show', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview User Detail">
+                <a class="me-1" href="{{ route('admin.agent.show', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Preview User Detail">
                   <i class="fas fa-eye text-warning" style="font-size: 20px;"></i>
                 </a>
-                <form class="d-inline" action="{{ route('admin.user.destroy', $user->id) }}" method="POST">
+                <form class="d-inline" action="{{ route('admin.agent.destroy', $user->id) }}" method="POST">
                   @csrf
                   @method('DELETE')
                   <button type="submit" class="transparent-btn" data-bs-toggle="tooltip" data-bs-original-title="Delete User">
@@ -100,7 +88,19 @@
                   </button>
                 </form>
               </td>
-             
+              <td>
+                <a href="{{ route('admin.agent.getTransfer', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash IN To Master" class="btn btn-info btn-sm">
+                  <i class="fas fa-right-left text-white me-1"></i>
+                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
+                  ငွေလွဲမည်
+                </a>
+                <a href="{{ route('admin.master.cashOut', $user->id) }}" data-bs-toggle="tooltip" data-bs-original-title="Cash Out To Master" class="btn btn-warning btn-sm">
+                  <i class="fas fa-right-left text-white me-1"></i>
+                  {{-- <i class="material-icons text-secondary position-relative text-lg" style="font-size: 25px">currency_exchange</i> --}}
+                  ငွေထုတ်မည်
+                </a>
+
+              </td>
             </tr>
             @endforeach
           </tbody>
@@ -112,9 +112,6 @@
 @endsection
 @section('scripts')
 <script src="{{ asset('admin_app/assets/js/plugins/datatables.js') }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-
 {{-- <script>
     const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
       searchable: true,
@@ -152,26 +149,5 @@
   var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
-  var errorMessage =  @json(session('error'));
-    var successMessage =  @json(session('success'));
-  
-console.log(successMessage);
 </script>
-<script>
-@if(session()->has('success'))
-  Swal.fire({
-    icon: 'success',
-    title: successMessage,
-    showConfirmButton: false,
-    timer: 1500
-  })
-  @elseif(session()->has('error'))
-  Swal.fire({
-    icon: 'error',
-    title: errorMessage,
-    showConfirmButton: false,
-    timer: 1500
-  })
-  @endif
-</script> 
 @endsection

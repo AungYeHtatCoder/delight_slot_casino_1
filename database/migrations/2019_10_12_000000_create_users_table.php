@@ -20,9 +20,6 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('profile', 2000)->nullable();
-            $table->string('profile_mime')->nullable();
-            $table->integer('profile_size')->nullable();
-            $table->string('address')->nullable();
             $table->integer('balance')->default(0);
              $table->integer('status')->default(0);
             $table->unsignedBigInteger('agent_id')->nullable();
