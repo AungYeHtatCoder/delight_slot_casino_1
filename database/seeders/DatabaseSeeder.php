@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\CashOutRequest;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,7 +16,6 @@ class DatabaseSeeder extends Seeder
     {
 
             $this->call([
-            // AdminTableSeeder::class,
             PermissionsTableSeeder::class,
             RolesTableSeeder::class,
             PermissionRoleTableSeeder::class,
@@ -32,6 +33,9 @@ class DatabaseSeeder extends Seeder
             JKGameListSeeder::class,
             S3GameListSeeder::class,
             JDGameListSeeder::class
+
+           
         ]);
+      
     }
 }

@@ -20,6 +20,6 @@ class GameTypeController extends Controller
         );
         // Retrieve all game types with their related providers
         $gameTypes = GameType::with('providers')->get();
-        return view('admin.slot.game_type.index', compact('gameTypes'));
+        return view('admin.game_type.index', compact('gameTypes'));
     }
 }
