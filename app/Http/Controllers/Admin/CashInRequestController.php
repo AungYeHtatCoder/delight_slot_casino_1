@@ -58,28 +58,27 @@ class CashInRequestController extends ApiController
         $request->validate([
             'payment_method' => 'required',
             'last_6_num' => 'required',
-            'receipt' => 'required|file|image',
+            // 'receipt' => 'required|file|image',
             'amount' => 'required|numeric',
             'phone' => 'required|numeric',
             'provider_id' => 'required|numeric',
         ]);
 
-        $image = $request->file('receipt');
-        $ext = $image->getClientOriginalExtension();
-        $filename = uniqid('receipt') . '.' . $ext;
-        $image->move(public_path('assets/img/receipts/'), $filename);
+        // $image = $request->file('receipt');
+        // $ext = $image->getClientOriginalExtension();
+        // $filename = uniqid('receipt') . '.' . $ext;
+        // $image->move(public_path('assets/img/receipts/'), $filename);
 
         $cashIn = CashInRequest::create([
             'payment_method' => $request->payment_method,
             'last_6_num' => $request->last_6_num,
-            'receipt' => $filename,
+            // 'receipt' => $filename,
             'amount' => $request->amount,
             'phone' => $request->phone,
             'user_id' => auth()->id(),
             'provider_id' => $request->provider_id,
         ]);
         $user = User::find(auth()->id());
-        $receipt = CashInRequest::find($cashIn->id);
         $provider = Provider::find($request->provider_id);
         $toMail = "delightdeveloper4@gmail.com";
         $mail = [
@@ -89,7 +88,7 @@ class CashInRequestController extends ApiController
             'payment_method'=> $request->payment_method,
             'phone' => $request->phone,
             'amount' => $request->amount,
-            'receipt' => $receipt->img_url,
+            // 'receipt' => $receipt->img_url,
             'last_6_num' => $request->last_6_num,
             'provider' => $provider->p_code
         ];

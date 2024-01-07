@@ -10,7 +10,7 @@ class CashInRequest extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'payment_method', 'amount', 'phone', 'user_id', 'last_6_num', 'status', 'receipt', 'provider_id'
+        'payment_method', 'amount', 'phone', 'user_id', 'last_6_num', 'status', 'provider_id'
     ];
     protected $appends = ['img_url'];
 
@@ -22,8 +22,8 @@ class CashInRequest extends Model
         return $this->belongsTo(Provider::class);
     }
 
-    public function getImgUrlAttribute()
-    {
-        return asset('assets/img/receipts/' . $this->receipt);
-    }
+    // public function getImgUrlAttribute()
+    // {
+    //     return asset('assets/img/receipts/' . $this->receipt);
+    // }
 }
