@@ -59,7 +59,6 @@
 
 
     </div>
-    <!-- other games -->
 
 </div>
 <!-- content -->
