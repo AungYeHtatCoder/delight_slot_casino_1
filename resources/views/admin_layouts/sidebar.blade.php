@@ -33,6 +33,12 @@
             </a>
           </li>
           <li class="nav-item ">
+            <a class="nav-link text-white " href="{{ route('admin.text.index') }}">
+              <span class="sidenav-mini-icon"> <i class="fa-solid fa-bullhorn"></i> </span>
+              <span class="sidenav-normal  ms-2  ps-1"> Banner Text </span>
+            </a>
+          </li>
+          <li class="nav-item ">
             <a class="nav-link text-white " href="{{ route('admin.games.index') }}">
               <span class="sidenav-mini-icon"> <i class="fa-solid fa-gamepad"></i> </span>
               <span class="sidenav-normal  ms-2  ps-1"> Bonus </span>
