@@ -7,13 +7,13 @@
             </a>
           </li>
 
-          <li class="nav-item active">
+          {{-- <li class="nav-item active">
             <a class="nav-link text-white " href="{{route('api_dashboard')  }}">
           
               <span class="sidenav-mini-icon">   <i class="material-icons-round {% if page.brand == 'RTL' %}ms-2{% else %} me-2{% endif %}">apps</i> </span>
               <span class="sidenav-normal  ms-2  ps-1">Api Dashboard </span>
             </a>
-          </li>
+          </li> --}}
         
     <hr class="horizontal light mt-0">
     <li class="nav-item">
